@@ -135,13 +135,25 @@ public extension Array where Element: Equatable {
     }
 }
 
-func += <T> (lhs: inout [T], rhs: [T]) {
-    lhs.append(contentsOf: rhs)
+/// append to array
+public func + <T> (lhs: [T], rhs: T) -> [T] {
+    return lhs + [rhs]
 }
 
-func + <T> (lhs: [T], rhs: [T]) -> [T] {
-    var result = lhs
-    result.append(contentsOf: rhs)
-    return result
+/// append to array
+public func + <T> (lhs: [T], rhs: [T]) -> [T] {
+    var cp = lhs
+    cp.append(contentsOf: rhs)
+    return cp
+}
+
+/// append to array
+public func += <T> (lhs: inout [T], rhs: T) {
+    lhs.append(rhs)
+}
+
+/// append to array
+public func += <T> (lhs: inout [T], rhs: [T]) {
+    lhs.append(contentsOf: rhs)
 }
 

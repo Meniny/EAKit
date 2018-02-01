@@ -9,15 +9,11 @@
 //  Copyright © 2017年 Meniny Lab. All rights reserved.
 //
 
-#if os(iOS)
+#if !os(OSX)
     import Foundation
     import UIKit
 
     public extension UIImage {
-        
-        public var hasContent: Bool {
-            return cgImage != nil || ciImage != nil
-        }
         
         public var original: UIImage? {
             guard hasContent else {
@@ -25,6 +21,14 @@
             }
             
             return withRenderingMode(.alwaysOriginal)
+        }
+        
+        public var hasContent: Bool {
+            #if os(iOS)
+                return cgImage != nil || ciImage != nil
+            #else
+                return cgImage != nil
+            #endif
         }
         
         public var template: UIImage? {

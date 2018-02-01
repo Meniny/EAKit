@@ -65,6 +65,113 @@ public extension Array where Element == String {
 }
 
 public extension String {
+    
+    public func repeating(_ time: Int, separator: String? = nil) -> String {
+        if time > 1 {
+            var res = [String]()
+            for _ in 1...time {
+                res.append(self)
+            }
+            if let sep = separator {
+                return res.joined(separator: sep)
+            }
+            return res.joined()
+        }
+        return self
+    }
+    
+    public func replace(_ string: String, with withString: String) -> String {
+        return replacingOccurrences(of: string, with: withString)
+    }
+    
+    public func truncate(_ length: Int, suffix: String = "...") -> String {
+        if count > length {
+            return self.substring(to: length) + suffix
+        }
+        return self
+    }
+    
+    public func split(_ delimiter: String) -> [String] {
+        let components = self.components(separatedBy: delimiter)
+        return components != [""] ? components : []
+    }
+    
+    public func trim(_ charactersSets: CharacterSet = CharacterSet.whitespaces) -> String {
+        return trimmingCharacters(in: charactersSets)
+    }
+    
+    public var uppercaseFirstLetter: String {
+        guard isPresent else { return self }
+        
+        var string = self
+        string.replaceSubrange(string.startIndex...string.startIndex,
+                               with: String(string[string.startIndex]).capitalized)
+        
+        return string
+    }
+    
+    public func substring(pattern: String, options: NSRegularExpression.Options = NSRegularExpression.Options.caseInsensitive) -> String? {
+        if let regex = try? NSRegularExpression(pattern: pattern, options: options) {
+            if let match = regex.firstMatch(in: self, options: .reportProgress, range: NSMakeRange(0, count)) {
+                return (self as NSString).substring(with: match.range)
+            }
+        }
+        return nil
+    }
+    
+    public func substring(from: Int) -> String {
+        return (self as NSString).substring(from: from)
+    }
+    
+    public func substring(to: Int) -> String {
+        return (self as NSString).substring(to: to)
+    }
+}
+
+public extension String {
+    
+    public var integerValue: Int? { return Int(self) }
+    public var intValue: Int? { return self.integerValue }
+    
+    public var unsignedIntegerValue: UInt? { return UInt(self) }
+    public var uintValue: UInt? { return self.unsignedIntegerValue }
+    
+    public var doubleValue: Double? { return Double(self) }
+    
+    public var floatValue: Float? { return Float(self) }
+}
+
+public extension String {
+    
+    public func uppercasedAtSentenceBoundary() -> String {
+        let string = self.lowercased()
+        
+        let capacity = string.count
+        let mutable = NSMutableString(capacity: capacity)
+        mutable.append(string)
+        
+        let pattern = "(?:^|\\b\\.[ ]*)(\\p{Ll})"
+        
+        if let regex = try? NSRegularExpression(pattern: pattern, options: .anchorsMatchLines) {
+            let results = regex.matches(in: string, options: [], range: NSMakeRange(0, capacity))
+            for result in results {
+                let numRanges = result.numberOfRanges
+                if numRanges >= 1 {
+                    for i in 1..<numRanges {
+                        let range = result.range(at: i)
+                        let substring = mutable.substring(with: range)
+                        mutable.replaceCharacters(in: range, with: substring.uppercased())
+                    }
+                }
+            }
+        }
+        
+        return mutable as String
+    }
+}
+
+public extension String {
+    
     public var base64Encoded: String? {
         return self.data(using: .utf8)?.base64EncodedString(options: Data.Base64EncodingOptions.init(rawValue: 0))
     }
@@ -75,32 +182,42 @@ public extension String {
         }
         return String.init(data: data, encoding: .utf8)
     }
-}
-
-// MARK: - Hex
-public extension String {
     
-    public var validatedHexString: String? {
-        if self.isEmpty { return nil }
+    /// decode unicode to plain string
+    public var unicodeDecodedString: String? {
+        let tempString = self.replacingOccurrences(of: "\\u", with: "\\U")
+            .replacingOccurrences(of:"\"", with: "\\\"")
         
-        //guard self.characters.first == "#" else { return nil }
-        
-        let colorString = self.replacingOccurrences(of: "#", with: "").uppercased()
-        
-        let length = colorString.length
-        guard [3, 4, 6, 8].contains(length) else { return nil }
-        
-        let disallowedCharacters = CharacterSet(charactersIn: "0123456789ABCDEF").inverted
-        guard (colorString as NSString).rangeOfCharacter(from: disallowedCharacters).location == NSNotFound else {
-            return nil
+        if let tempData = "\"\(tempString)\"".data(using: .utf8) {
+            if let res = try? PropertyListSerialization.propertyList(from: tempData, options: [], format: nil) {
+                return res as? String
+            }
         }
-        
-        return colorString
+        return nil
     }
     
-    /// Validates a string if it is a hex color value in forms of #RGB, #ARGB, #RRGGBB and #AARRGGBB.
-    public var isHexColorString: Bool {
-        return self.validatedHexString != nil
+    public var URLEncodedString: String {
+        if #available(iOS 10.0, macOS 10.12, *) {
+            if let esc = self.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed) {
+                return esc
+            }
+            return self
+        } else {
+            let chars = ":&=;+!@#$()',*"
+            let legalURLCharactersToBeEscaped: CFString = chars as CFString
+            return CFURLCreateStringByAddingPercentEscapes(nil, self as CFString!, nil, legalURLCharactersToBeEscaped, CFStringBuiltInEncodings.UTF8.rawValue) as String
+        }
+    }
+    
+    public var URLDecodedString: String {
+        if #available(iOS 10.0, macOS 10.12, *) {
+            if let esc = self.removingPercentEncoding {
+                return esc
+            }
+            return self
+        } else {
+            return CFURLCreateStringByReplacingPercentEscapesUsingEncoding(nil, self as CFString!, "" as CFString!, CFStringBuiltInEncodings.UTF8.rawValue) as String
+        }
     }
 }
 

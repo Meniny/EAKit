@@ -1,5 +1,5 @@
 PODS:
-  - EAKit (1.0.0)
+  - EAKit (1.0.1)
 
 DEPENDENCIES:
   - EAKit (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  EAKit: 46f2ca6de035a6b5eb02fc7d2f5c79952b64ed71
+  EAKit: 20c07c3f6597069734af251d49168ff48c50949f
 
 PODFILE CHECKSUM: 3fdabc442b85568342ed812c0dab159a7595d654
 
