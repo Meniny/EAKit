@@ -1,0 +1,14 @@
+def eakit()
+  use_frameworks!
+  pod 'EAKit', :path => "../"
+end
+
+target 'iOS' do
+  platform :ios, '9.0'
+  eakit()
+end
+
+target 'macOS' do
+  platform :osx, '10.9'
+  eakit()
+end

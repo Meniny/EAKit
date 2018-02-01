@@ -1,0 +1,16 @@
+PODS:
+  - EAKit (1.0.0)
+
+DEPENDENCIES:
+  - EAKit (from `../`)
+
+EXTERNAL SOURCES:
+  EAKit:
+    :path: ../
+
+SPEC CHECKSUMS:
+  EAKit: 46f2ca6de035a6b5eb02fc7d2f5c79952b64ed71
+
+PODFILE CHECKSUM: 3fdabc442b85568342ed812c0dab159a7595d654
+
+COCOAPODS: 1.4.0
