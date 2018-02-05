@@ -1,16 +1,42 @@
 PODS:
-  - EAKit (1.0.2)
+  - EAKit (1.1.0):
+    - EAKit/AppKit (= 1.1.0)
+    - EAKit/Core (= 1.1.0)
+    - EAKit/CoreGraphics (= 1.1.0)
+    - EAKit/CoreLocation (= 1.1.0)
+    - EAKit/Foundation (= 1.1.0)
+    - EAKit/Runtime (= 1.1.0)
+    - EAKit/sysctl (= 1.1.0)
+    - EAKit/Testing (= 1.1.0)
+    - EAKit/UIKit (= 1.1.0)
+  - EAKit/AppKit (1.1.0):
+    - EAKit/Core
+  - EAKit/Core (1.1.0)
+  - EAKit/CoreGraphics (1.1.0):
+    - EAKit/Core
+  - EAKit/CoreLocation (1.1.0):
+    - EAKit/Core
+  - EAKit/Foundation (1.1.0):
+    - EAKit/Core
+  - EAKit/Runtime (1.1.0)
+  - EAKit/sysctl (1.1.0)
+  - EAKit/Testing (1.1.0)
+  - EAKit/UIKit (1.1.0):
+    - EAKit/Core
+  - SwiftLint (0.24.2)
 
 DEPENDENCIES:
   - EAKit (from `../`)
+  - SwiftLint
 
 EXTERNAL SOURCES:
   EAKit:
     :path: ../
 
 SPEC CHECKSUMS:
-  EAKit: f9143ede55bf6a2bcd485949439bb8c2cfa06aa2
+  EAKit: 813b609762adb09ddbb90b8389576faca45d7023
+  SwiftLint: 2aa21b96c8d13396a051bc1cb659d2ce1e0075b0
 
-PODFILE CHECKSUM: 3fdabc442b85568342ed812c0dab159a7595d654
+PODFILE CHECKSUM: 7a7af1227a412edae239b2d614722fe49eb0a507
 
 COCOAPODS: 1.4.0

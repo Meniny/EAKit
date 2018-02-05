@@ -20,9 +20,25 @@
 		E1EA25B6897E85E150E35270 /* Pods_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77ADF8738EAFA3BC22EC7C3A /* Pods_iOS.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		5C21A161202849CE00208FAC /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		06CFC55DF446D6E7CF5ED897 /* Pods-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tvOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tvOS/Pods-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		4B53954293A550145DEAD0D2 /* Pods-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS/Pods-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		4FD9993DE768D2429E9EA885 /* Pods-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-tvOS/Pods-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		53A748FD7F5A3266ACAA0D17 /* Pods_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C21A0C820280DBE00208FAC /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
 		64D7BDA62022E73300E042B1 /* iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64D7BDA82022E73300E042B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		64D7BDAA2022E73300E042B1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -45,6 +61,7 @@
 		68AD7525176FEAE9551508D0 /* Pods-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS/Pods-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		7542F09C27074DFA514B6967 /* Pods-macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-macOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-macOS/Pods-macOS.release.xcconfig"; sourceTree = "<group>"; };
 		77ADF8738EAFA3BC22EC7C3A /* Pods_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		81B98B20CA4F698B40B5A6B4 /* Pods_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD350BFAC916DD80E2B6288D /* Pods-macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-macOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-macOS/Pods-macOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,6 +92,8 @@
 				68AD7525176FEAE9551508D0 /* Pods-iOS.release.xcconfig */,
 				DD350BFAC916DD80E2B6288D /* Pods-macOS.debug.xcconfig */,
 				7542F09C27074DFA514B6967 /* Pods-macOS.release.xcconfig */,
+				06CFC55DF446D6E7CF5ED897 /* Pods-tvOS.debug.xcconfig */,
+				4FD9993DE768D2429E9EA885 /* Pods-tvOS.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -82,6 +101,7 @@
 		64D7BD842022E72500E042B1 = {
 			isa = PBXGroup;
 			children = (
+				5C21A0C820280DBE00208FAC /* .swiftlint.yml */,
 				64D7BDCE2022E86800E042B1 /* _config.yml */,
 				64D7BDD12022E86800E042B1 /* .gitignore */,
 				64D7BDCF2022E86800E042B1 /* EAKit.podspec */,
@@ -135,6 +155,7 @@
 			children = (
 				77ADF8738EAFA3BC22EC7C3A /* Pods_iOS.framework */,
 				53A748FD7F5A3266ACAA0D17 /* Pods_macOS.framework */,
+				81B98B20CA4F698B40B5A6B4 /* Pods_tvOS.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -152,6 +173,8 @@
 				64D7BDA42022E73300E042B1 /* Resources */,
 				515DBE3B8186CAFC586D86C8 /* [CP] Embed Pods Frameworks */,
 				9C6BE9EEE200A7262B0A28AB /* [CP] Copy Pods Resources */,
+				5C21A0C720280DA100208FAC /* Lint */,
+				5C21A161202849CE00208FAC /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
@@ -297,6 +320,20 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOS/Pods-iOS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		5C21A0C720280DA100208FAC /* Lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Lint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"";
 		};
 		608A708D536586A3C9DC0EF5 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -513,7 +550,7 @@
 				DEVELOPMENT_TEAM = 63YL5QDMNS;
 				INFOPLIST_FILE = iOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cn.meniny.EAKit.iOS.iOS;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.meniny.EAKit.iOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -529,7 +566,7 @@
 				DEVELOPMENT_TEAM = 63YL5QDMNS;
 				INFOPLIST_FILE = iOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cn.meniny.EAKit.iOS.iOS;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.meniny.EAKit.iOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -549,7 +586,7 @@
 				INFOPLIST_FILE = macOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				PRODUCT_BUNDLE_IDENTIFIER = cn.meniny.EAKit.macOS.macOS;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.meniny.EAKit.macOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_VERSION = 4.0;
@@ -569,7 +606,7 @@
 				INFOPLIST_FILE = macOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				PRODUCT_BUNDLE_IDENTIFIER = cn.meniny.EAKit.macOS.macOS;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.meniny.EAKit.macOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_VERSION = 4.0;

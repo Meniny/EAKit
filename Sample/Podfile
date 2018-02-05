@@ -1,6 +1,12 @@
+def lint()
+    use_frameworks!
+    pod 'SwiftLint'
+end
+
 def eakit()
   use_frameworks!
   pod 'EAKit', :path => "../"
+  lint()
 end
 
 target 'iOS' do
@@ -9,6 +15,6 @@ target 'iOS' do
 end
 
 target 'macOS' do
-  platform :osx, '10.9'
+  platform :osx, '10.10'
   eakit()
 end
