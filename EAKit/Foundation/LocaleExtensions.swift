@@ -2,7 +2,7 @@
 //  LocalExtensions.swift
 //  EAKit
 //
-//  Created by Basem Emara on 4/19/17.
+//  Created by Elias Abel on 4/19/17.
 //  Copyright © 2017 EAKit
 //
 

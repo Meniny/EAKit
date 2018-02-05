@@ -2,7 +2,7 @@
 //  SignedIntegerExtensions.swift
 //  EAKit
 //
-//  Created by Omar Albeik on 8/15/17.
+//  Created by Elias Abel on 8/15/17.
 //  Copyright © 2017 EAKit
 //
 

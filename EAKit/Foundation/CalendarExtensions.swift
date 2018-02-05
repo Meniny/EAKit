@@ -2,7 +2,7 @@
 //  CalendarExtensions.swift
 //  EAKit
 //
-//  Created by Chaithanya Prathyush on 09/11/17.
+//  Created by Elias Abel on 09/11/17.
 //  Copyright © 2017 EAKit
 //
 

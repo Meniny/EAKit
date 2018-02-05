@@ -2,7 +2,7 @@
 //  ColorExtensions.swift
 //  EAKit-iOS
 //
-//  Created by Omar Albeik on 9/27/17.
+//  Created by Elias Abel on 9/27/17.
 //  Copyright © 2017 EAKit
 //
 

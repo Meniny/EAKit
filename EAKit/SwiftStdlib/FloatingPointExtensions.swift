@@ -2,7 +2,7 @@
 //  FloatingPointExtensions.swift
 //  EAKit
 //
-//  Created by Omar Albeik on 7/23/17.
+//  Created by Elias Abel on 7/23/17.
 //  Copyright © 2017 EAKit
 //
 

@@ -2,7 +2,7 @@
 //  DataExtensions.swift
 //  EAKit
 //
-//  Created by Omar Albeik on 07/12/2016.
+//  Created by Elias Abel on 07/12/2016.
 //  Copyright © 2016 EAKit
 //
 
@@ -30,6 +30,14 @@ public extension Data {
 		return String(data: self, encoding: encoding)
 	}
 	
+    /// Convert self UUID to String.
+    ///
+    /// Useful for push notifications.
+    ///
+    /// - Returns: Returns self as String from UUID.
+    public func readableUUID() -> String {
+        return self.description.trimmingCharacters(in: CharacterSet(charactersIn: "<>")).replacingOccurrences(of: " ", with: "").replacingOccurrences(of: "-", with: "")
+    }
 }
 
 extension Data {

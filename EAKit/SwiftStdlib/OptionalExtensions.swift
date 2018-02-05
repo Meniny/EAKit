@@ -2,7 +2,7 @@
 //  OptionalExtensions.swift
 //  EAKit
 //
-//  Created by Omar Albeik on 3/3/17.
+//  Created by Elias Abel on 3/3/17.
 //  Copyright © 2017 EAKit
 //
 

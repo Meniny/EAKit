@@ -2,7 +2,7 @@
 //  StringExtensions.swift
 //  EAKit
 //
-//  Created by Omar Albeik on 8/5/16.
+//  Created by Elias Abel on 8/5/16.
 //  Copyright © 2016 EAKit
 //
 #if os(macOS)
@@ -27,6 +27,10 @@ public extension Array where Element == String {
 
 // MARK: - Properties
 public extension String {
+    
+    public var length: Int {
+        return self.count
+    }
     
     public var uppercasedAtSentenceBoundary: String {
         let string = self.lowercased()
@@ -1048,4 +1052,138 @@ public extension String {
 		return (self as NSString).appendingPathExtension(str)
 	}
 	
+}
+
+public extension String {
+    /// Remove double or more duplicated spaces.
+    ///
+    /// - returns: Remove double or more duplicated spaces.
+    public func removeExtraSpaces() -> String {
+        let squashed = self.replacingOccurrences(of: "[ ]+", with: " ", options: .regularExpression, range: nil)
+        return squashed.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
+    }
+    
+    /// Returns a new string in which all occurrences of a target strings in a specified range of the String are replaced by another given string.
+    ///
+    /// - Parameters:
+    ///   - target: Target strings array.
+    ///   - replacement: Replacement string.
+    /// - Returns: Returns a new string in which all occurrences of a target strings in a specified range of the String are replaced by another given string.
+    public func replacingOccurrences(of target: [String], with replacement: String) -> String {
+        var string = self
+        for occurrence in target {
+            string = string.replacingOccurrences(of: occurrence, with: replacement)
+        }
+        
+        return string
+    }
+    
+    /// Count the number of lowercase characters.
+    ///
+    /// - Returns: Number of lowercase characters.
+    public func countLowercasedCharacters() -> Int {
+        var countChar = 0
+        for i in 0 ..< self.length {
+            guard let character = UnicodeScalar((NSString(string: self)).character(at: i)) else {
+                return 0
+            }
+            let isLowercase = CharacterSet.lowercaseLetters.contains(character)
+            if isLowercase {
+                countChar += 1
+            }
+        }
+        
+        return countChar
+    }
+    
+    /// Count the number of uppercase characters.
+    ///
+    /// - Returns: Number of uppercase characters.
+    public func countUppercasedCharacters() -> Int {
+        var countChar = 0
+        for i in 0 ..< self.length {
+            guard let character = UnicodeScalar((NSString(string: self)).character(at: i)) else {
+                return 0
+            }
+            let isUppercase = CharacterSet.uppercaseLetters.contains(character)
+            if isUppercase {
+                countChar += 1
+            }
+        }
+        
+        return countChar
+    }
+    
+    /// Count the number of numbers.
+    ///
+    /// - Returns: Number of numbers.
+    public func countNumbers() -> Int {
+        var countNumber = 0
+        for i in 0 ..< self.length {
+            guard let character = UnicodeScalar((NSString(string: self)).character(at: i)) else {
+                return 0
+            }
+            let isNumber = CharacterSet(charactersIn: "0123456789").contains(character)
+            if isNumber {
+                countNumber += 1
+            }
+        }
+        
+        return countNumber
+    }
+    
+    /// Count the number of symbols.
+    ///
+    /// - Returns: Number of symbols.
+    public func countSymbols() -> Int {
+        var countSymbol = 0
+        for i in 0 ..< self.length {
+            guard let character = UnicodeScalar((NSString(string: self)).character(at: i)) else {
+                return 0
+            }
+            let isSymbol = CharacterSet(charactersIn: "`~!?@#$€£¥§%^&*()_+-={}[]:\";.,<>'•\\|/").contains(character)
+            if isSymbol {
+                countSymbol += 1
+            }
+        }
+        
+        return countSymbol
+    }
+    
+    /// Convert HEX string (separated by space) to "usual" characters string.
+    /// Example: "68 65 6c 6c 6f" -> "hello".
+    ///
+    /// - Returns: Readable string.
+    public func stringFromHEX() -> String {
+        var hex = self
+        hex = hex.replacingOccurrences(of: " ", with: "")
+        var string: String = ""
+        while !hex.isEmpty {
+            let character: String = String(hex[..<hex.index(hex.startIndex, offsetBy: 2)])
+            hex = String(hex[hex.index(hex.startIndex, offsetBy: 2)...])
+            var characterInt: UInt32 = 0
+            _ = Scanner(string: character).scanHexInt32(&characterInt)
+            string += String(format: "%c", characterInt)
+        }
+        return string
+    }
+    
+    /// Return if self is anagram of another String.
+    ///
+    /// - Parameter string: Other String.
+    /// - Returns: Return true if self is anagram of another String, otherwise false.
+    public func isAnagram(of string: String) -> Bool {
+        let lowerSelf = self.lowercased().replacingOccurrences(of: " ", with: "")
+        let lowerOther = string.lowercased().replacingOccurrences(of: " ", with: "")
+        return lowerSelf.sorted() == lowerOther.sorted()
+    }
+    
+    /// Returns if self is palindrome.
+    ///
+    /// - Returns: Returns true if self is palindrome, otherwise false.
+    public func isPalindrome() -> Bool {
+        let selfString = self.lowercased().replacingOccurrences(of: " ", with: "")
+        let otherString = String(selfString.reversed())
+        return selfString == otherString
+    }
 }

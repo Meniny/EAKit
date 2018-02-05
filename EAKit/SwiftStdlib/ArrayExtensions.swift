@@ -2,7 +2,7 @@
 //  ArrayExtensions.swift
 //  EAKit
 //
-//  Created by Omar Albeik on 8/5/16.
+//  Created by Elias Abel on 8/5/16.
 //  Copyright © 2016 EAKit
 //
 
@@ -75,6 +75,44 @@ public extension Array where Element: FloatingPoint {
 
 // MARK: - Methods
 public extension Array {
+    
+    /// A Bool value indicating whether the collection is not empty.
+    ///
+    /// - Returns: Returns a Bool value indicating whether the collection is not empty.
+    public var isNotEmpty: Bool {
+        return !self.isEmpty
+    }
+    
+    /// Creates a flatten array.
+    ///
+    /// Example:
+    ///
+    ///     [1, 2, [3, [4]]] -> [1, 2, 3, 4]
+    ///
+    /// - Parameter array: Array bo te flattened.
+    /// - Returns: Returns a flatten array.
+    public var flattened: [Element] {
+        /// Returned flattened array.
+        var result: [Element] = []
+        
+        /// For every element inside the array.
+        for element in self {
+            /// If it's a nested array, safely cast.
+            if let subarray = element as? [Element] {
+                /// For every subarray call the `flatten` function.
+                for subelement in subarray.flattened {
+                    /// We are now sure that this is an element
+                    /// and we can add it to `flattened`.
+                    result.append(subelement)
+                }
+            } else {
+                /// Otherwise is an element and add it to `flattened`.
+                result.append(element)
+            }
+        }
+        
+        return result
+    }
 	
 	/// EAKit: Element at the given index if it exists.
 	///
@@ -88,6 +126,18 @@ public extension Array {
 		guard startIndex..<endIndex ~= index else { return nil }
 		return self[index]
 	}
+    
+    /// EAKit: Element at the given index if it exists.
+    ///
+    ///        [1, 2, 3, 4, 5].item(at: 2) -> 3
+    ///        [1.2, 2.3, 4.5, 3.4, 4.5].item(at: 3) -> 3.4
+    ///        ["h", "e", "l", "l", "o"].item(at: 10) -> nil
+    ///
+    /// - Parameter index: index of element.
+    /// - Returns: optional element (if exists).
+    public func element(at index: Int) -> Element? {
+        return self.item(at: index)
+    }
 	
 	/// EAKit: Remove last element from array and return it.
 	///

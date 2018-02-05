@@ -2,7 +2,7 @@
 //  NSAttributedStringExtensions.swift
 //  EAKit
 //
-//  Created by Omar Albeik on 26/11/2016.
+//  Created by Elias Abel on 26/11/2016.
 //  Copyright © 2016 EAKit
 //
 

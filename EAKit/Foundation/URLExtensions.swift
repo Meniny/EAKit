@@ -2,7 +2,7 @@
 //  URLExtensions.swift
 //  EAKit
 //
-//  Created by Omar Albeik on 03/02/2017.
+//  Created by Elias Abel on 03/02/2017.
 //  Copyright © 2017 EAKit
 //
 

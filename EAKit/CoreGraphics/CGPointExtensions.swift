@@ -2,7 +2,7 @@
 //  CGPointExtensions.swift
 //  EAKit
 //
-//  Created by Omar Albeik on 07/12/2016.
+//  Created by Elias Abel on 07/12/2016.
 //  Copyright © 2016 EAKit
 //
 

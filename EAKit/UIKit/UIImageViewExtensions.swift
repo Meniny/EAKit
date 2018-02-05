@@ -2,7 +2,7 @@
 //  UIImageViewExtensions.swift
 //  EAKit
 //
-//  Created by Omar Albeik on 8/25/16.
+//  Created by Elias Abel on 8/25/16.
 //  Copyright © 2016 EAKit
 //
 

@@ -2,7 +2,7 @@
 //  UILabelExtensions.swift
 //  EAKit
 //
-//  Created by Omar Albeik on 9/23/16.
+//  Created by Elias Abel on 9/23/16.
 //  Copyright © 2016 EAKit
 //
 

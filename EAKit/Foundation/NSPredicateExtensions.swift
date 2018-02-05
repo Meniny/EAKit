@@ -2,7 +2,7 @@
 //  NSPredicateExtensions.swift
 //  EAKit
 //
-//  Created by Max Härtwig on 04.10.17.
+//  Created by Elias Abel on 04.10.17.
 //  Copyright © 2017 EAKit
 //
 

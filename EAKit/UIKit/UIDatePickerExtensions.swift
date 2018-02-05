@@ -2,7 +2,7 @@
 //  UIDatePickerExtensions.swift
 //  EAKit
 //
-//  Created by Omar Albeik on 12/9/17.
+//  Created by Elias Abel on 12/9/17.
 //  Copyright © 2017 EAKit
 //
 
