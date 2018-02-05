@@ -7,12 +7,16 @@
 //
 
 import UIKit
+import EAKit
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        EALog.error("error", self)
+        EALog.dump("dump", self)
     }
 
     override func didReceiveMemoryWarning() {

@@ -2907,688 +2907,884 @@
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 29,
+      "line": 7,
       "symbol": "EALogType",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 29,
+      "line": 7,
       "symbol": "EALogType",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 29,
+      "line": 7,
       "symbol": "EALogType",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 29,
+      "line": 7,
       "symbol": "EALogType",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 29,
+      "line": 7,
       "symbol": "EALogType",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 29,
+      "line": 7,
       "symbol": "EALogType",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 29,
+      "line": 7,
       "symbol": "EALogType",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 29,
+      "line": 7,
       "symbol": "EALogType",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 29,
+      "line": 7,
       "symbol": "EALogType",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 29,
+      "line": 7,
       "symbol": "EALogType",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 29,
+      "line": 7,
       "symbol": "EALogType",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 29,
+      "line": 7,
       "symbol": "EALogType",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 29,
+      "line": 7,
       "symbol": "EALogType",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 29,
+      "line": 7,
       "symbol": "EALogType",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 30,
+      "line": 8,
       "symbol": "EALogType.debug",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 30,
+      "line": 8,
       "symbol": "EALogType.debug",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 30,
+      "line": 8,
       "symbol": "EALogType.debug",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 30,
+      "line": 8,
       "symbol": "EALogType.debug",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 30,
+      "line": 8,
       "symbol": "EALogType.debug",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 30,
+      "line": 8,
       "symbol": "EALogType.debug",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 30,
+      "line": 8,
       "symbol": "EALogType.debug",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 30,
+      "line": 8,
       "symbol": "EALogType.debug",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 30,
+      "line": 8,
       "symbol": "EALogType.debug",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 30,
+      "line": 8,
       "symbol": "EALogType.debug",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 30,
+      "line": 8,
       "symbol": "EALogType.debug",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 30,
+      "line": 8,
       "symbol": "EALogType.debug",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 30,
+      "line": 8,
       "symbol": "EALogType.debug",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 30,
+      "line": 8,
       "symbol": "EALogType.debug",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 31,
+      "line": 9,
       "symbol": "EALogType.error",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 31,
+      "line": 9,
       "symbol": "EALogType.error",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 31,
+      "line": 9,
       "symbol": "EALogType.error",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 31,
+      "line": 9,
       "symbol": "EALogType.error",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 31,
+      "line": 9,
       "symbol": "EALogType.error",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 31,
+      "line": 9,
       "symbol": "EALogType.error",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 31,
+      "line": 9,
       "symbol": "EALogType.error",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 31,
+      "line": 9,
       "symbol": "EALogType.error",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 31,
+      "line": 9,
       "symbol": "EALogType.error",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 31,
+      "line": 9,
       "symbol": "EALogType.error",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 31,
+      "line": 9,
       "symbol": "EALogType.error",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 31,
+      "line": 9,
       "symbol": "EALogType.error",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 31,
+      "line": 9,
       "symbol": "EALogType.error",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 31,
+      "line": 9,
       "symbol": "EALogType.error",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 32,
+      "line": 10,
       "symbol": "EALogType.info",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 32,
+      "line": 10,
       "symbol": "EALogType.info",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 32,
+      "line": 10,
       "symbol": "EALogType.info",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 32,
+      "line": 10,
       "symbol": "EALogType.info",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 32,
+      "line": 10,
       "symbol": "EALogType.info",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 32,
+      "line": 10,
       "symbol": "EALogType.info",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 32,
+      "line": 10,
       "symbol": "EALogType.info",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 32,
+      "line": 10,
       "symbol": "EALogType.info",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 32,
+      "line": 10,
       "symbol": "EALogType.info",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 32,
+      "line": 10,
       "symbol": "EALogType.info",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 32,
+      "line": 10,
       "symbol": "EALogType.info",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 32,
+      "line": 10,
       "symbol": "EALogType.info",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 32,
+      "line": 10,
       "symbol": "EALogType.info",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 32,
+      "line": 10,
       "symbol": "EALogType.info",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 33,
+      "line": 11,
       "symbol": "EALogType.warning",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 33,
+      "line": 11,
       "symbol": "EALogType.warning",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 33,
+      "line": 11,
       "symbol": "EALogType.warning",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 33,
+      "line": 11,
       "symbol": "EALogType.warning",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 33,
+      "line": 11,
       "symbol": "EALogType.warning",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 33,
+      "line": 11,
       "symbol": "EALogType.warning",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 33,
+      "line": 11,
       "symbol": "EALogType.warning",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 33,
+      "line": 11,
       "symbol": "EALogType.warning",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 33,
+      "line": 11,
       "symbol": "EALogType.warning",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 33,
+      "line": 11,
       "symbol": "EALogType.warning",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 33,
+      "line": 11,
       "symbol": "EALogType.warning",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 33,
+      "line": 11,
       "symbol": "EALogType.warning",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 33,
+      "line": 11,
       "symbol": "EALogType.warning",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 33,
+      "line": 11,
       "symbol": "EALogType.warning",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 35,
+      "line": 12,
+      "symbol": "EALogType.dumping",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
+      "line": 12,
+      "symbol": "EALogType.dumping",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
+      "line": 12,
+      "symbol": "EALogType.dumping",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
+      "line": 12,
+      "symbol": "EALogType.dumping",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
+      "line": 12,
+      "symbol": "EALogType.dumping",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
+      "line": 12,
+      "symbol": "EALogType.dumping",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
+      "line": 12,
+      "symbol": "EALogType.dumping",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
+      "line": 12,
+      "symbol": "EALogType.dumping",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
+      "line": 12,
+      "symbol": "EALogType.dumping",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
+      "line": 12,
+      "symbol": "EALogType.dumping",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
+      "line": 12,
+      "symbol": "EALogType.dumping",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
+      "line": 12,
+      "symbol": "EALogType.dumping",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
+      "line": 12,
+      "symbol": "EALogType.dumping",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
+      "line": 12,
+      "symbol": "EALogType.dumping",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
+      "line": 14,
       "symbol": "EALogType.emoji",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 35,
+      "line": 14,
       "symbol": "EALogType.emoji",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 35,
+      "line": 14,
       "symbol": "EALogType.emoji",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 35,
+      "line": 14,
       "symbol": "EALogType.emoji",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 35,
+      "line": 14,
       "symbol": "EALogType.emoji",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 35,
+      "line": 14,
       "symbol": "EALogType.emoji",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 35,
+      "line": 14,
       "symbol": "EALogType.emoji",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 35,
+      "line": 14,
       "symbol": "EALogType.emoji",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 35,
+      "line": 14,
       "symbol": "EALogType.emoji",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 35,
+      "line": 14,
       "symbol": "EALogType.emoji",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 35,
+      "line": 14,
       "symbol": "EALogType.emoji",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 35,
+      "line": 14,
       "symbol": "EALogType.emoji",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 35,
+      "line": 14,
       "symbol": "EALogType.emoji",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 35,
+      "line": 14,
       "symbol": "EALogType.emoji",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 73,
+      "line": 53,
       "symbol": "EALog",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 73,
+      "line": 53,
       "symbol": "EALog",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 73,
+      "line": 53,
       "symbol": "EALog",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 73,
+      "line": 53,
       "symbol": "EALog",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 73,
+      "line": 53,
       "symbol": "EALog",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 73,
+      "line": 53,
       "symbol": "EALog",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 73,
+      "line": 53,
       "symbol": "EALog",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 73,
+      "line": 53,
       "symbol": "EALog",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 73,
+      "line": 53,
       "symbol": "EALog",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 73,
+      "line": 53,
       "symbol": "EALog",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 73,
+      "line": 53,
       "symbol": "EALog",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 73,
+      "line": 53,
       "symbol": "EALog",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 73,
+      "line": 53,
       "symbol": "EALog",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
-      "line": 73,
+      "line": 53,
       "symbol": "EALog",
       "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
+      "line": 55,
+      "symbol": "EALog.isEnabled",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
+      "line": 55,
+      "symbol": "EALog.isEnabled",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
+      "line": 55,
+      "symbol": "EALog.isEnabled",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
+      "line": 55,
+      "symbol": "EALog.isEnabled",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
+      "line": 55,
+      "symbol": "EALog.isEnabled",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
+      "line": 55,
+      "symbol": "EALog.isEnabled",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
+      "line": 55,
+      "symbol": "EALog.isEnabled",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
+      "line": 55,
+      "symbol": "EALog.isEnabled",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
+      "line": 55,
+      "symbol": "EALog.isEnabled",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
+      "line": 55,
+      "symbol": "EALog.isEnabled",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
+      "line": 55,
+      "symbol": "EALog.isEnabled",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
+      "line": 55,
+      "symbol": "EALog.isEnabled",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
+      "line": 55,
+      "symbol": "EALog.isEnabled",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Log.swift",
+      "line": 55,
+      "symbol": "EALog.isEnabled",
+      "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
@@ -3687,1182 +3883,6 @@
       "line": 4,
       "symbol": "OnceAction",
       "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 17,
-      "symbol": "PasswordStrengthLevel.veryWeak",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 17,
-      "symbol": "PasswordStrengthLevel.veryWeak",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 17,
-      "symbol": "PasswordStrengthLevel.veryWeak",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 17,
-      "symbol": "PasswordStrengthLevel.veryWeak",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 17,
-      "symbol": "PasswordStrengthLevel.veryWeak",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 17,
-      "symbol": "PasswordStrengthLevel.veryWeak",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 17,
-      "symbol": "PasswordStrengthLevel.veryWeak",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 17,
-      "symbol": "PasswordStrengthLevel.veryWeak",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 17,
-      "symbol": "PasswordStrengthLevel.veryWeak",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 17,
-      "symbol": "PasswordStrengthLevel.veryWeak",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 17,
-      "symbol": "PasswordStrengthLevel.veryWeak",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 17,
-      "symbol": "PasswordStrengthLevel.veryWeak",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 17,
-      "symbol": "PasswordStrengthLevel.veryWeak",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 17,
-      "symbol": "PasswordStrengthLevel.veryWeak",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 18,
-      "symbol": "PasswordStrengthLevel.weak",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 18,
-      "symbol": "PasswordStrengthLevel.weak",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 18,
-      "symbol": "PasswordStrengthLevel.weak",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 18,
-      "symbol": "PasswordStrengthLevel.weak",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 18,
-      "symbol": "PasswordStrengthLevel.weak",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 18,
-      "symbol": "PasswordStrengthLevel.weak",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 18,
-      "symbol": "PasswordStrengthLevel.weak",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 18,
-      "symbol": "PasswordStrengthLevel.weak",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 18,
-      "symbol": "PasswordStrengthLevel.weak",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 18,
-      "symbol": "PasswordStrengthLevel.weak",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 18,
-      "symbol": "PasswordStrengthLevel.weak",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 18,
-      "symbol": "PasswordStrengthLevel.weak",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 18,
-      "symbol": "PasswordStrengthLevel.weak",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 18,
-      "symbol": "PasswordStrengthLevel.weak",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 19,
-      "symbol": "PasswordStrengthLevel.average",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 19,
-      "symbol": "PasswordStrengthLevel.average",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 19,
-      "symbol": "PasswordStrengthLevel.average",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 19,
-      "symbol": "PasswordStrengthLevel.average",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 19,
-      "symbol": "PasswordStrengthLevel.average",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 19,
-      "symbol": "PasswordStrengthLevel.average",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 19,
-      "symbol": "PasswordStrengthLevel.average",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 19,
-      "symbol": "PasswordStrengthLevel.average",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 19,
-      "symbol": "PasswordStrengthLevel.average",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 19,
-      "symbol": "PasswordStrengthLevel.average",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 19,
-      "symbol": "PasswordStrengthLevel.average",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 19,
-      "symbol": "PasswordStrengthLevel.average",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 19,
-      "symbol": "PasswordStrengthLevel.average",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 19,
-      "symbol": "PasswordStrengthLevel.average",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 20,
-      "symbol": "PasswordStrengthLevel.strong",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 20,
-      "symbol": "PasswordStrengthLevel.strong",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 20,
-      "symbol": "PasswordStrengthLevel.strong",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 20,
-      "symbol": "PasswordStrengthLevel.strong",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 20,
-      "symbol": "PasswordStrengthLevel.strong",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 20,
-      "symbol": "PasswordStrengthLevel.strong",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 20,
-      "symbol": "PasswordStrengthLevel.strong",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 20,
-      "symbol": "PasswordStrengthLevel.strong",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 20,
-      "symbol": "PasswordStrengthLevel.strong",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 20,
-      "symbol": "PasswordStrengthLevel.strong",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 20,
-      "symbol": "PasswordStrengthLevel.strong",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 20,
-      "symbol": "PasswordStrengthLevel.strong",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 20,
-      "symbol": "PasswordStrengthLevel.strong",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 20,
-      "symbol": "PasswordStrengthLevel.strong",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 21,
-      "symbol": "PasswordStrengthLevel.veryStrong",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 21,
-      "symbol": "PasswordStrengthLevel.veryStrong",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 21,
-      "symbol": "PasswordStrengthLevel.veryStrong",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 21,
-      "symbol": "PasswordStrengthLevel.veryStrong",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 21,
-      "symbol": "PasswordStrengthLevel.veryStrong",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 21,
-      "symbol": "PasswordStrengthLevel.veryStrong",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 21,
-      "symbol": "PasswordStrengthLevel.veryStrong",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 21,
-      "symbol": "PasswordStrengthLevel.veryStrong",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 21,
-      "symbol": "PasswordStrengthLevel.veryStrong",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 21,
-      "symbol": "PasswordStrengthLevel.veryStrong",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 21,
-      "symbol": "PasswordStrengthLevel.veryStrong",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 21,
-      "symbol": "PasswordStrengthLevel.veryStrong",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 21,
-      "symbol": "PasswordStrengthLevel.veryStrong",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 21,
-      "symbol": "PasswordStrengthLevel.veryStrong",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 22,
-      "symbol": "PasswordStrengthLevel.secure",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 22,
-      "symbol": "PasswordStrengthLevel.secure",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 22,
-      "symbol": "PasswordStrengthLevel.secure",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 22,
-      "symbol": "PasswordStrengthLevel.secure",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 22,
-      "symbol": "PasswordStrengthLevel.secure",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 22,
-      "symbol": "PasswordStrengthLevel.secure",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 22,
-      "symbol": "PasswordStrengthLevel.secure",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 22,
-      "symbol": "PasswordStrengthLevel.secure",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 22,
-      "symbol": "PasswordStrengthLevel.secure",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 22,
-      "symbol": "PasswordStrengthLevel.secure",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 22,
-      "symbol": "PasswordStrengthLevel.secure",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 22,
-      "symbol": "PasswordStrengthLevel.secure",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 22,
-      "symbol": "PasswordStrengthLevel.secure",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 22,
-      "symbol": "PasswordStrengthLevel.secure",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 23,
-      "symbol": "PasswordStrengthLevel.verySecure",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 23,
-      "symbol": "PasswordStrengthLevel.verySecure",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 23,
-      "symbol": "PasswordStrengthLevel.verySecure",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 23,
-      "symbol": "PasswordStrengthLevel.verySecure",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 23,
-      "symbol": "PasswordStrengthLevel.verySecure",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 23,
-      "symbol": "PasswordStrengthLevel.verySecure",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 23,
-      "symbol": "PasswordStrengthLevel.verySecure",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 23,
-      "symbol": "PasswordStrengthLevel.verySecure",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 23,
-      "symbol": "PasswordStrengthLevel.verySecure",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 23,
-      "symbol": "PasswordStrengthLevel.verySecure",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 23,
-      "symbol": "PasswordStrengthLevel.verySecure",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 23,
-      "symbol": "PasswordStrengthLevel.verySecure",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 23,
-      "symbol": "PasswordStrengthLevel.verySecure",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 23,
-      "symbol": "PasswordStrengthLevel.verySecure",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 27,
-      "symbol": "String.strength",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 27,
-      "symbol": "String.strength",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 27,
-      "symbol": "String.strength",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 27,
-      "symbol": "String.strength",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 27,
-      "symbol": "String.strength",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 27,
-      "symbol": "String.strength",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 27,
-      "symbol": "String.strength",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 27,
-      "symbol": "String.strength",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 27,
-      "symbol": "String.strength",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 27,
-      "symbol": "String.strength",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 27,
-      "symbol": "String.strength",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 27,
-      "symbol": "String.strength",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 27,
-      "symbol": "String.strength",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 27,
-      "symbol": "String.strength",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 31,
-      "symbol": "String.passwordStrengthLevel",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 31,
-      "symbol": "String.passwordStrengthLevel",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 31,
-      "symbol": "String.passwordStrengthLevel",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 31,
-      "symbol": "String.passwordStrengthLevel",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 31,
-      "symbol": "String.passwordStrengthLevel",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 31,
-      "symbol": "String.passwordStrengthLevel",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 31,
-      "symbol": "String.passwordStrengthLevel",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 31,
-      "symbol": "String.passwordStrengthLevel",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 31,
-      "symbol": "String.passwordStrengthLevel",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 31,
-      "symbol": "String.passwordStrengthLevel",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 31,
-      "symbol": "String.passwordStrengthLevel",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 31,
-      "symbol": "String.passwordStrengthLevel",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 31,
-      "symbol": "String.passwordStrengthLevel",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 31,
-      "symbol": "String.passwordStrengthLevel",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 35,
-      "symbol": "String.score",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 35,
-      "symbol": "String.score",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 35,
-      "symbol": "String.score",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 35,
-      "symbol": "String.score",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 35,
-      "symbol": "String.score",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 35,
-      "symbol": "String.score",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 35,
-      "symbol": "String.score",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 35,
-      "symbol": "String.score",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 35,
-      "symbol": "String.score",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 35,
-      "symbol": "String.score",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 35,
-      "symbol": "String.score",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 35,
-      "symbol": "String.score",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 35,
-      "symbol": "String.score",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 35,
-      "symbol": "String.score",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 39,
-      "symbol": "String.passwordScore",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 39,
-      "symbol": "String.passwordScore",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 39,
-      "symbol": "String.passwordScore",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 39,
-      "symbol": "String.passwordScore",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 39,
-      "symbol": "String.passwordScore",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 39,
-      "symbol": "String.passwordScore",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 39,
-      "symbol": "String.passwordScore",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 39,
-      "symbol": "String.passwordScore",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 39,
-      "symbol": "String.passwordScore",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 39,
-      "symbol": "String.passwordScore",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 39,
-      "symbol": "String.passwordScore",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 39,
-      "symbol": "String.passwordScore",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 39,
-      "symbol": "String.passwordScore",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 39,
-      "symbol": "String.passwordScore",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 76,
-      "symbol": "Password.score(password:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 76,
-      "symbol": "Password.score(password:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 76,
-      "symbol": "Password.score(password:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 76,
-      "symbol": "Password.score(password:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 76,
-      "symbol": "Password.score(password:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 76,
-      "symbol": "Password.score(password:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 76,
-      "symbol": "Password.score(password:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 76,
-      "symbol": "Password.score(password:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 76,
-      "symbol": "Password.score(password:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 76,
-      "symbol": "Password.score(password:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 76,
-      "symbol": "Password.score(password:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 76,
-      "symbol": "Password.score(password:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 76,
-      "symbol": "Password.score(password:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/Core/Password.swift",
-      "line": 76,
-      "symbol": "Password.score(password:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
@@ -6925,42 +5945,42 @@
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/SwiftStdlib/StringExtensions.swift",
-      "line": 35,
+      "line": 42,
       "symbol": "String.uppercasedAtSentenceBoundary",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/SwiftStdlib/StringExtensions.swift",
-      "line": 35,
+      "line": 42,
       "symbol": "String.uppercasedAtSentenceBoundary",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/SwiftStdlib/StringExtensions.swift",
-      "line": 94,
+      "line": 101,
       "symbol": "String.URLEncodedString",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/SwiftStdlib/StringExtensions.swift",
-      "line": 94,
+      "line": 101,
       "symbol": "String.URLEncodedString",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/SwiftStdlib/StringExtensions.swift",
-      "line": 107,
+      "line": 114,
       "symbol": "String.URLDecodedString",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Meniny/Documents/GitHub/EAKit/EAKit/SwiftStdlib/StringExtensions.swift",
-      "line": 107,
+      "line": 114,
       "symbol": "String.URLDecodedString",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
