@@ -319,7 +319,7 @@ public extension Array {
     
     public func forEach(withIndex body: (Element, Index) throws -> Void) rethrows {
         guard self.isNotEmpty else { return }
-        for index in startIndex...endIndex {
+        for index in startIndex..<endIndex {
             let element = self[index]
             try body(element, index)
         }
@@ -327,7 +327,7 @@ public extension Array {
     
     public func safeForEach(withIndex body: (Element, Index) throws -> Void) rethrows {
         guard self.isNotEmpty else { return }
-        for index in startIndex...endIndex {
+        for index in startIndex..<endIndex {
             guard let element = self.item(at: index) else { continue }
             try body(element, index)
         }
