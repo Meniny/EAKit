@@ -451,6 +451,9 @@
                 <a href="../Extensions/UIWindow.html">UIWindow</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Extensions/UInt.html">UInt</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Extensions/URL.html">URL</a>
               </li>
               <li class="nav-group-task">
@@ -474,22 +477,22 @@
                 <a href="../Functions.html#/s:5EAKit2mmoiSdSi_SitF">**(_:_:)</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Functions.html#/s:5EAKit1poiSayxGAC_ACtlF">+(_:_:)</a>
+                <a href="../Functions/+(_:_:).html">+(_:_:)</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Functions.html#/s:5EAKit1poiSayxGAC_xtlF">+(_:_:)</a>
+                <a href="../Functions/+(_:_:).html">+(_:_:)</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Functions.html#/s:5EAKit2peoiySayxGz_ACtlF">+=(_:_:)</a>
+                <a href="../Functions/+=(_:_:).html">+=(_:_:)</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Functions.html#/s:5EAKit2peoiySayxGz_xtlF">+=(_:_:)</a>
+                <a href="../Functions/+=(_:_:).html">+=(_:_:)</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Functions.html#/s:5EAKit3legoiSbx_x_xtts10ComparableRzlF">&lt;=&gt;(_:_:)</a>
+                <a href="../Functions/&lt;=&gt;(_:_:).html">&lt;=&gt;(_:_:)</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Functions.html#/s:5EAKit2lgoiSbx_x_xtts10ComparableRzlF">&lt;&gt;(_:_:)</a>
+                <a href="../Functions/&lt;&gt;(_:_:).html">&lt;&gt;(_:_:)</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Functions.html#/s:5EAKit2eeoiSbAA5RegexV_ADtF">==(_:_:)</a>
@@ -555,13 +558,13 @@
                 <a href="../Functions.html#/s:5EAKit003obaopSi_SitSiF">±(_:)</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Functions.html#/s:5EAKit003obaopx_xtxs13FloatingPointRzlF">±(_:)</a>
+                <a href="../Functions/±(_:).html">±(_:)</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Functions.html#/s:5EAKit003obaoiSi_SitSi_SitF">±(_:_:)</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Functions.html#/s:5EAKit003obaoix_xtx_xts13FloatingPointRzlF">±(_:_:)</a>
+                <a href="../Functions/±(_:_:).html">±(_:_:)</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Functions.html#/s:5EAKit003BJgopS2dF">√(_:)</a>
@@ -757,7 +760,7 @@
             <h1>Character</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">Character</span> <span class="p">:</span> <span class="kt">ExpressibleByExtendedGraphemeClusterLiteral</span><span class="p">,</span> <span class="kt">Hashable</span></code></pre>
+                  <pre class="highlight"><code><span class="kd">struct</span> <span class="kt">Character</span> <span class="p">:</span> <span class="kt">ExpressibleByExtendedGraphemeClusterLiteral</span><span class="p">,</span> <span class="kt">Hashable</span></code></pre>
 
                 </div>
               </div>
@@ -780,7 +783,7 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>EAKit: Check if character is emoji.</p>
-<pre class="highlight swift"><code><span class="nf">Character</span><span class="p">(</span><span class="s">"😀"</span><span class="p">)</span><span class="o">.</span><span class="n">isEmoji</span> <span class="o">-&gt;</span> <span class="kc">true</span>
+<pre class="highlight plaintext"><code>Character("😀").isEmoji -&gt; true
 </code></pre>
 
                       </div>
@@ -788,7 +791,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">isEmoji</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">isEmoji</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
 
                         </div>
                       </div>
@@ -809,8 +812,8 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>EAKit: Check if character is number.</p>
-<pre class="highlight swift"><code><span class="nf">Character</span><span class="p">(</span><span class="s">"1"</span><span class="p">)</span><span class="o">.</span><span class="n">isNumber</span> <span class="o">-&gt;</span> <span class="kc">true</span>
-<span class="nf">Character</span><span class="p">(</span><span class="s">"a"</span><span class="p">)</span><span class="o">.</span><span class="n">isNumber</span> <span class="o">-&gt;</span> <span class="kc">false</span>
+<pre class="highlight plaintext"><code>Character("1").isNumber -&gt; true
+Character("a").isNumber -&gt; false
 </code></pre>
 
                       </div>
@@ -818,7 +821,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">isNumber</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">isNumber</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
 
                         </div>
                       </div>
@@ -839,8 +842,8 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>EAKit: Check if character is a letter.</p>
-<pre class="highlight swift"><code><span class="nf">Character</span><span class="p">(</span><span class="s">"4"</span><span class="p">)</span><span class="o">.</span><span class="n">isLetter</span> <span class="o">-&gt;</span> <span class="kc">false</span>
-<span class="nf">Character</span><span class="p">(</span><span class="s">"a"</span><span class="p">)</span><span class="o">.</span><span class="n">isLetter</span> <span class="o">-&gt;</span> <span class="kc">true</span>
+<pre class="highlight plaintext"><code>Character("4").isLetter -&gt; false
+Character("a").isLetter -&gt; true
 </code></pre>
 
                       </div>
@@ -848,7 +851,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">isLetter</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">isLetter</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
 
                         </div>
                       </div>
@@ -869,8 +872,8 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>EAKit: Check if character is uppercased.</p>
-<pre class="highlight swift"><code><span class="nf">Character</span><span class="p">(</span><span class="s">"a"</span><span class="p">)</span><span class="o">.</span><span class="n">isUppercased</span> <span class="o">-&gt;</span> <span class="kc">false</span>
-<span class="nf">Character</span><span class="p">(</span><span class="s">"A"</span><span class="p">)</span><span class="o">.</span><span class="n">isUppercased</span> <span class="o">-&gt;</span> <span class="kc">true</span>
+<pre class="highlight plaintext"><code>Character("a").isUppercased -&gt; false
+Character("A").isUppercased -&gt; true
 </code></pre>
 
                       </div>
@@ -878,7 +881,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">isUppercased</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">isUppercased</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
 
                         </div>
                       </div>
@@ -899,8 +902,8 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>EAKit: Check if character is lowercased.</p>
-<pre class="highlight swift"><code><span class="nf">Character</span><span class="p">(</span><span class="s">"a"</span><span class="p">)</span><span class="o">.</span><span class="n">isLowercased</span> <span class="o">-&gt;</span> <span class="kc">true</span>
-<span class="nf">Character</span><span class="p">(</span><span class="s">"A"</span><span class="p">)</span><span class="o">.</span><span class="n">isLowercased</span> <span class="o">-&gt;</span> <span class="kc">false</span>
+<pre class="highlight plaintext"><code>Character("a").isLowercased -&gt; true
+Character("A").isLowercased -&gt; false
 </code></pre>
 
                       </div>
@@ -908,7 +911,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">isLowercased</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">isLowercased</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
 
                         </div>
                       </div>
@@ -929,8 +932,8 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>EAKit: Check if character is white space.</p>
-<pre class="highlight swift"><code><span class="nf">Character</span><span class="p">(</span><span class="s">" "</span><span class="p">)</span><span class="o">.</span><span class="n">isWhiteSpace</span> <span class="o">-&gt;</span> <span class="kc">true</span>
-<span class="nf">Character</span><span class="p">(</span><span class="s">"A"</span><span class="p">)</span><span class="o">.</span><span class="n">isWhiteSpace</span> <span class="o">-&gt;</span> <span class="kc">false</span>
+<pre class="highlight plaintext"><code>Character(" ").isWhiteSpace -&gt; true
+Character("A").isWhiteSpace -&gt; false
 </code></pre>
 
                       </div>
@@ -938,7 +941,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">isWhiteSpace</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">isWhiteSpace</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
 
                         </div>
                       </div>
@@ -959,8 +962,8 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>EAKit: Integer from character (if applicable).</p>
-<pre class="highlight swift"><code><span class="nf">Character</span><span class="p">(</span><span class="s">"1"</span><span class="p">)</span><span class="o">.</span><span class="n">int</span> <span class="o">-&gt;</span> <span class="mi">1</span>
-<span class="nf">Character</span><span class="p">(</span><span class="s">"A"</span><span class="p">)</span><span class="o">.</span><span class="n">int</span> <span class="o">-&gt;</span> <span class="kc">nil</span>
+<pre class="highlight plaintext"><code>Character("1").int -&gt; 1
+Character("A").int -&gt; nil
 </code></pre>
 
                       </div>
@@ -968,7 +971,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">int</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">int</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
@@ -989,7 +992,7 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>EAKit: String from character.</p>
-<pre class="highlight swift"><code><span class="nf">Character</span><span class="p">(</span><span class="s">"a"</span><span class="p">)</span><span class="o">.</span><span class="n">string</span> <span class="o">-&gt;</span> <span class="s">"a"</span>
+<pre class="highlight plaintext"><code>Character("a").string -&gt; "a"
 </code></pre>
 
                       </div>
@@ -997,7 +1000,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">string</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">string</span><span class="p">:</span> <span class="kt">String</span></code></pre>
 
                         </div>
                       </div>
@@ -1018,7 +1021,7 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>EAKit: Return the character lowercased.</p>
-<pre class="highlight swift"><code><span class="nf">Character</span><span class="p">(</span><span class="s">"A"</span><span class="p">)</span><span class="o">.</span><span class="n">lowercased</span> <span class="o">-&gt;</span> <span class="nf">Character</span><span class="p">(</span><span class="s">"a"</span><span class="p">)</span>
+<pre class="highlight plaintext"><code>Character("A").lowercased -&gt; Character("a")
 </code></pre>
 
                       </div>
@@ -1026,7 +1029,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">lowercased</span><span class="p">:</span> <span class="kt">Character</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">lowercased</span><span class="p">:</span> <span class="kt">Character</span></code></pre>
 
                         </div>
                       </div>
@@ -1047,7 +1050,7 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>EAKit: Return the character uppercased.</p>
-<pre class="highlight swift"><code><span class="nf">Character</span><span class="p">(</span><span class="s">"a"</span><span class="p">)</span><span class="o">.</span><span class="n">uppercased</span> <span class="o">-&gt;</span> <span class="nf">Character</span><span class="p">(</span><span class="s">"A"</span><span class="p">)</span>
+<pre class="highlight plaintext"><code>Character("a").uppercased -&gt; Character("A")
 </code></pre>
 
                       </div>
@@ -1055,7 +1058,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">uppercased</span><span class="p">:</span> <span class="kt">Character</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">uppercased</span><span class="p">:</span> <span class="kt">Character</span></code></pre>
 
                         </div>
                       </div>
@@ -1080,7 +1083,7 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>EAKit: Repeat character multiple times.</p>
-<pre class="highlight swift"><code><span class="nf">Character</span><span class="p">(</span><span class="s">"-"</span><span class="p">)</span> <span class="o">*</span> <span class="mi">10</span> <span class="o">-&gt;</span> <span class="s">"----------"</span>
+<pre class="highlight plaintext"><code>Character("-") * 10 -&gt; "----------"
 </code></pre>
 
                       </div>
@@ -1088,7 +1091,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="o">*</span> <span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="kt">Character</span><span class="p">,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="o">*</span> <span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="kt">Character</span><span class="p">,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
 
                         </div>
                       </div>
@@ -1144,7 +1147,7 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>EAKit: Repeat character multiple times.</p>
-<pre class="highlight swift"><code><span class="mi">10</span> <span class="o">*</span> <span class="nf">Character</span><span class="p">(</span><span class="s">"-"</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s">"----------"</span>
+<pre class="highlight plaintext"><code>10 * Character("-") -&gt; "----------"
 </code></pre>
 
                       </div>
@@ -1152,7 +1155,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="o">*</span> <span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="kt">Character</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="o">*</span> <span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="kt">Character</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
 
                         </div>
                       </div>
@@ -1199,8 +1202,8 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2018 <a class="link" href="https://github.com/Meniny/EAKit" target="_blank" rel="external">Elias Abel</a>. All rights reserved. (Last updated: 2018-02-05)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2018 <a class="link" href="https://github.com/Meniny/EAKit" target="_blank" rel="external">Elias Abel</a>. All rights reserved. (Last updated: 2018-02-06)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>

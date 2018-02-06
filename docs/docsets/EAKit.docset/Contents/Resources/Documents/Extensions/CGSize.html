@@ -451,6 +451,9 @@
                 <a href="../Extensions/UIWindow.html">UIWindow</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Extensions/UInt.html">UInt</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Extensions/URL.html">URL</a>
               </li>
               <li class="nav-group-task">
@@ -474,22 +477,22 @@
                 <a href="../Functions.html#/s:5EAKit2mmoiSdSi_SitF">**(_:_:)</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Functions.html#/s:5EAKit1poiSayxGAC_ACtlF">+(_:_:)</a>
+                <a href="../Functions/+(_:_:).html">+(_:_:)</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Functions.html#/s:5EAKit1poiSayxGAC_xtlF">+(_:_:)</a>
+                <a href="../Functions/+(_:_:).html">+(_:_:)</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Functions.html#/s:5EAKit2peoiySayxGz_ACtlF">+=(_:_:)</a>
+                <a href="../Functions/+=(_:_:).html">+=(_:_:)</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Functions.html#/s:5EAKit2peoiySayxGz_xtlF">+=(_:_:)</a>
+                <a href="../Functions/+=(_:_:).html">+=(_:_:)</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Functions.html#/s:5EAKit3legoiSbx_x_xtts10ComparableRzlF">&lt;=&gt;(_:_:)</a>
+                <a href="../Functions/&lt;=&gt;(_:_:).html">&lt;=&gt;(_:_:)</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Functions.html#/s:5EAKit2lgoiSbx_x_xtts10ComparableRzlF">&lt;&gt;(_:_:)</a>
+                <a href="../Functions/&lt;&gt;(_:_:).html">&lt;&gt;(_:_:)</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Functions.html#/s:5EAKit2eeoiSbAA5RegexV_ADtF">==(_:_:)</a>
@@ -555,13 +558,13 @@
                 <a href="../Functions.html#/s:5EAKit003obaopSi_SitSiF">±(_:)</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Functions.html#/s:5EAKit003obaopx_xtxs13FloatingPointRzlF">±(_:)</a>
+                <a href="../Functions/±(_:).html">±(_:)</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Functions.html#/s:5EAKit003obaoiSi_SitSi_SitF">±(_:_:)</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Functions.html#/s:5EAKit003obaoix_xtx_xts13FloatingPointRzlF">±(_:_:)</a>
+                <a href="../Functions/±(_:_:).html">±(_:_:)</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Functions.html#/s:5EAKit003BJgopS2dF">√(_:)</a>
@@ -774,10 +777,10 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>EAKit: Aspect fit CGSize.</p>
-<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">rect</span> <span class="o">=</span> <span class="nf">CGSize</span><span class="p">(</span><span class="nv">width</span><span class="p">:</span> <span class="mi">120</span><span class="p">,</span> <span class="nv">height</span><span class="p">:</span> <span class="mi">80</span><span class="p">)</span>
-<span class="k">let</span> <span class="nv">parentRect</span>  <span class="o">=</span> <span class="nf">CGSize</span><span class="p">(</span><span class="nv">width</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span> <span class="nv">height</span><span class="p">:</span> <span class="mi">50</span><span class="p">)</span>
-<span class="k">let</span> <span class="nv">newRect</span> <span class="o">=</span> <span class="n">rect</span><span class="o">.</span><span class="nf">aspectFit</span><span class="p">(</span><span class="nv">to</span><span class="p">:</span> <span class="n">parentRect</span><span class="p">)</span>
-<span class="c1">//newRect.width = 75 , newRect = 50</span>
+<pre class="highlight plaintext"><code>let rect = CGSize(width: 120, height: 80)
+let parentRect  = CGSize(width: 100, height: 50)
+let newRect = rect.aspectFit(to: parentRect)
+//newRect.width = 75 , newRect = 50
 </code></pre>
 
                       </div>
@@ -785,7 +788,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">aspectFit</span><span class="p">(</span><span class="n">to</span> <span class="nv">boundingSize</span><span class="p">:</span> <span class="kt">CGSize</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">CGSize</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">aspectFit</span><span class="p">(</span><span class="n">to</span> <span class="nv">boundingSize</span><span class="p">:</span> <span class="kt">CGSize</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">CGSize</span></code></pre>
 
                         </div>
                       </div>
@@ -829,10 +832,10 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>EAKit: Aspect fill CGSize.</p>
-<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">rect</span> <span class="o">=</span> <span class="nf">CGSize</span><span class="p">(</span><span class="nv">width</span><span class="p">:</span> <span class="mi">20</span><span class="p">,</span> <span class="nv">height</span><span class="p">:</span> <span class="mi">120</span><span class="p">)</span>
-<span class="k">let</span> <span class="nv">parentRect</span>  <span class="o">=</span> <span class="nf">CGSize</span><span class="p">(</span><span class="nv">width</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span> <span class="nv">height</span><span class="p">:</span> <span class="mi">60</span><span class="p">)</span>
-<span class="k">let</span> <span class="nv">newRect</span> <span class="o">=</span> <span class="n">rect</span><span class="o">.</span><span class="nf">aspectFit</span><span class="p">(</span><span class="nv">to</span><span class="p">:</span> <span class="n">parentRect</span><span class="p">)</span>
-<span class="c1">//newRect.width = 100 , newRect = 60</span>
+<pre class="highlight plaintext"><code>let rect = CGSize(width: 20, height: 120)
+let parentRect  = CGSize(width: 100, height: 60)
+let newRect = rect.aspectFit(to: parentRect)
+//newRect.width = 100 , newRect = 60
 </code></pre>
 
                       </div>
@@ -840,7 +843,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">aspectFill</span><span class="p">(</span><span class="n">to</span> <span class="nv">boundingSize</span><span class="p">:</span> <span class="kt">CGSize</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">CGSize</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">aspectFill</span><span class="p">(</span><span class="n">to</span> <span class="nv">boundingSize</span><span class="p">:</span> <span class="kt">CGSize</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">CGSize</span></code></pre>
 
                         </div>
                       </div>
@@ -875,8 +878,8 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2018 <a class="link" href="https://github.com/Meniny/EAKit" target="_blank" rel="external">Elias Abel</a>. All rights reserved. (Last updated: 2018-02-05)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2018 <a class="link" href="https://github.com/Meniny/EAKit" target="_blank" rel="external">Elias Abel</a>. All rights reserved. (Last updated: 2018-02-06)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>

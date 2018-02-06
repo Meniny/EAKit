@@ -451,6 +451,9 @@
                 <a href="../Extensions/UIWindow.html">UIWindow</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Extensions/UInt.html">UInt</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Extensions/URL.html">URL</a>
               </li>
               <li class="nav-group-task">
@@ -474,22 +477,22 @@
                 <a href="../Functions.html#/s:5EAKit2mmoiSdSi_SitF">**(_:_:)</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Functions.html#/s:5EAKit1poiSayxGAC_ACtlF">+(_:_:)</a>
+                <a href="../Functions/+(_:_:).html">+(_:_:)</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Functions.html#/s:5EAKit1poiSayxGAC_xtlF">+(_:_:)</a>
+                <a href="../Functions/+(_:_:).html">+(_:_:)</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Functions.html#/s:5EAKit2peoiySayxGz_ACtlF">+=(_:_:)</a>
+                <a href="../Functions/+=(_:_:).html">+=(_:_:)</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Functions.html#/s:5EAKit2peoiySayxGz_xtlF">+=(_:_:)</a>
+                <a href="../Functions/+=(_:_:).html">+=(_:_:)</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Functions.html#/s:5EAKit3legoiSbx_x_xtts10ComparableRzlF">&lt;=&gt;(_:_:)</a>
+                <a href="../Functions/&lt;=&gt;(_:_:).html">&lt;=&gt;(_:_:)</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Functions.html#/s:5EAKit2lgoiSbx_x_xtts10ComparableRzlF">&lt;&gt;(_:_:)</a>
+                <a href="../Functions/&lt;&gt;(_:_:).html">&lt;&gt;(_:_:)</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Functions.html#/s:5EAKit2eeoiSbAA5RegexV_ADtF">==(_:_:)</a>
@@ -555,13 +558,13 @@
                 <a href="../Functions.html#/s:5EAKit003obaopSi_SitSiF">±(_:)</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Functions.html#/s:5EAKit003obaopx_xtxs13FloatingPointRzlF">±(_:)</a>
+                <a href="../Functions/±(_:).html">±(_:)</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Functions.html#/s:5EAKit003obaoiSi_SitSi_SitF">±(_:_:)</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Functions.html#/s:5EAKit003obaoix_xtx_xts13FloatingPointRzlF">±(_:_:)</a>
+                <a href="../Functions/±(_:_:).html">±(_:_:)</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Functions.html#/s:5EAKit003BJgopS2dF">√(_:)</a>
@@ -774,10 +777,10 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>EAKit: Distance from another CGPoint.</p>
-<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">point1</span> <span class="o">=</span> <span class="nf">CGPoint</span><span class="p">(</span><span class="nv">x</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="nv">y</span><span class="p">:</span> <span class="mi">10</span><span class="p">)</span>
-<span class="k">let</span> <span class="nv">point2</span> <span class="o">=</span> <span class="nf">CGPoint</span><span class="p">(</span><span class="nv">x</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span> <span class="nv">y</span><span class="p">:</span> <span class="mi">30</span><span class="p">)</span>
-<span class="k">let</span> <span class="nv">distance</span> <span class="o">=</span> <span class="n">point1</span><span class="o">.</span><span class="nf">distance</span><span class="p">(</span><span class="nv">from</span><span class="p">:</span> <span class="n">point2</span><span class="p">)</span>
-<span class="c1">//distance = 28.28</span>
+<pre class="highlight plaintext"><code>let point1 = CGPoint(x: 10, y: 10)
+let point2 = CGPoint(x: 30, y: 30)
+let distance = point1.distance(from: point2)
+//distance = 28.28
 </code></pre>
 
                       </div>
@@ -785,7 +788,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">distance</span><span class="p">(</span><span class="n">from</span> <span class="nv">point</span><span class="p">:</span> <span class="kt">CGPoint</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">CGFloat</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">distance</span><span class="p">(</span><span class="n">from</span> <span class="nv">point</span><span class="p">:</span> <span class="kt">CGPoint</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">CGFloat</span></code></pre>
 
                         </div>
                       </div>
@@ -829,10 +832,10 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>EAKit: Distance between two CGPoints.</p>
-<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">point1</span> <span class="o">=</span> <span class="nf">CGPoint</span><span class="p">(</span><span class="nv">x</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="nv">y</span><span class="p">:</span> <span class="mi">10</span><span class="p">)</span>
-<span class="k">let</span> <span class="nv">point2</span> <span class="o">=</span> <span class="nf">CGPoint</span><span class="p">(</span><span class="nv">x</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span> <span class="nv">y</span><span class="p">:</span> <span class="mi">30</span><span class="p">)</span>
-<span class="k">let</span> <span class="nv">distance</span> <span class="o">=</span> <span class="kt">CGPoint</span><span class="o">.</span><span class="nf">distance</span><span class="p">(</span><span class="nv">from</span><span class="p">:</span> <span class="n">point2</span><span class="p">,</span> <span class="nv">to</span><span class="p">:</span> <span class="n">point1</span><span class="p">)</span>
-<span class="c1">//Distance = 28.28</span>
+<pre class="highlight plaintext"><code>let point1 = CGPoint(x: 10, y: 10)
+let point2 = CGPoint(x: 30, y: 30)
+let distance = CGPoint.distance(from: point2, to: point1)
+//Distance = 28.28
 </code></pre>
 
                       </div>
@@ -840,7 +843,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">distance</span><span class="p">(</span><span class="n">from</span> <span class="nv">point1</span><span class="p">:</span> <span class="kt">CGPoint</span><span class="p">,</span> <span class="n">to</span> <span class="nv">point2</span><span class="p">:</span> <span class="kt">CGPoint</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">CGFloat</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">distance</span><span class="p">(</span><span class="n">from</span> <span class="nv">point1</span><span class="p">:</span> <span class="kt">CGPoint</span><span class="p">,</span> <span class="n">to</span> <span class="nv">point2</span><span class="p">:</span> <span class="kt">CGPoint</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">CGFloat</span></code></pre>
 
                         </div>
                       </div>
@@ -900,10 +903,10 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>EAKit: Add two CGPoints.</p>
-<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">point1</span> <span class="o">=</span> <span class="nf">CGPoint</span><span class="p">(</span><span class="nv">x</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="nv">y</span><span class="p">:</span> <span class="mi">10</span><span class="p">)</span>
-<span class="k">let</span> <span class="nv">point2</span> <span class="o">=</span> <span class="nf">CGPoint</span><span class="p">(</span><span class="nv">x</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span> <span class="nv">y</span><span class="p">:</span> <span class="mi">30</span><span class="p">)</span>
-<span class="k">let</span> <span class="nv">point</span> <span class="o">=</span> <span class="n">point1</span> <span class="o">+</span> <span class="n">point2</span>
-<span class="c1">//point = CGPoint(x: 40, y: 40)</span>
+<pre class="highlight plaintext"><code>let point1 = CGPoint(x: 10, y: 10)
+let point2 = CGPoint(x: 30, y: 30)
+let point = point1 + point2
+//point = CGPoint(x: 40, y: 40)
 </code></pre>
 
                       </div>
@@ -911,7 +914,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="o">+</span> <span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="kt">CGPoint</span><span class="p">,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="kt">CGPoint</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">CGPoint</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="o">+</span> <span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="kt">CGPoint</span><span class="p">,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="kt">CGPoint</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">CGPoint</span></code></pre>
 
                         </div>
                       </div>
@@ -967,10 +970,10 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>EAKit: Add a CGPoints to self.</p>
-<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">point1</span> <span class="o">=</span> <span class="nf">CGPoint</span><span class="p">(</span><span class="nv">x</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="nv">y</span><span class="p">:</span> <span class="mi">10</span><span class="p">)</span>
-<span class="k">let</span> <span class="nv">point2</span> <span class="o">=</span> <span class="nf">CGPoint</span><span class="p">(</span><span class="nv">x</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span> <span class="nv">y</span><span class="p">:</span> <span class="mi">30</span><span class="p">)</span>
-<span class="n">point1</span> <span class="o">+=</span> <span class="n">point2</span>
-<span class="c1">//point1 = CGPoint(x: 40, y: 40)</span>
+<pre class="highlight plaintext"><code>let point1 = CGPoint(x: 10, y: 10)
+let point2 = CGPoint(x: 30, y: 30)
+point1 += point2
+//point1 = CGPoint(x: 40, y: 40)
 </code></pre>
 
                       </div>
@@ -978,7 +981,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="o">+=</span> <span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="k">inout</span> <span class="kt">CGPoint</span><span class="p">,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="kt">CGPoint</span><span class="p">)</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="o">+=</span> <span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="k">inout</span> <span class="kt">CGPoint</span><span class="p">,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="kt">CGPoint</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -1030,10 +1033,10 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>EAKit: Subtract two CGPoints.</p>
-<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">point1</span> <span class="o">=</span> <span class="nf">CGPoint</span><span class="p">(</span><span class="nv">x</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="nv">y</span><span class="p">:</span> <span class="mi">10</span><span class="p">)</span>
-<span class="k">let</span> <span class="nv">point2</span> <span class="o">=</span> <span class="nf">CGPoint</span><span class="p">(</span><span class="nv">x</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span> <span class="nv">y</span><span class="p">:</span> <span class="mi">30</span><span class="p">)</span>
-<span class="k">let</span> <span class="nv">point</span> <span class="o">=</span> <span class="n">point1</span> <span class="o">-</span> <span class="n">point2</span>
-<span class="c1">//point = CGPoint(x: -20, y: -20)</span>
+<pre class="highlight plaintext"><code>let point1 = CGPoint(x: 10, y: 10)
+let point2 = CGPoint(x: 30, y: 30)
+let point = point1 - point2
+//point = CGPoint(x: -20, y: -20)
 </code></pre>
 
                       </div>
@@ -1041,7 +1044,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="o">-</span> <span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="kt">CGPoint</span><span class="p">,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="kt">CGPoint</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">CGPoint</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="o">-</span> <span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="kt">CGPoint</span><span class="p">,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="kt">CGPoint</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">CGPoint</span></code></pre>
 
                         </div>
                       </div>
@@ -1097,10 +1100,10 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>EAKit: Subtract a CGPoints from self.</p>
-<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">point1</span> <span class="o">=</span> <span class="nf">CGPoint</span><span class="p">(</span><span class="nv">x</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="nv">y</span><span class="p">:</span> <span class="mi">10</span><span class="p">)</span>
-<span class="k">let</span> <span class="nv">point2</span> <span class="o">=</span> <span class="nf">CGPoint</span><span class="p">(</span><span class="nv">x</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span> <span class="nv">y</span><span class="p">:</span> <span class="mi">30</span><span class="p">)</span>
-<span class="n">point1</span> <span class="o">-=</span> <span class="n">point2</span>
-<span class="c1">//point1 = CGPoint(x: -20, y: -20)</span>
+<pre class="highlight plaintext"><code>let point1 = CGPoint(x: 10, y: 10)
+let point2 = CGPoint(x: 30, y: 30)
+point1 -= point2
+//point1 = CGPoint(x: -20, y: -20)
 </code></pre>
 
                       </div>
@@ -1108,7 +1111,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="o">-=</span> <span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="k">inout</span> <span class="kt">CGPoint</span><span class="p">,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="kt">CGPoint</span><span class="p">)</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="o">-=</span> <span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="k">inout</span> <span class="kt">CGPoint</span><span class="p">,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="kt">CGPoint</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -1160,9 +1163,9 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>EAKit: Multiply a CGPoint with a scalar</p>
-<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">point1</span> <span class="o">=</span> <span class="nf">CGPoint</span><span class="p">(</span><span class="nv">x</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="nv">y</span><span class="p">:</span> <span class="mi">10</span><span class="p">)</span>
-<span class="k">let</span> <span class="nv">scalar</span> <span class="o">=</span> <span class="n">point1</span> <span class="o">*</span> <span class="mi">5</span>
-<span class="c1">//scalar = CGPoint(x: 50, y: 50)</span>
+<pre class="highlight plaintext"><code>let point1 = CGPoint(x: 10, y: 10)
+let scalar = point1 * 5
+//scalar = CGPoint(x: 50, y: 50)
 </code></pre>
 
                       </div>
@@ -1170,7 +1173,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="o">*</span> <span class="p">(</span><span class="nv">point</span><span class="p">:</span> <span class="kt">CGPoint</span><span class="p">,</span> <span class="nv">scalar</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">CGPoint</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="o">*</span> <span class="p">(</span><span class="nv">point</span><span class="p">:</span> <span class="kt">CGPoint</span><span class="p">,</span> <span class="nv">scalar</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">CGPoint</span></code></pre>
 
                         </div>
                       </div>
@@ -1226,9 +1229,9 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>EAKit: Multiply self with a scalar</p>
-<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">point1</span> <span class="o">=</span> <span class="nf">CGPoint</span><span class="p">(</span><span class="nv">x</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="nv">y</span><span class="p">:</span> <span class="mi">10</span><span class="p">)</span>
-<span class="n">point</span> <span class="o">*=</span> <span class="mi">5</span>
-<span class="c1">//point1 = CGPoint(x: 50, y: 50)</span>
+<pre class="highlight plaintext"><code>let point1 = CGPoint(x: 10, y: 10)
+point *= 5
+//point1 = CGPoint(x: 50, y: 50)
 </code></pre>
 
                       </div>
@@ -1236,7 +1239,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="o">*=</span> <span class="p">(</span><span class="nv">point</span><span class="p">:</span> <span class="k">inout</span> <span class="kt">CGPoint</span><span class="p">,</span> <span class="nv">scalar</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">)</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="o">*=</span> <span class="p">(</span><span class="nv">point</span><span class="p">:</span> <span class="k">inout</span> <span class="kt">CGPoint</span><span class="p">,</span> <span class="nv">scalar</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -1292,9 +1295,9 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>EAKit: Multiply a CGPoint with a scalar</p>
-<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">point1</span> <span class="o">=</span> <span class="nf">CGPoint</span><span class="p">(</span><span class="nv">x</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="nv">y</span><span class="p">:</span> <span class="mi">10</span><span class="p">)</span>
-<span class="k">let</span> <span class="nv">scalar</span> <span class="o">=</span> <span class="mi">5</span> <span class="o">*</span> <span class="n">point1</span>
-<span class="c1">//scalar = CGPoint(x: 50, y: 50)</span>
+<pre class="highlight plaintext"><code>let point1 = CGPoint(x: 10, y: 10)
+let scalar = 5 * point1
+//scalar = CGPoint(x: 50, y: 50)
 </code></pre>
 
                       </div>
@@ -1302,7 +1305,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="o">*</span> <span class="p">(</span><span class="nv">scalar</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">,</span> <span class="nv">point</span><span class="p">:</span> <span class="kt">CGPoint</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">CGPoint</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="o">*</span> <span class="p">(</span><span class="nv">scalar</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">,</span> <span class="nv">point</span><span class="p">:</span> <span class="kt">CGPoint</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">CGPoint</span></code></pre>
 
                         </div>
                       </div>
@@ -1349,8 +1352,8 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2018 <a class="link" href="https://github.com/Meniny/EAKit" target="_blank" rel="external">Elias Abel</a>. All rights reserved. (Last updated: 2018-02-05)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2018 <a class="link" href="https://github.com/Meniny/EAKit" target="_blank" rel="external">Elias Abel</a>. All rights reserved. (Last updated: 2018-02-06)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>

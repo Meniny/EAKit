@@ -451,6 +451,9 @@
                 <a href="../Extensions/UIWindow.html">UIWindow</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Extensions/UInt.html">UInt</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Extensions/URL.html">URL</a>
               </li>
               <li class="nav-group-task">
@@ -474,22 +477,22 @@
                 <a href="../Functions.html#/s:5EAKit2mmoiSdSi_SitF">**(_:_:)</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Functions.html#/s:5EAKit1poiSayxGAC_ACtlF">+(_:_:)</a>
+                <a href="../Functions/+(_:_:).html">+(_:_:)</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Functions.html#/s:5EAKit1poiSayxGAC_xtlF">+(_:_:)</a>
+                <a href="../Functions/+(_:_:).html">+(_:_:)</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Functions.html#/s:5EAKit2peoiySayxGz_ACtlF">+=(_:_:)</a>
+                <a href="../Functions/+=(_:_:).html">+=(_:_:)</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Functions.html#/s:5EAKit2peoiySayxGz_xtlF">+=(_:_:)</a>
+                <a href="../Functions/+=(_:_:).html">+=(_:_:)</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Functions.html#/s:5EAKit3legoiSbx_x_xtts10ComparableRzlF">&lt;=&gt;(_:_:)</a>
+                <a href="../Functions/&lt;=&gt;(_:_:).html">&lt;=&gt;(_:_:)</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Functions.html#/s:5EAKit2lgoiSbx_x_xtts10ComparableRzlF">&lt;&gt;(_:_:)</a>
+                <a href="../Functions/&lt;&gt;(_:_:).html">&lt;&gt;(_:_:)</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Functions.html#/s:5EAKit2eeoiSbAA5RegexV_ADtF">==(_:_:)</a>
@@ -555,13 +558,13 @@
                 <a href="../Functions.html#/s:5EAKit003obaopSi_SitSiF">±(_:)</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Functions.html#/s:5EAKit003obaopx_xtxs13FloatingPointRzlF">±(_:)</a>
+                <a href="../Functions/±(_:).html">±(_:)</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Functions.html#/s:5EAKit003obaoiSi_SitSi_SitF">±(_:_:)</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Functions.html#/s:5EAKit003obaoix_xtx_xts13FloatingPointRzlF">±(_:_:)</a>
+                <a href="../Functions/±(_:_:).html">±(_:_:)</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Functions.html#/s:5EAKit003BJgopS2dF">√(_:)</a>
@@ -757,7 +760,7 @@
             <h1>Optional</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">Optional</span><span class="o">&lt;</span><span class="kt">Wrapped</span><span class="o">&gt;</span> <span class="p">:</span> <span class="kt">ExpressibleByNilLiteral</span></code></pre>
+                  <pre class="highlight"><code><span class="kd">enum</span> <span class="kt">Optional</span><span class="o">&lt;</span><span class="kt">Wrapped</span><span class="o">&gt;</span> <span class="p">:</span> <span class="kt">ExpressibleByNilLiteral</span></code></pre>
 
                 </div>
               </div>
@@ -780,11 +783,11 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>EAKit: Get self of default value (if self is nil).</p>
-<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">foo</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span>
-<span class="nf">print</span><span class="p">(</span><span class="n">foo</span><span class="o">.</span><span class="nf">unwrapped</span><span class="p">(</span><span class="nv">or</span><span class="p">:</span> <span class="s">"bar"</span><span class="p">))</span> <span class="o">-&gt;</span> <span class="s">"bar"</span>
+<pre class="highlight plaintext"><code>let foo: String? = nil
+print(foo.unwrapped(or: "bar")) -&gt; "bar"
 
-<span class="k">let</span> <span class="nv">bar</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="s">"bar"</span>
-<span class="nf">print</span><span class="p">(</span><span class="n">bar</span><span class="o">.</span><span class="nf">unwrapped</span><span class="p">(</span><span class="nv">or</span><span class="p">:</span> <span class="s">"foo"</span><span class="p">))</span> <span class="o">-&gt;</span> <span class="s">"bar"</span>
+let bar: String? = "bar"
+print(bar.unwrapped(or: "foo")) -&gt; "bar"
 </code></pre>
 
                       </div>
@@ -792,7 +795,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">unwrapped</span><span class="p">(</span><span class="n">or</span> <span class="n">defaultValue</span><span class="p">:</span> <span class="kt">Wrapped</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Wrapped</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">unwrapped</span><span class="p">(</span><span class="n">or</span> <span class="n">defaultValue</span><span class="p">:</span> <span class="kt">Wrapped</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Wrapped</span></code></pre>
 
                         </div>
                       </div>
@@ -836,17 +839,17 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>EAKit: Runs a block to Wrapped if not nil</p>
-<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">foo</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span>
-<span class="n">foo</span><span class="o">.</span><span class="nf">run</span> <span class="p">{</span> <span class="n">unwrappedFoo</span> <span class="k">in</span>
-    <span class="c1">// block will never run sice foo is nill</span>
-    <span class="nf">print</span><span class="p">(</span><span class="n">unwrappedFoo</span><span class="p">)</span>
-<span class="p">}</span>
+<pre class="highlight plaintext"><code>let foo: String? = nil
+foo.run { unwrappedFoo in
+    // block will never run sice foo is nill
+    print(unwrappedFoo)
+}
 
-<span class="k">let</span> <span class="nv">bar</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="s">"bar"</span>
-<span class="n">bar</span><span class="o">.</span><span class="nf">run</span> <span class="p">{</span> <span class="n">unwrappedBar</span> <span class="k">in</span>
-    <span class="c1">// block will run sice bar is not nill</span>
-    <span class="nf">print</span><span class="p">(</span><span class="n">unwrappedBar</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s">"bar"</span>
-<span class="p">}</span>
+let bar: String? = "bar"
+bar.run { unwrappedBar in
+    // block will run sice bar is not nill
+    print(unwrappedBar) -&gt; "bar"
+}
 </code></pre>
 
                       </div>
@@ -854,7 +857,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">run</span><span class="p">(</span><span class="n">_</span> <span class="nv">block</span><span class="p">:</span> <span class="p">(</span><span class="kt">Wrapped</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">run</span><span class="p">(</span><span class="n">_</span> <span class="nv">block</span><span class="p">:</span> <span class="p">(</span><span class="kt">Wrapped</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -894,9 +897,9 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>EAKit: Assign an optional value to a variable only if the value is not nil.</p>
-<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">someParameter</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span>
-<span class="k">let</span> <span class="nv">parameters</span> <span class="o">=</span> <span class="p">[</span><span class="kt">String</span><span class="p">:</span><span class="kt">Any</span><span class="p">]()</span> <span class="c1">//Some parameters to be attached to a GET request</span>
-<span class="n">parameters</span><span class="p">[</span><span class="n">someKey</span><span class="p">]</span> <span class="p">??</span><span class="o">=</span> <span class="n">someParameter</span> <span class="c1">//It won't be added to the parameters dict</span>
+<pre class="highlight plaintext"><code>let someParameter: String? = nil
+let parameters = [String:Any]() //Some parameters to be attached to a GET request
+parameters[someKey] ??= someParameter //It won't be added to the parameters dict
 </code></pre>
 
                       </div>
@@ -904,7 +907,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="p">??</span><span class="o">=</span> <span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="k">inout</span> <span class="kt">Optional</span><span class="p">,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="kt">Optional</span><span class="p">)</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="p">??</span><span class="o">=</span> <span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="k">inout</span> <span class="kt">Optional</span><span class="p">,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="kt">Optional</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -947,8 +950,8 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2018 <a class="link" href="https://github.com/Meniny/EAKit" target="_blank" rel="external">Elias Abel</a>. All rights reserved. (Last updated: 2018-02-05)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2018 <a class="link" href="https://github.com/Meniny/EAKit" target="_blank" rel="external">Elias Abel</a>. All rights reserved. (Last updated: 2018-02-06)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>
