@@ -61,7 +61,17 @@ public extension Int {
 		}
 		return String(format: "\(sign)%ikk", abs / 100000)
 	}
+    
+    public var stringify: String {
+        return String.init(describing: self)
+    }
 	
+}
+
+public extension UInt {
+    public var stringify: String {
+        return String.init(describing: self)
+    }
 }
 
 // MARK: - Methods

@@ -39,6 +39,32 @@ public extension String {
         return !self.isEmpty
     }
     
+    #if os(iOS)
+        public func attributed(color: UIColor,
+                               background: UIColor = UIColor.clear,
+                               font: UIFont = UIFont.systemFont(ofSize: 14)) -> NSAttributedString {
+            return self.attributed([
+                NSAttributedStringKey.foregroundColor: color,
+                NSAttributedStringKey.backgroundColor: background,
+                NSAttributedStringKey.font: font
+            ])
+        }
+    #elseif os(OSX)
+        public func attributed(color: NSColor,
+                               background: NSColor = NSColor.clear,
+                               font: NSFont = NSFont.systemFont(ofSize: 14)) -> NSAttributedString {
+            return self.attributed([
+                NSAttributedStringKey.foregroundColor: color,
+                NSAttributedStringKey.backgroundColor: background,
+                NSAttributedStringKey.font: font
+                ])
+        }
+    #endif
+    
+    public func attributed(_ attributes: [NSAttributedStringKey: Any]?) -> NSAttributedString {
+        return NSAttributedString.init(string: self, attributes: attributes)
+    }
+    
     public var uppercasedAtSentenceBoundary: String {
         let string = self.lowercased()
         

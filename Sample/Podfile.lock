@@ -1,27 +1,27 @@
 PODS:
-  - EAKit (1.2.0):
-    - EAKit/AppKit (= 1.2.0)
-    - EAKit/Core (= 1.2.0)
-    - EAKit/CoreGraphics (= 1.2.0)
-    - EAKit/CoreLocation (= 1.2.0)
-    - EAKit/Foundation (= 1.2.0)
-    - EAKit/Runtime (= 1.2.0)
-    - EAKit/sysctl (= 1.2.0)
-    - EAKit/Testing (= 1.2.0)
-    - EAKit/UIKit (= 1.2.0)
-  - EAKit/AppKit (1.2.0):
+  - EAKit (1.2.1):
+    - EAKit/AppKit (= 1.2.1)
+    - EAKit/Core (= 1.2.1)
+    - EAKit/CoreGraphics (= 1.2.1)
+    - EAKit/CoreLocation (= 1.2.1)
+    - EAKit/Foundation (= 1.2.1)
+    - EAKit/Runtime (= 1.2.1)
+    - EAKit/sysctl (= 1.2.1)
+    - EAKit/Testing (= 1.2.1)
+    - EAKit/UIKit (= 1.2.1)
+  - EAKit/AppKit (1.2.1):
     - EAKit/Core
-  - EAKit/Core (1.2.0)
-  - EAKit/CoreGraphics (1.2.0):
+  - EAKit/Core (1.2.1)
+  - EAKit/CoreGraphics (1.2.1):
     - EAKit/Core
-  - EAKit/CoreLocation (1.2.0):
+  - EAKit/CoreLocation (1.2.1):
     - EAKit/Core
-  - EAKit/Foundation (1.2.0):
+  - EAKit/Foundation (1.2.1):
     - EAKit/Core
-  - EAKit/Runtime (1.2.0)
-  - EAKit/sysctl (1.2.0)
-  - EAKit/Testing (1.2.0)
-  - EAKit/UIKit (1.2.0):
+  - EAKit/Runtime (1.2.1)
+  - EAKit/sysctl (1.2.1)
+  - EAKit/Testing (1.2.1)
+  - EAKit/UIKit (1.2.1):
     - EAKit/Core
   - SwiftLint (0.24.2)
 
@@ -34,7 +34,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  EAKit: 0c59fca6f942e790a264ef1da548affb4d5553c3
+  EAKit: a47b1cd925ad6ae22a5ca119970c20e78cd6fcb7
   SwiftLint: 2aa21b96c8d13396a051bc1cb659d2ce1e0075b0
 
 PODFILE CHECKSUM: 7a7af1227a412edae239b2d614722fe49eb0a507
