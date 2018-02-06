@@ -615,6 +615,11 @@ public extension Array where Element: Equatable {
 		}
 		return found
 	}
+    
+    /// EAKit: Checks if array contains at least 1 item which type is same with given element's type
+    public func contains<T>(type elementType: T.Type) -> Bool {
+        return contains { type(of: $0) == elementType}
+    }
 	
 	/// EAKit: All indices of specified item.
 	///

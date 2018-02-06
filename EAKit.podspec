@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name        = 'EAKit'
   s.module_name = 'EAKit'
-  s.version     = '1.2.3'
+  s.version     = '1.3.0'
   s.summary     = 'A huge collection of native Swift extensions to boost your productivity.'
 
   s.homepage    = 'https://github.com/Meniny/EAKit'
@@ -22,9 +22,11 @@ Pod::Spec.new do |s|
   s.swift_version       = '4.0'
   # s.documentation_url   = 'https://meniny.cn/EAKit/docs'
 
+  s.default_subspecs = 'Core', 'Foundation', 'UIKit', 'AppKit', 'CoreLocation', 'CoreGraphics', 'Testing', 'sysctl', 'Runtime'
+
   # SwiftStdlib Extensions
   s.subspec 'Core' do |sp|
-    sp.source_files  = 'EAKit/Core/**/*.swift'
+    sp.source_files  = 'EAKit/Core/**/*.swift', 'EAKit/SwiftStdlib/**/*.swift'
   end
 
   # Foundation Extensions

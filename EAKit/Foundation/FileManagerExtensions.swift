@@ -1,5 +1,5 @@
 //
-//  UIApplication.swift
+//  FileManager.swift
 //  EAKit
 //
 //  Blog  : https://meniny.cn
@@ -57,17 +57,24 @@
 //
 //  total_hours_wasted_here = 0
 //
-//  Created by Elias Abel on 2018/1/11.
-//  Copyright © 2018年 Meniny Lab. All rights reserved.
+//  Created by Elias Abel on 2018/2/6.
+//  
 //
 
-#if os(iOS)
-    import Foundation
-    import UIKit
+import Foundation
 
-    public extension UIApplication {
-        public static var rootViewController: UIViewController? {
-            return UIApplication.shared.keyWindow?.rootViewController
-        }
+extension FileManager {
+    
+    /// EAKit: Returns path of documents directory
+    public var documentsDirectoryPath: String? {
+        let paths = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
+        return paths.first
     }
-#endif
+    
+    /// EAKit: Returns path of documents directory caches
+    public var cachesDirectoryPath: String? {
+        let paths = NSSearchPathForDirectoriesInDomains(.cachesDirectory, .userDomainMask, true)
+        return paths.first
+    }
+    
+}

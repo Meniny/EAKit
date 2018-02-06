@@ -16,7 +16,7 @@ public extension UISwitch {
 	///
 	/// - Parameter animated: set true to animate the change (default is true)
 	public func toggle(animated: Bool = true) {
-		setOn(!isOn, animated: animated)
+		self.setOn(!self.isOn, animated: animated)
 	}
 	
 }

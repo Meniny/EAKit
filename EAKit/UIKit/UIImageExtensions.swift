@@ -36,6 +36,11 @@ public extension UIImage {
 
 // MARK: - Methods
 public extension UIImage {
+    
+    /// EAKit: Returns base64 string
+    public var base64EncodedString: String? {
+        return self.compressed(quality: 1.0)?.base64EncodedString
+    }
 	
 	/// EAKit: Compressed UIImage from original UIImage.
 	///

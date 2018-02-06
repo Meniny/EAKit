@@ -10,6 +10,18 @@ import CoreGraphics
 
 // MARK: - Properties
 public extension Int {
+    
+    /// EAKit: Checks if the integer is even.
+    public var isEven: Bool { return (self % 2 == 0) }
+    
+    /// EAKit: Checks if the integer is odd.
+    public var isOdd: Bool { return (self % 2 != 0) }
+    
+    /// EAKit: Checks if the integer is positive.
+    public var isPositive: Bool { return (self > 0) }
+    
+    /// EAKit: Checks if the integer is negative.
+    public var isNegative: Bool { return (self < 0) }
 	
 	/// EAKit: CountableRange 0..<Int.
 	public var countableRange: CountableRange<Int> {

@@ -238,11 +238,11 @@
         /// EAKit: Add shadow to view.
         ///
         /// - Parameters:
-        ///   - color: shadow color (default is #137992).
+        ///   - color: shadow color (default is Charcoal: #424141).
         ///   - radius: shadow radius (default is 3).
         ///   - offset: shadow offset (default is .zero).
         ///   - opacity: shadow opacity (default is 0.5).
-        public func addShadow(ofColor color: UIColor = UIColor(red: 0.07, green: 0.47, blue: 0.57, alpha: 1.0), radius: CGFloat = 3, offset: CGSize = .zero, opacity: Float = 0.5) {
+        public func addShadow(ofColor color: UIColor = UIColor(red: 0.26, green: 0.25, blue: 0.25, alpha: 1.00), radius: CGFloat = 3, offset: CGSize = .zero, opacity: Float = 0.5) {
             layer.shadowColor = color.cgColor
             layer.shadowOffset = offset
             layer.shadowRadius = radius
@@ -253,8 +253,15 @@
         /// EAKit: Add array of subviews to view.
         ///
         /// - Parameter subviews: array of subviews to add to self.
-        public func addSubviews(_ subviews: [UIView]) {
-            subviews.forEach({self.addSubview($0)})
+        public func addSubviews(_ svs: [UIView]) {
+            svs.forEach({self.addSubview($0)})
+        }
+        
+        /// EAKit: Add array of subviews to view.
+        ///
+        /// - Parameter subviews: list of subviews to add to self.
+        public func addSubviews(_ svs: UIView...) {
+            self.addSubviews(svs)
         }
         
         /// EAKit: Fade in view.
@@ -505,5 +512,232 @@
             anchorCenterYToSuperview()
         }
         
+    }
+    
+    // MARK: Transform Extensions
+    extension UIView {
+        /// EZSwiftExtensions
+        public func setRotationX(_ x: CGFloat) {
+            var transform = CATransform3DIdentity
+            transform.m34 = 1.0 / -1000.0
+            transform = CATransform3DRotate(transform, x.degreesToRadians, 1.0, 0.0, 0.0)
+            self.layer.transform = transform
+        }
+        
+        /// EZSwiftExtensions
+        public func setRotationY(_ y: CGFloat) {
+            var transform = CATransform3DIdentity
+            transform.m34 = 1.0 / -1000.0
+            transform = CATransform3DRotate(transform, y.degreesToRadians, 0.0, 1.0, 0.0)
+            self.layer.transform = transform
+        }
+        
+        /// EZSwiftExtensions
+        public func setRotationZ(_ z: CGFloat) {
+            var transform = CATransform3DIdentity
+            transform.m34 = 1.0 / -1000.0
+            transform = CATransform3DRotate(transform, z.degreesToRadians, 0.0, 0.0, 1.0)
+            self.layer.transform = transform
+        }
+        
+        /// EZSwiftExtensions
+        public func setRotation(x: CGFloat, y: CGFloat, z: CGFloat) {
+            var transform = CATransform3DIdentity
+            transform.m34 = 1.0 / -1000.0
+            transform = CATransform3DRotate(transform, x.degreesToRadians, 1.0, 0.0, 0.0)
+            transform = CATransform3DRotate(transform, y.degreesToRadians, 0.0, 1.0, 0.0)
+            transform = CATransform3DRotate(transform, z.degreesToRadians, 0.0, 0.0, 1.0)
+            self.layer.transform = transform
+        }
+        
+        /// EZSwiftExtensions
+        public func setScale(x: CGFloat, y: CGFloat) {
+            var transform = CATransform3DIdentity
+            transform.m34 = 1.0 / -1000.0
+            transform = CATransform3DScale(transform, x, y, 1)
+            self.layer.transform = transform
+        }
+    }
+    
+    private let UIViewAnimationDuration: TimeInterval = 1
+    private let UIViewAnimationSpringDamping: CGFloat = 0.5
+    private let UIViewAnimationSpringVelocity: CGFloat = 0.5
+    
+    //TODO: add this to readme
+    // MARK: Animation Extensions
+    extension UIView {
+        /// EAKit
+        public func spring(animations: @escaping (() -> Void), completion: ((Bool) -> Void)? = nil) {
+            spring(duration: UIViewAnimationDuration, animations: animations, completion: completion)
+        }
+        
+        /// EAKit
+        public func spring(duration: TimeInterval, animations: @escaping (() -> Void), completion: ((Bool) -> Void)? = nil) {
+            UIView.animate(
+                withDuration: UIViewAnimationDuration,
+                delay: 0,
+                usingSpringWithDamping: UIViewAnimationSpringDamping,
+                initialSpringVelocity: UIViewAnimationSpringVelocity,
+                options: UIViewAnimationOptions.allowAnimatedContent,
+                animations: animations,
+                completion: completion
+            )
+        }
+        
+        /// EAKit
+        public func animate(duration: TimeInterval, animations: @escaping (() -> Void), completion: ((Bool) -> Void)? = nil) {
+            UIView.animate(withDuration: duration, animations: animations, completion: completion)
+        }
+        
+        /// EAKit
+        public func animate(animations: @escaping (() -> Void), completion: ((Bool) -> Void)? = nil) {
+            animate(duration: UIViewAnimationDuration, animations: animations, completion: completion)
+        }
+        
+        /// EAKit
+        public func pop() {
+            setScale(x: 1.1, y: 1.1)
+            spring(duration: 0.2, animations: { [unowned self] () -> Void in
+                self.setScale(x: 1, y: 1)
+            })
+        }
+        
+        /// EAKit
+        public func popBig() {
+            setScale(x: 1.25, y: 1.25)
+            spring(duration: 0.2, animations: { [unowned self] () -> Void in
+                self.setScale(x: 1, y: 1)
+            })
+        }
+        
+        //EAKit: Reverse pop, good for button animations
+        public func reversePop() {
+            setScale(x: 0.9, y: 0.9)
+            UIView.animate(withDuration: 0.05, delay: 0, options: UIViewAnimationOptions.allowUserInteraction, animations: { [weak self] in
+                self?.setScale(x: 1, y: 1)
+            })
+        }
+    }
+    
+    // MARK: Gesture Extensions
+    extension UIView {
+        /// http://stackoverflow.com/questions/4660371/how-to-add-a-touch-event-to-a-uiview/32182866#32182866
+        /// EAKit
+        public func addTapGesture(taps: Int = 1, target: AnyObject, action: Selector) {
+            let tap = UITapGestureRecognizer(target: target, action: action)
+            tap.numberOfTapsRequired = taps
+            self.addGestureRecognizer(tap)
+            self.isUserInteractionEnabled = true
+        }
+        
+        /// EAKit - Make sure you use  "[weak self] (gesture) in" if you are using the keyword self inside the closure or there might be a memory leak
+        public func addTapGesture(taps: Int = 1, touches: Int = 1, action: ((UITapGestureRecognizer) -> Void)?) {
+            let tap = UIClosureTap.init(taps: taps, touches: 1, action: action)
+            self.addGestureRecognizer(tap)
+            self.isUserInteractionEnabled = true
+        }
+        
+        /// EAKit
+        public func addSwipeGesture(direction: UISwipeGestureRecognizerDirection, numberOfTouches: Int = 1, target: AnyObject, action: Selector) {
+            let swipe = UISwipeGestureRecognizer(target: target, action: action)
+            swipe.direction = direction
+            
+            #if os(iOS)
+                swipe.numberOfTouchesRequired = numberOfTouches
+            #endif
+            
+            self.addGestureRecognizer(swipe)
+            self.isUserInteractionEnabled = true
+        }
+        
+        /// EAKit - Make sure you use  "[weak self] (gesture) in" if you are using the keyword self inside the closure or there might be a memory leak
+        public func addSwipeGesture(to direction: UISwipeGestureRecognizerDirection, touches: Int = 1, action: ((UISwipeGestureRecognizer) -> Void)?) {
+            let swipe = UIClosureSwipe.init(to: direction, touches: touches, action: action)
+            self.addGestureRecognizer(swipe)
+            self.isUserInteractionEnabled = true
+        }
+        
+        /// EAKit
+        public func addPanGesture(target: AnyObject, action: Selector) {
+            let pan = UIPanGestureRecognizer(target: target, action: action)
+            self.addGestureRecognizer(pan)
+            self.isUserInteractionEnabled = true
+        }
+        
+        /// EAKit - Make sure you use  "[weak self] (gesture) in" if you are using the keyword self inside the closure or there might be a memory leak
+        public func addPanGesture(action: ((UIPanGestureRecognizer) -> Void)?) {
+            let pan = UIClosurePan.init(action: action)
+            self.addGestureRecognizer(pan)
+            self.isUserInteractionEnabled = true
+        }
+        
+        #if os(iOS)
+        
+        /// EAKit
+        public func addPinchGesture(target: AnyObject, action: Selector) {
+            let pinch = UIPinchGestureRecognizer(target: target, action: action)
+            self.addGestureRecognizer(pinch)
+            self.isUserInteractionEnabled = true
+        }
+        
+        #endif
+        
+        #if os(iOS)
+        
+        /// EAKit - Make sure you use  "[weak self] (gesture) in" if you are using the keyword self inside the closure or there might be a memory leak
+        public func addPinchGesture(action: ((UIPinchGestureRecognizer) -> Void)?) {
+            let pinch = UIClosurePinch.init(action: action)
+            self.addGestureRecognizer(pinch)
+            self.isUserInteractionEnabled = true
+        }
+        
+        #endif
+        
+        /// EAKit
+        public func addLongPressGesture(target: AnyObject, action: Selector) {
+            let longPress = UILongPressGestureRecognizer(target: target, action: action)
+            self.addGestureRecognizer(longPress)
+            self.isUserInteractionEnabled = true
+        }
+        
+        /// EAKit - Make sure you use  "[weak self] (gesture) in" if you are using the keyword self inside the closure or there might be a memory leak
+        public func addLongPressGesture(action: ((UILongPressGestureRecognizer) -> Void)?) {
+            let longPress = UIClosureLongPress.init(action: action)
+            self.addGestureRecognizer(longPress)
+            self.isUserInteractionEnabled = true
+        }
+    }
+    
+    extension UIView {
+        ///EAKit: Loops until it finds the top root view. //TODO: Add to readme
+        func rootView() -> UIView {
+            guard let parentView = superview else {
+                return self
+            }
+            return parentView.rootView()
+        }
+    }
+    
+    // MARK: Fade Extensions
+    
+    public let UIViewDefaultFadingDuration: TimeInterval = 0.4
+    
+    extension UIView {
+        ///EAKit: Fade in with duration, delay and completion block.
+        public func fadeIn(_ duration: TimeInterval? = UIViewDefaultFadingDuration, delay: TimeInterval? = 0.0, completion: ((Bool) -> Void)? = nil) {
+            fadeTo(1.0, duration: duration, delay: delay, completion: completion)
+        }
+        
+        /// EAKit
+        public func fadeOut(_ duration: TimeInterval? = UIViewDefaultFadingDuration, delay: TimeInterval? = 0.0, completion: ((Bool) -> Void)? = nil) {
+            fadeTo(0.0, duration: duration, delay: delay, completion: completion)
+        }
+        
+        /// Fade to specific value     with duration, delay and completion block.
+        public func fadeTo(_ value: CGFloat, duration: TimeInterval? = UIViewDefaultFadingDuration, delay: TimeInterval? = 0.0, completion: ((Bool) -> Void)? = nil) {
+            UIView.animate(withDuration: duration ?? UIViewDefaultFadingDuration, delay: delay ?? UIViewDefaultFadingDuration, options: .curveEaseInOut, animations: {
+                self.alpha = value
+            }, completion: completion)
+        }
     }
 #endif

@@ -12,6 +12,20 @@
     // MARK: - Properties
     public extension UIViewController {
         
+        /// EAKit: Add array of subviews to `self.view`.
+        ///
+        /// - Parameter subviews: array of subviews to add to `self.view`.
+        public func addSubviews(_ svs: [UIView]) {
+            self.view.addSubviews(svs)
+        }
+        
+        /// EAKit: Add array of subviews to `self.view`.
+        ///
+        /// - Parameter subviews: list of subviews to add to `self.view`.
+        public func addSubviews(_ svs: UIView...) {
+            self.view.addSubviews(svs)
+        }
+        
         /// EAKit: Check if ViewController is onscreen and not hidden.
         public var isVisible: Bool {
             // http://stackoverflow.com/questions/2777438/how-to-tell-if-uiviewcontrollers-view-is-visible
@@ -92,20 +106,16 @@
     
     public extension UIViewController {
         
-        public class func instance(storyboard sbname: String, bundle: Bundle? = nil, identifier: String?) -> Self {
-            return helper_instance(storyboard: sbname, bundle: bundle, identifier: identifier)
+        public class func instance(storyboard sbname: String, bundle: Bundle? = nil, identifier: String?) -> Self? {
+            return self._instance(storyboard: sbname, bundle: bundle, identifier: identifier)
         }
         
-        public class func sb(_ sbname: String, bundle: Bundle? = nil, id: String?) -> Self {
-            return helper_instance(storyboard: sbname, bundle: bundle, identifier: id)
-        }
-        
-        private class func helper_instance<T>(storyboard sbname: String, bundle: Bundle?, identifier: String?) -> T {
+        private class func _instance<T>(storyboard sbname: String, bundle: Bundle?, identifier: String?) -> T? {
             let storyboard = UIStoryboard.init(name: sbname, bundle: bundle)
             guard let id = identifier else {
-                return storyboard.instantiateInitialViewController() as! T
+                return storyboard.instantiateInitialViewController() as? T
             }
-            return storyboard.instantiateViewController(withIdentifier: id) as! T
+            return storyboard.instantiateViewController(withIdentifier: id) as? T
         }
     }
 #endif

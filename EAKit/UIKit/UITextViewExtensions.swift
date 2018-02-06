@@ -30,6 +30,23 @@ public extension UITextView {
 		let range = NSMakeRange(0, 1)
 		scrollRangeToVisible(range)
 	}
-	
 }
+#endif
+
+#if os(iOS)
+    public extension UITextView {
+        /// EAKit: Automatically adds a toolbar with a done button to the top of the keyboard. Tapping the button will dismiss the keyboard.
+        public func addDoneButton(_ barStyle: UIBarStyle = .default, title: String? = nil) {
+            let keyboardToolbar = UIToolbar()
+            keyboardToolbar.items = [
+                UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil),
+                UIBarButtonItem(title: NSLocalizedString(title ?? "Done", comment: ""), style: .done, target: self, action: #selector(resignFirstResponder))
+            ]
+            
+            keyboardToolbar.barStyle = barStyle
+            keyboardToolbar.sizeToFit()
+            
+            inputAccessoryView = keyboardToolbar
+        }
+    }
 #endif

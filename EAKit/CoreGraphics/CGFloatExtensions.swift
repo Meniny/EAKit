@@ -14,6 +14,9 @@
 
 // MARK: - Properties
 public extension CGFloat {
+    
+    /// EAKit: Return the central value of CGFloat.
+    public var center: CGFloat { return (self / 2) }
 	
 	/// EAKit: Absolute of CGFloat value.
 	public var abs: CGFloat {
@@ -69,6 +72,11 @@ public extension CGFloat {
 
 // MARK: - Methods
 public extension CGFloat {
+    
+    /// EAKit: Returns a random floating point number between 0.0 and 1.0, inclusive.
+    public static func random() -> CGFloat {
+        return CGFloat(Float(arc4random()) / 0xFFFFFFFF)
+    }
 	
 	/// EAKit: Random CGFloat between two CGFloat values.
 	///
