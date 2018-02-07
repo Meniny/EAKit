@@ -1,6 +1,6 @@
 
 <p align="center">
-  <!-- <img src="./Assets/EAKit.png" alt="EAKit"> -->
+  <img src="./Assets/EAKit.png" alt="EAKit">
   <br/><a href="https://cocoapods.org/pods/EAKit">
   <img alt="Version" src="https://img.shields.io/badge/version-1.3.0-brightgreen.svg">
   <img alt="Author" src="https://img.shields.io/badge/author-Meniny-blue.svg">
