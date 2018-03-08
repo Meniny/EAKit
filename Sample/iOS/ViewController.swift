@@ -15,10 +15,17 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        self.view.backgroundColor = UIColor.aqua
+        self.view.backgroundColor = CSSColor.aqua.color
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            self.view.backgroundColor = UIColor.random
+        }
         
         EALog.error("error", self)
         EALog.dump("dump", self)
+        
+        var string = "This is a sample string."
+        EALog.info("the memory address of 'string1' is: ", address(of: &string), separator: "")
     }
 
     override func didReceiveMemoryWarning() {
