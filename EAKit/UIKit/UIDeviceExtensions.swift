@@ -62,6 +62,8 @@
 //
 
 import Foundation
+
+#if os(iOS)
 import UIKit
 
 public enum iPhone {
@@ -118,3 +120,4 @@ public extension UIDevice {
         return iPhone.statusBarHeight
     }
 }
+#endif
