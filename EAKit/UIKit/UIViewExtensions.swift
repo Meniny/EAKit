@@ -45,6 +45,11 @@
     // MARK: - Properties
     public extension UIView {
         
+        public convenience init(frame: CGRect = .zero, color: UIColor?) {
+            self.init(frame: frame)
+            self.backgroundColor = color
+        }
+        
         /// EAKit: Border color of view; also inspectable from Storyboard.
         @IBInspectable public var borderColor: UIColor? {
             get {

@@ -119,39 +119,24 @@ public extension Encodable {
             print(error)
             return nil
         }
-        
     }
     
     /// To JSON string
     public var jsonify: String? {
-        if self is Data {
-            guard let data = (self as? Data) else {
-                return nil
+        if let data = (self as? Data) {
+            
+            if let json = data.jsonDictionary {
+                return json.jsonify
             }
-            guard let json = data.jsonObject else {
-                return String.init(data: data, encoding: .utf8)
+            if let json = data.jsonArray {
+                return json.jsonify
             }
-            return json.jsonify
+            return String.init(data: data, encoding: .utf8)
         }
-        guard let data = self.encoded else {
+        
+        guard let encodedData = self.encoded else {
             return nil
         }
-        return String.init(data: data, encoding: .utf8)
-    }
-    
-    public var jsonObject: [String: Any]? {
-        if self is Data {
-            return (self as? Data)?.toJsonObject
-        }
-        guard let data = self.encoded else {
-            return nil
-        }
-        do {
-            let obj = try JSONSerialization.jsonObject(with: data, options: [])
-            return obj as? [String: Any]
-        } catch {
-            print(error)
-            return nil
-        }
+        return String.init(data: encodedData, encoding: .utf8)
     }
 }

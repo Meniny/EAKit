@@ -57,7 +57,7 @@ extension Data {
 }
 
 public extension Data {
-    public var toJson: Any? {
+    public var jsonDeserialized: Any? {
         do {
             let json = try JSONSerialization.jsonObject(with: self, options: [])
             return json
@@ -67,8 +67,12 @@ public extension Data {
         }
     }
     
-    public var toJsonObject: [String: Any]? {
-        return self.toJson as? [String: Any]
+    public var jsonDictionary: [String: Any]? {
+        return self.jsonDeserialized as? [String: Any]
+    }
+    
+    public var jsonArray: [Any]? {
+        return self.jsonDeserialized as? [Any]
     }
 }
 
