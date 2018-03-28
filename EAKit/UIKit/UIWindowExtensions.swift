@@ -66,7 +66,7 @@
     import UIKit
     
     extension UIWindow {
-        /// EAKit: Creates and shows UIWindow. The size will show iPhone4 size until you add launch images with proper sizes. TODO: Add to readme
+        /// EAKit: Creates and shows UIWindow. The size will show iPhone4 size until you add launch images with proper sizes.
         public convenience init(viewController: UIViewController, backgroundColor: UIColor) {
             self.init(frame: UIScreen.main.bounds)
             self.rootViewController = viewController

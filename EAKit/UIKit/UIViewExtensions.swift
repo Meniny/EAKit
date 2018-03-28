@@ -568,7 +568,6 @@
     private let UIViewAnimationSpringDamping: CGFloat = 0.5
     private let UIViewAnimationSpringVelocity: CGFloat = 0.5
     
-    //TODO: add this to readme
     // MARK: Animation Extensions
     extension UIView {
         /// EAKit
@@ -714,7 +713,7 @@
     }
     
     extension UIView {
-        ///EAKit: Loops until it finds the top root view. //TODO: Add to readme
+        ///EAKit: Loops until it finds the top root view.
         func rootView() -> UIView {
             guard let parentView = superview else {
                 return self
