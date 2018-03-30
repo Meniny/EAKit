@@ -75,7 +75,7 @@ extension RandomAccessCollection {
     @_inlineable
     public func parallelEach(body: (Element) -> ()) {
         DispatchQueue.concurrentPerform(iterations: Int(self.count)) {
-            body(self[self.index(startIndex, offsetBy: IndexDistance($0))])
+            body(self[self.index(startIndex, offsetBy: $0)])
         }
     }
     
@@ -102,11 +102,12 @@ extension RandomAccessCollection {
         let count = Int(self.count)
         let buffer = UnsafeMutablePointer<T>.allocate(capacity: count)
         DispatchQueue.concurrentPerform(iterations: count) {
-            (buffer + $0).initialize(to: transform(self[self.index(startIndex, offsetBy: IndexDistance($0))]))
+            (buffer + $0).initialize(to: transform(self[self.index(startIndex, offsetBy: $0)]))
         }
         let result = ContiguousArray(UnsafeMutableBufferPointer(start: buffer, count: count))
         buffer.deinitialize(count: count)
-        buffer.deallocate(capacity: count)
+        buffer.deallocate()
+//        buffer.deallocate(capacity: count)
         return Array(result)
     }
 }

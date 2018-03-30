@@ -76,11 +76,31 @@ public extension Data {
     }
 }
 
+public extension Data {
+    public func codableJsonDeserialized<T: Codable>() throws -> T? {
+        let json = try JSONSerialization.jsonObject(with: self, options: [])
+        return json as? T
+    }
+    
+    public func codableJsonDictionary<T: Codable>() throws -> [String: T]? {
+        let r: [String: T]? = try self.codableJsonDeserialized()
+        return r
+    }
+    
+    public func codableJsonArray<T: Codable>() throws -> [T]? {
+        let r: [T]? = try self.codableJsonDeserialized()
+        return r
+    }
+}
+
 extension Data {
     // http://stackoverflow.com/questions/39248092/nsattributedstring-extension-in-swift-3
     var attributedString: NSAttributedString? {
         do {
-            return try NSAttributedString(data: self, options:[NSAttributedString.DocumentReadingOptionKey.documentType:NSAttributedString.DocumentType.html, NSAttributedString.DocumentReadingOptionKey.characterEncoding: String.Encoding.utf8.rawValue], documentAttributes: nil)
+            return try NSAttributedString(data: self, options:[
+                .documentType: NSAttributedString.DocumentType.html,
+                .characterEncoding: String.Encoding.utf8.rawValue
+                ], documentAttributes: nil)
         } catch let error as NSError {
             print(error.localizedDescription)
         }

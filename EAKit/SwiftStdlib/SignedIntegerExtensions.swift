@@ -36,13 +36,13 @@ public extension SignedInteger {
 	
 	/// EAKit: Array of digits of integer value.
 	public var digits: [Self] {
-		let intsArray = description.flatMap({Int(String($0))})
+		let intsArray = description.compactMap({ Int(String($0)) })
 		return intsArray.map({Self($0)})
 	}
 	
 	/// EAKit: Number of digits of integer value.
 	public var digitsCount: Int {
-		return description.flatMap({Int(String($0))}).count
+		return description.compactMap({ Int(String($0)) }).count
 	}
 	
 	/// EAKit: String of format (XXh XXm) from seconds Int.

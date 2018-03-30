@@ -133,7 +133,7 @@ public extension String {
         } else {
             let chars = ":&=;+!@#$()',*"
             let legalURLCharactersToBeEscaped: CFString = chars as CFString
-            return CFURLCreateStringByAddingPercentEscapes(nil, self as CFString!, nil, legalURLCharactersToBeEscaped, CFStringBuiltInEncodings.UTF8.rawValue) as String
+            return CFURLCreateStringByAddingPercentEscapes(nil, self as CFString?, nil, legalURLCharactersToBeEscaped, CFStringBuiltInEncodings.UTF8.rawValue) as String
         }
     }
     
@@ -144,7 +144,7 @@ public extension String {
             }
             return self
         } else {
-            return CFURLCreateStringByReplacingPercentEscapesUsingEncoding(nil, self as CFString!, "" as CFString!, CFStringBuiltInEncodings.UTF8.rawValue) as String
+            return CFURLCreateStringByReplacingPercentEscapesUsingEncoding(nil, self as CFString?, "" as CFString?, CFStringBuiltInEncodings.UTF8.rawValue) as String
         }
     }
 	

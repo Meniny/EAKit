@@ -9,6 +9,11 @@
 import UIKit
 import EAKit
 
+struct Some: Codable {
+    var title: String
+    var message: String
+}
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -26,6 +31,10 @@ class ViewController: UIViewController {
         
         var string = "This is a sample string."
         EALog.info("the memory address of 'string1' is: ", address(of: &string), separator: "")
+        
+        let some = Some.init(title: "Hello", message: "Hi there!")
+        EALog.info(some.jsonify)
+        
     }
 
     override func didReceiveMemoryWarning() {

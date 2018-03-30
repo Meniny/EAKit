@@ -124,14 +124,9 @@ public extension Encodable {
     /// To JSON string
     public var jsonify: String? {
         if let data = (self as? Data) {
-            
-            if let json = data.jsonDictionary {
-                return json.jsonify
+            if let str = String.init(data: data, encoding: .utf8) {
+                return str
             }
-            if let json = data.jsonArray {
-                return json.jsonify
-            }
-            return String.init(data: data, encoding: .utf8)
         }
         
         guard let encodedData = self.encoded else {

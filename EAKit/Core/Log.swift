@@ -28,7 +28,7 @@ public let EALogDefaultSeparator = "\n"
 /// Exenteds NSLog.
 ///
 /// Activate it by setting BFLogActive variable to true before using it.
-internal func _log(_ type: EALogType, _ items: [Any], dump: Bool, separator: String, filename: String, function: StaticString, line: Int) -> String {
+internal func _log(_ type: EALogType, _ items: [Any?], dump: Bool, separator: String, filename: String, function: StaticString, line: Int) -> String {
     let file = URL.init(fileURLWithPath: filename).lastPathComponent
     let now = Date.init()
     let timestamp = Int(now.timeIntervalSince1970)
@@ -43,6 +43,7 @@ internal func _log(_ type: EALogType, _ items: [Any], dump: Bool, separator: Str
         "▷ "
     ].joined(separator: "\n")
     let message = items.map({ (i) -> String in
+        guard let i = i else { return "nil" }
         if dump {
             return dumper(i)
         }
@@ -69,7 +70,7 @@ public struct EALog {
     ///   - function: Function name. Default is #function.
     ///   - line: Line number. Default is #line.
     @discardableResult
-    public static func warning(_ items: Any..., separator: String = EALogDefaultSeparator, filename: String = #file, function: StaticString = #function, line: Int = #line) -> String {
+    public static func warning(_ items: Any?..., separator: String = EALogDefaultSeparator, filename: String = #file, function: StaticString = #function, line: Int = #line) -> String {
         if EALog.isEnabled {
             return _log(.warning, items, dump: false, separator: separator, filename: filename, function: function, line: line)
         }
@@ -86,7 +87,7 @@ public struct EALog {
     ///   - function: Function name. Default is #function.
     ///   - line: Line number. Default is #line.
     @discardableResult
-    public static func error(_ items: Any..., separator: String = EALogDefaultSeparator, filename: String = #file, function: StaticString = #function, line: Int = #line) -> String {
+    public static func error(_ items: Any?..., separator: String = EALogDefaultSeparator, filename: String = #file, function: StaticString = #function, line: Int = #line) -> String {
         if EALog.isEnabled {
             return _log(.error, items, dump: false, separator: separator, filename: filename, function: function, line: line)
         }
@@ -103,7 +104,7 @@ public struct EALog {
     ///   - function: Function name. Default is #function.
     ///   - line: Line number. Default is #line.
     @discardableResult
-    public static func debug(_ items: Any..., separator: String = EALogDefaultSeparator, filename: String = #file, function: StaticString = #function, line: Int = #line) -> String {
+    public static func debug(_ items: Any?..., separator: String = EALogDefaultSeparator, filename: String = #file, function: StaticString = #function, line: Int = #line) -> String {
         if EALog.isEnabled {
             return _log(.debug, items, dump: false, separator: separator, filename: filename, function: function, line: line)
         }
@@ -120,7 +121,7 @@ public struct EALog {
     ///   - function: Function name. Default is #function.
     ///   - line: Line number. Default is #line.
     @discardableResult
-    public static func info(_ items: Any..., separator: String = EALogDefaultSeparator, filename: String = #file, function: StaticString = #function, line: Int = #line) -> String {
+    public static func info(_ items: Any?..., separator: String = EALogDefaultSeparator, filename: String = #file, function: StaticString = #function, line: Int = #line) -> String {
         if EALog.isEnabled {
             return _log(.info, items, dump: false, separator: separator, filename: filename, function: function, line: line)
         }
@@ -137,7 +138,7 @@ public struct EALog {
     ///   - function: Function name. Default is #function.
     ///   - line: Line number. Default is #line.
     @discardableResult
-    public static func dump(_ items: Any..., separator: String = EALogDefaultSeparator, filename: String = #file, function: StaticString = #function, line: Int = #line) -> String {
+    public static func dump(_ items: Any?..., separator: String = EALogDefaultSeparator, filename: String = #file, function: StaticString = #function, line: Int = #line) -> String {
         if EALog.isEnabled {
             return _log(.dumping, items, dump: true, separator: separator, filename: filename, function: function, line: line)
         }

@@ -31,7 +31,8 @@ public extension String {
 func arrayOfBytes<T>(_ value: T, length: Int? = nil) -> [UInt8] {
     let totalBytes = length ?? (MemoryLayout<T>.size * 8)
     
-    let valuePointer = UnsafeMutablePointer<T>.allocate(capacity: 1)
+    let count = 1
+    let valuePointer = UnsafeMutablePointer<T>.allocate(capacity: count)
     valuePointer.pointee = value
     
     let bytes = valuePointer.withMemoryRebound(to: UInt8.self, capacity: totalBytes) { (bytesPointer) -> [UInt8] in
@@ -42,8 +43,9 @@ func arrayOfBytes<T>(_ value: T, length: Int? = nil) -> [UInt8] {
         return bytes
     }
     
-    valuePointer.deinitialize()
-    valuePointer.deallocate(capacity: 1)
+    valuePointer.deinitialize(count: count)//deinitialize()
+//    valuePointer.deallocate(capacity: 1)
+    valuePointer.deallocate()
     
     return bytes
 }
