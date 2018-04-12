@@ -724,3 +724,14 @@ public extension Array where Element: Equatable {
 	}
 	
 }
+
+public extension Array {
+    /// EAKit: Creates a flatten array.
+    ///
+    ///        let flattened: [Int] = [[1], [2, 3], [4], [5, 6]].flat() -> [1, 2, 3, 4, 5, 6]
+    ///
+    /// - Returns: A flatten array.
+    public func flat<Subelement>() -> Array.Element where Array.Element == Array<Subelement> {
+        return self.reduce(Array.Element()) { $0 + $1 }
+    }
+}

@@ -36,11 +36,10 @@ internal func _log(_ type: EALogType, _ items: [Any?], dump: Bool, separator: St
     dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss.SSS"
     let dateString = dateFormatter.string(from: now)
     let log = [
-        "▷ \(type.emoji) \(type.rawValue)",
-        "▷ \(dateString) [\(timestamp)]",
-        "▷ \(file) [\(line)]",
-        "▷ \(function)",
-        "▷ "
+        "▷ [\(type.emoji)] \(type.rawValue)",
+        "▷ [📆] \(dateString) (\(timestamp))",
+        "▷ [📋] \(file) :\(line)",
+        "▷ [🔎] \(function)",
     ].joined(separator: "\n")
     let message = items.map({ (i) -> String in
         guard let i = i else { return "nil" }
@@ -49,7 +48,8 @@ internal func _log(_ type: EALogType, _ items: [Any?], dump: Bool, separator: St
         }
         return String.init(describing: i)
     }).joined(separator: separator)
-    let res = log + (dump ? "\n" : "") + message
+    let sep = "-------------------"
+    let res = [sep, log, message, sep].joined(separator: "\n")
     print(res)
     return res
 }

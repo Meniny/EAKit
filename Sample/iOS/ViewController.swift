@@ -35,6 +35,9 @@ class ViewController: UIViewController {
         let some = Some.init(title: "Hello", message: "Hi there!")
         EALog.info(some.jsonify)
         
+        let source: [[Int]] = [[1], [2, 3], [4], [5, 6]]
+        let flattened: [Int] = source.flat()
+        EALog.info(source, flattened)
     }
 
     override func didReceiveMemoryWarning() {
