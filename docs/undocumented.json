@@ -21695,56 +21695,196 @@
     },
     {
       "file": "/Users/elias/Documents/GitHub/EAKit/EAKit/Foundation/DateExtensions.swift",
-      "line": 701,
+      "line": 465,
+      "symbol": "Date.TimeIntervalUnit",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/elias/Documents/GitHub/EAKit/EAKit/Foundation/DateExtensions.swift",
+      "line": 465,
+      "symbol": "Date.TimeIntervalUnit",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/elias/Documents/GitHub/EAKit/EAKit/Foundation/DateExtensions.swift",
+      "line": 465,
+      "symbol": "Date.TimeIntervalUnit",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/elias/Documents/GitHub/EAKit/EAKit/Foundation/DateExtensions.swift",
+      "line": 465,
+      "symbol": "Date.TimeIntervalUnit",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/elias/Documents/GitHub/EAKit/EAKit/Foundation/DateExtensions.swift",
+      "line": 466,
+      "symbol": "Date.TimeIntervalUnit.seconds",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/elias/Documents/GitHub/EAKit/EAKit/Foundation/DateExtensions.swift",
+      "line": 466,
+      "symbol": "Date.TimeIntervalUnit.seconds",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/elias/Documents/GitHub/EAKit/EAKit/Foundation/DateExtensions.swift",
+      "line": 466,
+      "symbol": "Date.TimeIntervalUnit.seconds",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/elias/Documents/GitHub/EAKit/EAKit/Foundation/DateExtensions.swift",
+      "line": 466,
+      "symbol": "Date.TimeIntervalUnit.seconds",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/elias/Documents/GitHub/EAKit/EAKit/Foundation/DateExtensions.swift",
+      "line": 467,
+      "symbol": "Date.TimeIntervalUnit.milliseconds",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/elias/Documents/GitHub/EAKit/EAKit/Foundation/DateExtensions.swift",
+      "line": 467,
+      "symbol": "Date.TimeIntervalUnit.milliseconds",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/elias/Documents/GitHub/EAKit/EAKit/Foundation/DateExtensions.swift",
+      "line": 467,
+      "symbol": "Date.TimeIntervalUnit.milliseconds",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/elias/Documents/GitHub/EAKit/EAKit/Foundation/DateExtensions.swift",
+      "line": 467,
+      "symbol": "Date.TimeIntervalUnit.milliseconds",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/elias/Documents/GitHub/EAKit/EAKit/Foundation/DateExtensions.swift",
+      "line": 468,
+      "symbol": "Date.TimeIntervalUnit.microseconds",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/elias/Documents/GitHub/EAKit/EAKit/Foundation/DateExtensions.swift",
+      "line": 468,
+      "symbol": "Date.TimeIntervalUnit.microseconds",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/elias/Documents/GitHub/EAKit/EAKit/Foundation/DateExtensions.swift",
+      "line": 468,
+      "symbol": "Date.TimeIntervalUnit.microseconds",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/elias/Documents/GitHub/EAKit/EAKit/Foundation/DateExtensions.swift",
+      "line": 468,
+      "symbol": "Date.TimeIntervalUnit.microseconds",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/elias/Documents/GitHub/EAKit/EAKit/Foundation/DateExtensions.swift",
+      "line": 471,
+      "symbol": "Date.timeIntervalSince1970(in:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/elias/Documents/GitHub/EAKit/EAKit/Foundation/DateExtensions.swift",
+      "line": 471,
+      "symbol": "Date.timeIntervalSince1970(in:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/elias/Documents/GitHub/EAKit/EAKit/Foundation/DateExtensions.swift",
+      "line": 471,
+      "symbol": "Date.timeIntervalSince1970(in:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/elias/Documents/GitHub/EAKit/EAKit/Foundation/DateExtensions.swift",
+      "line": 471,
+      "symbol": "Date.timeIntervalSince1970(in:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/elias/Documents/GitHub/EAKit/EAKit/Foundation/DateExtensions.swift",
+      "line": 719,
       "symbol": "Date.defaultFormatStyle",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/elias/Documents/GitHub/EAKit/EAKit/Foundation/DateExtensions.swift",
-      "line": 701,
+      "line": 719,
       "symbol": "Date.defaultFormatStyle",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/elias/Documents/GitHub/EAKit/EAKit/Foundation/DateExtensions.swift",
-      "line": 701,
+      "line": 719,
       "symbol": "Date.defaultFormatStyle",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/elias/Documents/GitHub/EAKit/EAKit/Foundation/DateExtensions.swift",
-      "line": 701,
+      "line": 719,
       "symbol": "Date.defaultFormatStyle",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/elias/Documents/GitHub/EAKit/EAKit/Foundation/DateExtensions.swift",
-      "line": 703,
+      "line": 721,
       "symbol": "Date.format(style:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/elias/Documents/GitHub/EAKit/EAKit/Foundation/DateExtensions.swift",
-      "line": 703,
+      "line": 721,
       "symbol": "Date.format(style:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/elias/Documents/GitHub/EAKit/EAKit/Foundation/DateExtensions.swift",
-      "line": 703,
+      "line": 721,
       "symbol": "Date.format(style:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/elias/Documents/GitHub/EAKit/EAKit/Foundation/DateExtensions.swift",
-      "line": 703,
+      "line": 721,
       "symbol": "Date.format(style:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"

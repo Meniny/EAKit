@@ -461,6 +461,24 @@ public extension Date {
     public var timestamp: Int {
         return Int(self.timeIntervalSince1970)
     }
+    
+    public enum TimeIntervalUnit {
+        case seconds
+        case milliseconds
+        case microseconds
+    }
+    
+    public func timeIntervalSince1970(in unit: Date.TimeIntervalUnit = .seconds) -> Int {
+        let second = Date().timeIntervalSince1970
+        switch unit {
+        case .seconds:
+            return Int(second)
+        case .milliseconds:
+            return Int(second * 1000)
+        case .microseconds:
+            return Int(second * 1000000)
+        }
+    }
 }
 
 // MARK: - Methods
