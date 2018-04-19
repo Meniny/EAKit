@@ -8,6 +8,20 @@
 
 import CoreGraphics
 
+public extension Int {
+    public func `repeat`(_ action: (Int) -> Void) {
+        guard self > 0 else { return }
+        for i in 0..<self { action(i) }
+    }
+}
+
+public extension UInt {
+    public func `repeat`(_ action: (UInt) -> Void) {
+        guard self > 0 else { return }
+        for i in 0..<self { action(i) }
+    }
+}
+
 // MARK: - Properties
 public extension Int {
     
