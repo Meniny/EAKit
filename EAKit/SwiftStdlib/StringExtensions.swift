@@ -438,6 +438,27 @@ public extension String {
     }
 }
 
+// MARK: - Substring
+public extension String {
+    public func substring(toMax index: Int) -> String {
+        if index <= 0 { return "" }
+        if index >= self.count { return self }
+        return (self as NSString).substring(to: index)
+    }
+    
+    public func substring(fromMin index: Int) -> String {
+        if index <= 0 { return "" }
+        if index >= self.count { return "" }
+        return (self as NSString).substring(from: index)
+    }
+    
+    public func substring(with range: CountableClosedRange<Int>) -> String {
+        let min = (range.lowerBound < 0) ? 0 : range.lowerBound
+        let max = (range.upperBound >= self.count) ? self.count : range.upperBound
+        return (self as NSString).substring(with: NSRange.init(location: min, length: max - min))
+    }
+}
+
 // MARK: - Methods
 public extension String {
 	
