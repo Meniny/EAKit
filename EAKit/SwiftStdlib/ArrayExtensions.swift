@@ -347,18 +347,18 @@ public extension Array {
     ///     // Prints "two"
     ///     // Prints "three"
     ///
-    ///     numberWords.enumerate { (word, index) -> Bool in
-    ///         print(word, index)
-    ///         // Stop next enumeration if the current index is equal to 1
-    ///         return index == 1
+    ///     let map = numberWords.enumerate { (word, index, _) -> String in
+    ///         let new = "\(word)\(index)"
+    ///         print(new)
+    ///         return new
     ///     }
-    ///     // Prints "one"
-    ///     // Prints "two"
+    ///     // Prints "one0"
+    ///     // Prints "two1"
+    ///     // Prints "three2"
     ///
     /// - Parameter body: A closure that takes an element of the sequence, the index of this element and the sequence itself as
     ///   parameters, returns a new element.
     /// - Returns: A mapped new sequence.
-    @discardableResult
     public func enumerate(_ body: (Element, Index, [Element]) -> Element) -> [Element] {
         guard self.isNotEmpty else { return self }
         var new: [Element] = []

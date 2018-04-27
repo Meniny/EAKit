@@ -43,17 +43,13 @@ class ViewController: UIViewController {
         for word in numberWords {
             print(word)
         }
-        // Prints "one"
-        // Prints "two"
-        // Prints "three"
         
-        numberWords.enumerate { (word, index) -> Bool in
-            print(word, index)
-            // Stop next enumeration if the current index is equal to 1
-            return index == 1
+        let map = numberWords.enumerate { (word, index, _) -> String in
+            let new = "word " + word
+            print(word, new, index)
+            return new
         }
-        // Prints "one", 0
-        // Prints "two", 1
+        print(map)
     }
 
     override func didReceiveMemoryWarning() {
