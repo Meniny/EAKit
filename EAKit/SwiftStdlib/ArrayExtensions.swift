@@ -332,8 +332,41 @@ public extension Array {
             try body(element, index)
         }
     }
-//    public extension Array where Element: Equatable {
-//    }
+    
+    
+    /// Calls the given closure on each element in the sequence in the same order
+    /// as a `for`-`in` loop.
+    ///
+    /// The two loops in the following example produce the same output:
+    ///
+    ///     let numberWords = ["one", "two", "three"]
+    ///     for word in numberWords {
+    ///         print(word)
+    ///     }
+    ///     // Prints "one"
+    ///     // Prints "two"
+    ///     // Prints "three"
+    ///
+    ///     numberWords.enumerate { (word, index) -> Bool in
+    ///         print(word, index)
+    ///         // Stop next enumeration if the current index is equal to 1
+    ///         return index == 1
+    ///     }
+    ///     // Prints "one"
+    ///     // Prints "two"
+    ///
+    /// - Parameter body: A closure that takes an element of the sequence and the index of this element as a
+    ///   parameter, returns a `Bool` value to control the enumeration, the loop will be stopped if the closure returns `true`.
+    /// - Returns: The array itself.
+    @discardableResult
+    public func enumerate(_ body: (Element, Index) -> Bool) -> [Element] {
+        guard self.isNotEmpty else { return self }
+        for index in startIndex..<endIndex {
+            guard let element = self.item(at: index) else { continue }
+            if body(element, index) { break }
+        }
+        return self
+    }
 	
 	/// EAKit: Reduces an array while returning each interim combination.
 	///

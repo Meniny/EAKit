@@ -38,6 +38,22 @@ class ViewController: UIViewController {
         let source: [[Int]] = [[1], [2, 3], [4], [5, 6]]
         let flattened: [Int] = source.flat()
         EALog.info(source, flattened)
+        
+        let numberWords = ["one", "two", "three"]
+        for word in numberWords {
+            print(word)
+        }
+        // Prints "one"
+        // Prints "two"
+        // Prints "three"
+        
+        numberWords.enumerate { (word, index) -> Bool in
+            print(word, index)
+            // Stop next enumeration if the current index is equal to 1
+            return index == 1
+        }
+        // Prints "one", 0
+        // Prints "two", 1
     }
 
     override func didReceiveMemoryWarning() {
