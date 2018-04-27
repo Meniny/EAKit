@@ -355,17 +355,18 @@ public extension Array {
     ///     // Prints "one"
     ///     // Prints "two"
     ///
-    /// - Parameter body: A closure that takes an element of the sequence and the index of this element as a
-    ///   parameter, returns a `Bool` value to control the enumeration, the loop will be stopped if the closure returns `true`.
-    /// - Returns: The array itself.
+    /// - Parameter body: A closure that takes an element of the sequence, the index of this element and the sequence itself as
+    ///   parameters, returns a new element.
+    /// - Returns: A mapped new sequence.
     @discardableResult
-    public func enumerate(_ body: (Element, Index) -> Bool) -> [Element] {
+    public func enumerate(_ body: (Element, Index, [Element]) -> Element) -> [Element] {
         guard self.isNotEmpty else { return self }
+        var new: [Element] = []
         for index in startIndex..<endIndex {
             guard let element = self.item(at: index) else { continue }
-            if body(element, index) { break }
+            new.append(body(element, index, self))
         }
-        return self
+        return new
     }
 	
 	/// EAKit: Reduces an array while returning each interim combination.
