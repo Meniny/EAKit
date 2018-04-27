@@ -1411,3 +1411,128 @@ public struct Password {
         }
     }
 }
+
+public enum NATOPhoneticAlphabet: String {
+    case alfa = "Alfa"
+    case bravo = "Bravo"
+    case charlie = "Charlie"
+    case delta = "Delta"
+    case echo = "Echo"
+    case foxtrot = "Foxtrot"
+    case golf = "Golf"
+    case hotel = "Hotel"
+    case india = "India"
+    case juliett = "Juliett"
+    case kilo = "Kilo"
+    case lima = "Lima"
+    case mike = "Mike"
+    case november = "November"
+    case oscar = "Oscar"
+    case papa = "Papa"
+    case quebec = "Quebec"
+    case romeo = "Romeo"
+    case sierra = "Sierra"
+    case tango = "Tango"
+    case uniform = "Uniform"
+    case victor = "Victor"
+    case whiskey = "Whiskey"
+    case xray = "Xray"
+    case yankee = "Yankee"
+    case zulu = "Zulu"
+    
+    public static let allAlphabets: [NATOPhoneticAlphabet] = [
+        .alfa, .bravo, .charlie, .delta, .echo, .foxtrot, .golf, .hotel, .india, .juliett, .kilo, .lima, .mike, .november, .oscar, .papa, .quebec, .romeo, .sierra, .tango, .uniform, .victor, .whiskey, .xray, .yankee, .zulu
+    ]
+    
+    public init?(englishPhoneticAlphabet epa: String) {
+        guard epa.count == 1 else {
+            return nil
+        }
+        switch epa.uppercased() {
+        case "A":
+            self = .alfa
+        case "B":
+            self = .bravo
+        case "C":
+            self = .charlie
+        case "D":
+            self = .delta
+        case "E":
+            self = .echo
+        case "F":
+            self = .foxtrot
+        case "G":
+            self = .golf
+        case "H":
+            self = .hotel
+        case "I":
+            self = .india
+        case "J":
+            self = .juliett
+        case "K":
+            self = .kilo
+        case "L":
+            self = .lima
+        case "M":
+            self = .mike
+        case "N":
+            self = .november
+        case "O":
+            self = .oscar
+        case "P":
+            self = .papa
+        case "Q":
+            self = .quebec
+        case "R":
+            self = .romeo
+        case "S":
+            self = .sierra
+        case "T":
+            self = .tango
+        case "U":
+            self = .uniform
+        case "V":
+            self = .victor
+        case "W":
+            self = .whiskey
+        case "X":
+            self = .xray
+        case "Y":
+            self = .yankee
+        case "Z":
+            self = .zulu
+        default: return nil
+        }
+    }
+    
+    public var englishPhoneticAlphabet: String {
+        switch self {
+        case .alfa: return "A"
+        case .bravo: return "B"
+        case .charlie: return "C"
+        case .delta: return "D"
+        case .echo: return "E"
+        case .foxtrot: return "F"
+        case .golf: return "G"
+        case .hotel: return "H"
+        case .india: return "I"
+        case .juliett: return "J"
+        case .kilo: return "K"
+        case .lima: return "L"
+        case .mike: return "M"
+        case .november: return "N"
+        case .oscar: return "O"
+        case .papa: return "P"
+        case .quebec: return "Q"
+        case .romeo: return "R"
+        case .sierra: return "S"
+        case .tango: return "T"
+        case .uniform: return "U"
+        case .victor: return "V"
+        case .whiskey: return "W"
+        case .xray: return "X"
+        case .yankee: return "Y"
+        case .zulu: return "Z"
+        }
+    }
+}

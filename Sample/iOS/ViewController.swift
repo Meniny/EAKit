@@ -50,6 +50,10 @@ class ViewController: UIViewController {
             return new
         }
         print(map)
+        
+        let npa = NATOPhoneticAlphabet.allAlphabets
+        print(npa.map({ $0.rawValue }))
+        print(npa.map({ $0.englishPhoneticAlphabet }))
     }
 
     override func didReceiveMemoryWarning() {

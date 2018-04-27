@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name        = 'EAKit'
   s.module_name = 'EAKit'
-  s.version     = '1.4.5'
+  s.version     = '1.4.6'
   s.summary     = 'A huge collection of native Swift extensions to boost your productivity.'
 
   s.homepage    = 'https://github.com/Meniny/EAKit'
