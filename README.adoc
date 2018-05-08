@@ -19,7 +19,7 @@ v{version}, 2018-05-08
 [subs="attributes"]
 ++++
 <p align="center">
-  <img src="./Assets/{name}.jpg" alt="{name}">
+  <img src="./Assets/{name}.png" alt="{name}">
   <br/><br/>
   <img alt="Author" src="https://img.shields.io/badge/author-Elias%20Abel-blue.svg">
   <img alt="EMail" src="https://img.shields.io/badge/mail-admin@meniny.cn-orange.svg">
