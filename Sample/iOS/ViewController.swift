@@ -14,17 +14,37 @@ struct Some: Codable {
     var message: String
 }
 
-class ViewController: UIViewController {
+/// See `Sample/HEX.html`
+enum HexColors: String {
+    case rgb = "#f0f"
+    case argb = "#ffcc"
+    case rrggbb = "#00ff00"
+    case aarrggbb = "#0000ffcc"
+    
+    var attrString: NSAttributedString {
+        let color = Color.init(hexString: self.rawValue)
+        
+        return NSAttributedString.init(string: self.rawValue, attributes: [
+            NSAttributedStringKey.backgroundColor: color!,
+            NSAttributedStringKey.foregroundColor: color!.complementary!
+            ])
+    }
+}
 
+class ViewController: UIViewController {
+    
+    var timer: Timer?
+
+    @IBOutlet weak var bottomLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
         self.view.backgroundColor = CSSColor.aqua.color
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+        self.timer = Timer.scheduledTimer(withTimeInterval: 2, repeats: true, block: { (_) in
             self.view.backgroundColor = UIColor.random
-        }
+        })
         
         EALog.error("error", self)
         EALog.dump("dump", self)
@@ -54,6 +74,12 @@ class ViewController: UIViewController {
         let npa = NATOPhoneticAlphabet.allAlphabets
         print(npa.map({ $0.rawValue }))
         print(npa.map({ $0.englishPhoneticAlphabet }))
+        
+        let attrString = NSMutableAttributedString.init(string: "")
+        [HexColors.rgb, HexColors.argb, HexColors.rrggbb, HexColors.aarrggbb].forEach { (mode) in
+            attrString.append(mode.attrString)
+        }
+        self.bottomLabel.attributedText = attrString
     }
 
     override func didReceiveMemoryWarning() {
