@@ -3,7 +3,7 @@
 :mail: admin@meniny.cn
 :desc: a collection of Swift extensions
 :version: 1.5.0
-:na: N/A
+:na: [.line-through]#N/A#
 :ios: 8.0
 :macos: 10.10
 :watchos: {na}
