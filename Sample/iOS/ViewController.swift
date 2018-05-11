@@ -45,6 +45,15 @@ enum HexColors: String {
     }
 }
 
+struct Post: Codable {
+    let title: String
+    let url: String
+}
+
+struct Posts: Codable {
+    let posts: [Post]
+}
+
 class ViewController: UIViewController {
     
     var timer: Timer?
@@ -101,7 +110,16 @@ class ViewController: UIViewController {
             return [mode.rawValue: c.hexRepresentation(mode: mode.mode)]
         }
         print(colors)
+
+        let url = URL.init(string: "https://meniny.cn/api/v2/posts.json")
         
+        url?.get(as: Posts.self, completion: { (posts) in
+            print(posts?.posts.count ?? 0)
+        })
+        
+        url?.get(serializer: CodableDataSerializer<Posts>(), completion: { (posts) in
+            print(posts?.posts.count ?? 0)
+        })
     }
 
     override func didReceiveMemoryWarning() {

@@ -27,6 +27,49 @@ public extension URL {
 
 // MARK: - Methods
 public extension URL {
+    
+    /// EAKit: Request the data from a URL.
+    ///
+    /// - Parameters:
+    ///   - completion: completion handler to run when request finishs.
+    public func get(completion: @escaping ((_ mimeType: String?, _ data: Data?) -> Void)) {
+        URLSession.shared.dataTask(with: self) { (data, response, _) in
+            DispatchQueue.main.async {
+                completion(response?.mimeType, data)
+            }
+            }.resume()
+    }
+    
+    /// EAKit: Request the data from a URL.
+    ///
+    /// - Parameters:
+    ///   - completion: completion handler to run when request finishs.
+    public func get<T: Codable>(as type: T.Type, completion: @escaping ((T?) -> Void)) {
+        self.get { (_, data) in
+            guard let data = data else {
+                completion(nil)
+                return
+            }
+            let obj = T.decode(from: data)
+            completion(obj)
+        }
+    }
+    
+    /// EAKit: Request the data from a URL.
+    ///
+    /// - Parameters:
+    ///   - serializer: a serializer
+    ///   - completion: completion handler to run when request finishs.
+    public func get<T>(serializer: Serializer<Data, T>, completion: @escaping ((T?) -> Void)) {
+        self.get { (_, data) in
+            guard let data = data else {
+                completion(nil)
+                return
+            }
+            let obj = serializer.serialize(data)
+            completion(obj)
+        }
+    }
 	
 	/// EAKit: URL with appending query parameters.
 	///
