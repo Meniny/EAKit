@@ -358,22 +358,56 @@ public extension Color {
 }
 
 public extension Color {
-    public enum HexadecimalNotationMode: Int {
-        case rgb = 3
-        case rgba = 4
-        case rrggbb = 6
-        case aarrggbb = 8
+    public enum HexadecimalNotationMode {
+        case rgb
+        case rgba
+        case argb
+        case rrggbb
+        case rrggbbaa
+        case aarrggbb
         
-        public var digits: Int {
-            return self.rawValue
+        public var divisor: Int {
+            switch self {
+            case .rgb:      return 15
+            case .rgba:     return 15
+            case .argb:     return 15
+            case .rrggbb:   return 255
+            case .aarrggbb: return 255
+            case .rrggbbaa: return 255
+            }
         }
         
-        public init?(hexString: String) {
-            let colorString = hexString.replacingOccurrences(of: ["#", "0x"], with: "")
-            guard let mode = Color.HexadecimalNotationMode.init(rawValue: colorString.length) else {
-                return nil
+        public var digits: Int {
+            switch self {
+            case .rgb:      return 3
+            case .rgba:     return 4
+            case .argb:     return 4
+            case .rrggbb:   return 6
+            case .aarrggbb: return 8
+            case .rrggbbaa: return 8
             }
-            self = mode
+        }
+        
+        public var hasAlpha: Bool {
+            switch self {
+            case .rgb:      return false
+            case .rgba:     return true
+            case .argb:     return true
+            case .rrggbb:   return false
+            case .aarrggbb: return true
+            case .rrggbbaa: return true
+            }
+        }
+        
+        public var isShortForm: Bool {
+            switch self {
+            case .rgb:      return true
+            case .rgba:     return true
+            case .argb:     return true
+            case .rrggbb:   return false
+            case .aarrggbb: return false
+            case .rrggbbaa: return false
+            }
         }
     }
     
@@ -383,43 +417,48 @@ public extension Color {
     ///
     /// - Parameters:
     ///   - hexString: hexadecimal string (examples: 0000ffcc, #0000ffcc, EDE7F6, 0xEDE7F6, #EDE7F6, #0ff, 0xF0F, ..).
-    public convenience init?(hexString: String) {
+    public convenience init?(hexString: String, mode: HexadecimalNotationMode) {
         let colorString = hexString.replacingOccurrences(of: ["#", "0x"], with: "")
-        
-        guard let mode = Color.HexadecimalNotationMode.init(rawValue: colorString.length) else {
-            return nil
-        }
         
         var hexValue: UInt32 = 0
         guard Scanner(string: colorString).scanHexInt32(&hexValue) else {
             return nil
         }
         
-        let r, g, b, a, divisor: CGFloat
+        let r, g, b, a: CGFloat
+        let divisor: CGFloat = CGFloat(mode.divisor)
         switch mode {
         case .rgb:
-            divisor = 15
             r = CGFloat((hexValue & 0xF00) >> 8) / divisor
             g = CGFloat((hexValue & 0x0F0) >> 4) / divisor
             b = CGFloat( hexValue & 0x00F) / divisor
             a = 1
             break
         case .rgba:
-            divisor = 15
             r = CGFloat((hexValue & 0xF000) >> 12) / divisor
             g = CGFloat((hexValue & 0x0F00) >> 8) / divisor
             b = CGFloat((hexValue & 0x00F0) >> 4) / divisor
             a = CGFloat( hexValue & 0x000F) / divisor
             break
+        case .argb:
+            a = CGFloat((hexValue & 0xF000) >> 12) / divisor
+            r = CGFloat((hexValue & 0x0F00) >> 8) / divisor
+            g = CGFloat((hexValue & 0x00F0) >> 4) / divisor
+            b = CGFloat( hexValue & 0x000F) / divisor
+            break
         case .rrggbb:
-            divisor = 255
             r = CGFloat((hexValue & 0xFF0000) >> 16) / divisor
             g = CGFloat((hexValue & 0x00FF00) >> 8) / divisor
             b = CGFloat( hexValue & 0x0000FF) / divisor
             a = 1
             break
         case .aarrggbb:
-            divisor = 255
+            a = CGFloat((hexValue & 0xFF000000) >> 24) / divisor
+            r = CGFloat((hexValue & 0x00FF0000) >> 16) / divisor
+            g = CGFloat((hexValue & 0x0000FF00) >> 8) / divisor
+            b = CGFloat( hexValue & 0x000000FF) / divisor
+            break
+        case .rrggbbaa:
             r = CGFloat((hexValue & 0xFF000000) >> 24) / divisor
             g = CGFloat((hexValue & 0x00FF0000) >> 16) / divisor
             b = CGFloat((hexValue & 0x0000FF00) >> 8) / divisor
@@ -433,46 +472,32 @@ public extension Color {
         #endif
     }
     
-    //    /// See [more about CSS hex color](https://drafts.csswg.org/css-color/#hex-notation)
-    //    public convenience init?(hex aHexString: String) {
-    //        let colorString = aHexString.replacingOccurrences(of: "#", with: "").uppercased()
-    //        let a, r, g, b: CGFloat
-    //        switch (colorString.length) {
-    //        case 3: // #RGB
-    //            a = 1.0
-    //            r = Color.colorComponent(from: colorString, start: 0, length: 1)
-    //            g = Color.colorComponent(from: colorString, start: 1, length: 1)
-    //            b = Color.colorComponent(from: colorString, start: 2, length: 1)
-    //            break
-    //        case 4: // #ARGB
-    //            a = Color.colorComponent(from: colorString, start: 0, length: 1)
-    //            r = Color.colorComponent(from: colorString, start: 1, length: 1)
-    //            g = Color.colorComponent(from: colorString, start: 2, length: 1)
-    //            b = Color.colorComponent(from: colorString, start: 3, length: 1)
-    //            break
-    //        case 6: // #RRGGBB
-    //            a = 1.0
-    //            r = Color.colorComponent(from: colorString, start: 0, length: 2)
-    //            g = Color.colorComponent(from: colorString, start: 2, length: 2)
-    //            b = Color.colorComponent(from: colorString, start: 4, length: 2)
-    //            break
-    //        case 8: // #AARRGGBB
-    //            a = Color.colorComponent(from: colorString, start: 0, length: 2)
-    //            r = Color.colorComponent(from: colorString, start: 2, length: 2)
-    //            g = Color.colorComponent(from: colorString, start: 4, length: 2)
-    //            b = Color.colorComponent(from: colorString, start: 6, length: 2)
-    //            break
-    //        default:
-    //            return nil
-    //        }
-    //        self.init(red: r, green: g, blue: b, alpha: a)
-    //    }
-    //
-    //    public class func colorComponent(from string: String, start s: Int, length l: Int) -> CGFloat {
-    //        let substring = (string as NSString).substring(with: NSRange.init(location: s, length: l))
-    //        let fullhex = l == 2 ? substring : substring + substring
-    //        var hexComponent: UInt64 = 0
-    //        Scanner.init(string: fullhex).scanHexInt64(&hexComponent)
-    //        return CGFloat(hexComponent) / 255.0
-    //    }
+    public func hexRepresentation(mode: HexadecimalNotationMode) -> String {
+        let maxi = [HexadecimalNotationMode.rgb, HexadecimalNotationMode.rgba, HexadecimalNotationMode.argb].contains(mode) ? 16 : 256
+        
+        func toI(_ f: CGFloat) -> Int {
+            return min(maxi - 1, Int(CGFloat(maxi) * f))
+        }
+        
+        var r: CGFloat = 0
+        var g: CGFloat = 0
+        var b: CGFloat = 0
+        var a: CGFloat = 0
+        
+        self.getRed(&r, green: &g, blue: &b, alpha: &a)
+        
+        let ri = toI(r)
+        let gi = toI(g)
+        let bi = toI(b)
+        let ai = toI(a)
+        
+        switch mode {
+        case .rgb:       return String(format: "#%X%X%X", ri, gi, bi)
+        case .rgba:      return String(format: "#%X%X%X%X", ri, gi, bi, ai)
+        case .argb:      return String(format: "#%X%X%X%X", ai, ri, gi, bi)
+        case .rrggbb:    return String(format: "#%02X%02X%02X", ri, gi, bi)
+        case .rrggbbaa:  return String(format: "#%02X%02X%02X%02X", ri, gi, bi, ai)
+        case .aarrggbb:  return String(format: "#%02X%02X%02X%02X", ai, ri, gi, bi)
+        }
+    }
 }

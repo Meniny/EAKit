@@ -17,16 +17,30 @@ struct Some: Codable {
 /// See `Sample/HEX.html`
 enum HexColors: String {
     case rgb = "#f0f"
-    case argb = "#ffcc"
+    case rgba = "#ffcc"
+//    case argb = "#cffc"
     case rrggbb = "#00ff00"
-    case aarrggbb = "#0000ffcc"
+    case aarrggbb = "#FFFF8697"
+    case rrggbbaa = "#FF8697FF"
+    
+    var mode: Color.HexadecimalNotationMode {
+        switch self {
+        case .rgb:      return .rgb
+        case .rgba:     return .rgba
+        case .rrggbb:   return .rrggbb
+        case .aarrggbb: return .aarrggbb
+        case .rrggbbaa: return .rrggbbaa
+        }
+    }
+    
+    var color: UIColor? {
+        return Color.init(hexString: self.rawValue, mode: self.mode)!
+    }
     
     var attrString: NSAttributedString {
-        let color = Color.init(hexString: self.rawValue)
-        
         return NSAttributedString.init(string: self.rawValue, attributes: [
-            NSAttributedStringKey.backgroundColor: color!,
-            NSAttributedStringKey.foregroundColor: color!.complementary!
+            NSAttributedStringKey.backgroundColor: self.color!,
+            NSAttributedStringKey.foregroundColor: self.color!.complementary!
             ])
     }
 }
@@ -75,11 +89,19 @@ class ViewController: UIViewController {
         print(npa.map({ $0.rawValue }))
         print(npa.map({ $0.englishPhoneticAlphabet }))
         
+        let modes = [HexColors.rgb, HexColors.rgba, HexColors.rrggbb, HexColors.aarrggbb, HexColors.rrggbbaa]
         let attrString = NSMutableAttributedString.init(string: "")
-        [HexColors.rgb, HexColors.argb, HexColors.rrggbb, HexColors.aarrggbb].forEach { (mode) in
+        modes.forEach { (mode) in
             attrString.append(mode.attrString)
         }
         self.bottomLabel.attributedText = attrString
+        
+        let colors = modes.map { mode -> [String: String] in
+            let c = mode.color!
+            return [mode.rawValue: c.hexRepresentation(mode: mode.mode)]
+        }
+        print(colors)
+        
     }
 
     override func didReceiveMemoryWarning() {

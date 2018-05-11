@@ -39,6 +39,8 @@
 		4FD9993DE768D2429E9EA885 /* Pods-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-tvOS/Pods-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		53A748FD7F5A3266ACAA0D17 /* Pods_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C21A0C820280DBE00208FAC /* .swiftlint.yml */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; fileEncoding = 4; path = .swiftlint.yml; sourceTree = "<group>"; };
+		6498A6F120A3E9400010554D /* README.adoc */ = {isa = PBXFileReference; lastKnownFileType = text; name = README.adoc; path = ../README.adoc; sourceTree = "<group>"; };
+		6498A6F220A3E9490010554D /* HEX.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = HEX.html; sourceTree = "<group>"; };
 		64D7BDA62022E73300E042B1 /* iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64D7BDA82022E73300E042B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		64D7BDAA2022E73300E042B1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,7 +52,6 @@
 		64D7BDCF2022E86800E042B1 /* EAKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; fileEncoding = 4; name = EAKit.podspec; path = ../EAKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		64D7BDD02022E86800E042B1 /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = LICENSE.md; path = ../LICENSE.md; sourceTree = "<group>"; };
 		64D7BDD12022E86800E042B1 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; name = .gitignore; path = ../.gitignore; sourceTree = "<group>"; };
-		64D7BDD22022E86800E042B1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		64D7BDD72022EA4E00E042B1 /* macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = macOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64D7BDD92022EA4E00E042B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		64D7BDDB2022EA4E00E042B1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,7 +107,8 @@
 				64D7BDD12022E86800E042B1 /* .gitignore */,
 				64D7BDCF2022E86800E042B1 /* EAKit.podspec */,
 				64D7BDD02022E86800E042B1 /* LICENSE.md */,
-				64D7BDD22022E86800E042B1 /* README.md */,
+				6498A6F120A3E9400010554D /* README.adoc */,
+				6498A6F220A3E9490010554D /* HEX.html */,
 				64D7BDA72022E73300E042B1 /* iOS */,
 				64D7BDD82022EA4E00E042B1 /* macOS */,
 				64D7BD8E2022E72500E042B1 /* Products */,

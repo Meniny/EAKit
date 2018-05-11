@@ -14,7 +14,7 @@
     <a title="CSS Structure Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../../index.html">EAKit Docs</a> (75% documented)</p>
+        <p><a href="../../index.html">EAKit Docs</a> (73% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -134,6 +134,9 @@
                 <a href="../../Enums/EALogType.html">EALogType</a>
               </li>
               <li class="nav-group-task">
+                <a href="../../Enums/NATOPhoneticAlphabet.html">NATOPhoneticAlphabet</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../../Enums/PasswordStrengthLevel.html">PasswordStrengthLevel</a>
               </li>
               <li class="nav-group-task">
@@ -141,6 +144,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../../Enums/Result.html">Result</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Enums/ReversingAction.html">ReversingAction</a>
               </li>
               <li class="nav-group-task">
                 <a href="../../Enums/ShakeAnimationType.html">ShakeAnimationType</a>
@@ -223,6 +229,9 @@
                 <a href="../../Extensions/Color.html">Color</a>
               </li>
               <li class="nav-group-task">
+                <a href="../../Extensions/Color/HexadecimalNotationMode.html">– HexadecimalNotationMode</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../../Extensions/Color/Social.html">– Social</a>
               </li>
               <li class="nav-group-task">
@@ -233,6 +242,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../../Extensions/Color/FlatUI.html">– FlatUI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Extensions/Color/HexadecimalNotationMode.html">– HexadecimalNotationMode</a>
               </li>
               <li class="nav-group-task">
                 <a href="../../Extensions/Color/Social.html">– Social</a>
@@ -846,7 +858,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">aliceBlue</span>				<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0xF0F8FF</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">aliceBlue</span>                <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0xF0F8FF</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -873,7 +885,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">antiqueWhite</span>			<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0xFAEBD7</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">antiqueWhite</span>            <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0xFAEBD7</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -900,7 +912,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">aqua</span>					<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0x00FFFF</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">aqua</span>                    <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0x00FFFF</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -927,7 +939,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">aquamarine</span>			<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0x7FFFD4</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">aquamarine</span>            <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0x7FFFD4</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -954,7 +966,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">azure</span>					<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0xF0FFFF</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">azure</span>                    <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0xF0FFFF</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -981,7 +993,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">beige</span>					<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0xF5F5DC</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">beige</span>                    <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0xF5F5DC</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -1008,7 +1020,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">bisque</span>				<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0xFFE4C4</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">bisque</span>                <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0xFFE4C4</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -1035,7 +1047,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">black</span>					<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0x000000</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">black</span>                    <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0x000000</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -1062,7 +1074,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">blanchedAlmond</span>		<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0xFFEBCD</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">blanchedAlmond</span>        <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0xFFEBCD</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -1089,7 +1101,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">blue</span>					<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0x0000FF</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">blue</span>                    <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0x0000FF</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -1116,7 +1128,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">blueViolet</span>			<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0x8A2BE2</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">blueViolet</span>            <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0x8A2BE2</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -1143,7 +1155,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">brown</span>					<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0xA52A2A</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">brown</span>                    <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0xA52A2A</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -1170,7 +1182,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">burlyWood</span>				<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0xDEB887</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">burlyWood</span>                <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0xDEB887</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -1197,7 +1209,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">cadetBlue</span>				<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0x5F9EA0</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">cadetBlue</span>                <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0x5F9EA0</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -1224,7 +1236,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">chartreuse</span>			<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0x7FFF00</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">chartreuse</span>            <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0x7FFF00</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -1251,7 +1263,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">chocolate</span>				<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0xD2691E</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">chocolate</span>                <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0xD2691E</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -1278,7 +1290,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">coral</span>					<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0xFF7F50</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">coral</span>                    <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0xFF7F50</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -1305,7 +1317,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">cornflowerBlue</span>		<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0x6495ED</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">cornflowerBlue</span>        <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0x6495ED</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -1332,7 +1344,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">cornsilk</span>				<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0xFFF8DC</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">cornsilk</span>                <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0xFFF8DC</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -1359,7 +1371,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">crimson</span>				<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0xDC143C</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">crimson</span>                <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0xDC143C</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -1386,7 +1398,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">cyan</span>					<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0x00FFFF</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">cyan</span>                    <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0x00FFFF</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -1413,7 +1425,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">darkBlue</span>				<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0x00008B</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">darkBlue</span>                <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0x00008B</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -1440,7 +1452,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">darkCyan</span>				<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0x008B8B</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">darkCyan</span>                <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0x008B8B</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -1467,7 +1479,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">darkGoldenRod</span>			<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0xB8860B</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">darkGoldenRod</span>            <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0xB8860B</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -1494,7 +1506,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">darkGray</span>				<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0xA9A9A9</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">darkGray</span>                <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0xA9A9A9</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -1521,7 +1533,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">darkGrey</span>				<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0xA9A9A9</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">darkGrey</span>                <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0xA9A9A9</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -1548,7 +1560,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">darkGreen</span>				<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0x006400</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">darkGreen</span>                <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0x006400</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -1575,7 +1587,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">darkKhaki</span>				<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0xBDB76B</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">darkKhaki</span>                <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0xBDB76B</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -1602,7 +1614,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">darkMagenta</span>			<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0x8B008B</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">darkMagenta</span>            <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0x8B008B</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -1629,7 +1641,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">darkOliveGreen</span>		<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0x556B2F</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">darkOliveGreen</span>        <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0x556B2F</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -1656,7 +1668,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">darkOrange</span>			<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0xFF8C00</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">darkOrange</span>            <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0xFF8C00</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -1683,7 +1695,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">darkOrchid</span>			<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0x9932CC</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">darkOrchid</span>            <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0x9932CC</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -1710,7 +1722,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">darkRed</span>				<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0x8B0000</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">darkRed</span>                <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0x8B0000</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -1737,7 +1749,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">darkSalmon</span>			<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0xE9967A</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">darkSalmon</span>            <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0xE9967A</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -1764,7 +1776,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">darkSeaGreen</span>			<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0x8FBC8F</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">darkSeaGreen</span>            <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0x8FBC8F</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -1791,7 +1803,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">darkSlateBlue</span>			<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0x483D8B</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">darkSlateBlue</span>            <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0x483D8B</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -1818,7 +1830,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">darkSlateGray</span>			<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0x2F4F4F</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">darkSlateGray</span>            <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0x2F4F4F</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -1845,7 +1857,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">darkSlateGrey</span>			<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0x2F4F4F</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">darkSlateGrey</span>            <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0x2F4F4F</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -1872,7 +1884,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">darkTurquoise</span>			<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0x00CED1</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">darkTurquoise</span>            <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0x00CED1</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -1899,7 +1911,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">darkViolet</span>			<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0x9400D3</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">darkViolet</span>            <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0x9400D3</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -1926,7 +1938,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">deepPink</span>				<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0xFF1493</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">deepPink</span>                <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0xFF1493</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -1953,7 +1965,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">deepSkyBlue</span>			<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0x00BFFF</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">deepSkyBlue</span>            <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0x00BFFF</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -1980,7 +1992,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">dimGray</span>				<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0x696969</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">dimGray</span>                <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0x696969</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -2007,7 +2019,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">dimGrey</span>				<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0x696969</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">dimGrey</span>                <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0x696969</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -2034,7 +2046,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">dodgerBlue</span>			<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0x1E90FF</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">dodgerBlue</span>            <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0x1E90FF</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -2061,7 +2073,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">fireBrick</span>				<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0xB22222</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">fireBrick</span>                <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0xB22222</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -2088,7 +2100,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">floralWhite</span>			<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0xFFFAF0</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">floralWhite</span>            <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0xFFFAF0</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -2115,7 +2127,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">forestGreen</span>			<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0x228B22</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">forestGreen</span>            <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0x228B22</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -2142,7 +2154,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">fuchsia</span>				<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0xFF00FF</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">fuchsia</span>                <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0xFF00FF</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -2169,7 +2181,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">gainsboro</span>				<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0xDCDCDC</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">gainsboro</span>                <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0xDCDCDC</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -2196,7 +2208,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">ghostWhite</span>			<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0xF8F8FF</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">ghostWhite</span>            <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0xF8F8FF</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -2223,7 +2235,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">gold</span>					<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0xFFD700</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">gold</span>                    <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0xFFD700</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -2250,7 +2262,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">goldenRod</span>				<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0xDAA520</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">goldenRod</span>                <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0xDAA520</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -2277,7 +2289,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">gray</span>					<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0x808080</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">gray</span>                    <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0x808080</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -2304,7 +2316,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">grey</span>					<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0x808080</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">grey</span>                    <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0x808080</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -2331,7 +2343,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">green</span>					<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0x008000</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">green</span>                    <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0x008000</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -2358,7 +2370,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">greenYellow</span>			<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0xADFF2F</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">greenYellow</span>            <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0xADFF2F</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -2385,7 +2397,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">honeyDew</span>				<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0xF0FFF0</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">honeyDew</span>                <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0xF0FFF0</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -2412,7 +2424,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">hotPink</span>				<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0xFF69B4</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">hotPink</span>                <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0xFF69B4</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -2439,7 +2451,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">indianRed</span>				<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0xCD5C5C</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">indianRed</span>                <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0xCD5C5C</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -2466,7 +2478,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">indigo</span>				<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0x4B0082</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">indigo</span>                <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0x4B0082</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -2493,7 +2505,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">ivory</span>					<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0xFFFFF0</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">ivory</span>                    <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0xFFFFF0</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -2520,7 +2532,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">khaki</span>					<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0xF0E68C</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">khaki</span>                    <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0xF0E68C</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -2547,7 +2559,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">lavender</span>				<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0xE6E6FA</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">lavender</span>                <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0xE6E6FA</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -2574,7 +2586,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">lavenderBlush</span>			<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0xFFF0F5</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">lavenderBlush</span>            <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0xFFF0F5</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -2601,7 +2613,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">lawnGreen</span>				<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0x7CFC00</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">lawnGreen</span>                <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0x7CFC00</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -2628,7 +2640,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">lemonChiffon</span>			<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0xFFFACD</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">lemonChiffon</span>            <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0xFFFACD</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -2655,7 +2667,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">lightBlue</span>				<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0xADD8E6</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">lightBlue</span>                <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0xADD8E6</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -2682,7 +2694,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">lightCoral</span>			<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0xF08080</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">lightCoral</span>            <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0xF08080</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -2709,7 +2721,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">lightCyan</span>				<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0xE0FFFF</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">lightCyan</span>                <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0xE0FFFF</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -2736,7 +2748,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">lightGoldenRodYellow</span>	<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0xFAFAD2</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">lightGoldenRodYellow</span>    <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0xFAFAD2</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -2763,7 +2775,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">lightGray</span>				<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0xD3D3D3</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">lightGray</span>                <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0xD3D3D3</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -2790,7 +2802,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">lightGrey</span>				<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0xD3D3D3</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">lightGrey</span>                <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0xD3D3D3</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -2817,7 +2829,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">lightGreen</span>			<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0x90EE90</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">lightGreen</span>            <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0x90EE90</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -2844,7 +2856,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">lightPink</span>				<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0xFFB6C1</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">lightPink</span>                <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0xFFB6C1</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -2871,7 +2883,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">lightSalmon</span>			<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0xFFA07A</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">lightSalmon</span>            <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0xFFA07A</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -2898,7 +2910,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">lightSeaGreen</span>			<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0x20B2AA</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">lightSeaGreen</span>            <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0x20B2AA</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -2925,7 +2937,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">lightSkyBlue</span>			<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0x87CEFA</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">lightSkyBlue</span>            <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0x87CEFA</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -2952,7 +2964,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">lightSlateGray</span>		<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0x778899</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">lightSlateGray</span>        <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0x778899</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -2979,7 +2991,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">lightSlateGrey</span>		<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0x778899</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">lightSlateGrey</span>        <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0x778899</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -3006,7 +3018,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">lightSteelBlue</span>		<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0xB0C4DE</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">lightSteelBlue</span>        <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0xB0C4DE</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -3033,7 +3045,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">lightYellow</span>			<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0xFFFFE0</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">lightYellow</span>            <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0xFFFFE0</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -3060,7 +3072,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">lime</span>					<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0x00FF00</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">lime</span>                    <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0x00FF00</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -3087,7 +3099,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">limeGreen</span>				<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0x32CD32</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">limeGreen</span>                <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0x32CD32</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -3114,7 +3126,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">linen</span>					<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0xFAF0E6</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">linen</span>                    <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0xFAF0E6</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -3141,7 +3153,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">magenta</span>				<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0xFF00FF</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">magenta</span>                <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0xFF00FF</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -3168,7 +3180,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">maroon</span>				<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0x800000</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">maroon</span>                <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0x800000</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -3195,7 +3207,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">mediumAquaMarine</span>		<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0x66CDAA</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">mediumAquaMarine</span>        <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0x66CDAA</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -3222,7 +3234,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">mediumBlue</span>			<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0x0000CD</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">mediumBlue</span>            <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0x0000CD</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -3249,7 +3261,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">mediumOrchid</span>			<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0xBA55D3</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">mediumOrchid</span>            <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0xBA55D3</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -3276,7 +3288,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">mediumPurple</span>			<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0x9370DB</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">mediumPurple</span>            <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0x9370DB</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -3303,7 +3315,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">mediumSeaGreen</span>		<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0x3CB371</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">mediumSeaGreen</span>        <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0x3CB371</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -3330,7 +3342,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">mediumSlateBlue</span>		<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0x7B68EE</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">mediumSlateBlue</span>        <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0x7B68EE</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -3357,7 +3369,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">mediumSpringGreen</span>		<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0x00FA9A</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">mediumSpringGreen</span>        <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0x00FA9A</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -3384,7 +3396,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">mediumTurquoise</span>		<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0x48D1CC</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">mediumTurquoise</span>        <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0x48D1CC</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -3411,7 +3423,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">mediumVioletRed</span>		<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0xC71585</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">mediumVioletRed</span>        <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0xC71585</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -3438,7 +3450,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">midnightBlue</span>			<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0x191970</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">midnightBlue</span>            <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0x191970</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -3465,7 +3477,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">mintCream</span>				<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0xF5FFFA</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">mintCream</span>                <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0xF5FFFA</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -3492,7 +3504,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">mistyRose</span>				<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0xFFE4E1</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">mistyRose</span>                <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0xFFE4E1</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -3519,7 +3531,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">moccasin</span>				<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0xFFE4B5</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">moccasin</span>                <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0xFFE4B5</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -3546,7 +3558,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">navajoWhite</span>			<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0xFFDEAD</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">navajoWhite</span>            <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0xFFDEAD</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -3573,7 +3585,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">navy</span>					<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0x000080</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">navy</span>                    <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0x000080</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -3600,7 +3612,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">oldLace</span>				<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0xFDF5E6</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">oldLace</span>                <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0xFDF5E6</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -3627,7 +3639,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">olive</span>					<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0x808000</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">olive</span>                    <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0x808000</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -3654,7 +3666,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">oliveDrab</span>				<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0x6B8E23</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">oliveDrab</span>                <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0x6B8E23</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -3681,7 +3693,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">orange</span>				<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0xFFA500</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">orange</span>                <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0xFFA500</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -3708,7 +3720,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">orangeRed</span>				<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0xFF4500</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">orangeRed</span>                <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0xFF4500</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -3735,7 +3747,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">orchid</span>				<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0xDA70D6</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">orchid</span>                <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0xDA70D6</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -3762,7 +3774,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">paleGoldenRod</span>			<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0xEEE8AA</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">paleGoldenRod</span>            <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0xEEE8AA</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -3789,7 +3801,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">paleGreen</span>				<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0x98FB98</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">paleGreen</span>                <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0x98FB98</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -3816,7 +3828,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">paleTurquoise</span>			<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0xAFEEEE</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">paleTurquoise</span>            <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0xAFEEEE</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -3843,7 +3855,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">paleVioletRed</span>			<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0xDB7093</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">paleVioletRed</span>            <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0xDB7093</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -3870,7 +3882,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">papayaWhip</span>			<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0xFFEFD5</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">papayaWhip</span>            <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0xFFEFD5</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -3897,7 +3909,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">peachPuff</span>				<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0xFFDAB9</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">peachPuff</span>                <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0xFFDAB9</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -3924,7 +3936,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">peru</span>					<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0xCD853F</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">peru</span>                    <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0xCD853F</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -3951,7 +3963,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">pink</span>					<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0xFFC0CB</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">pink</span>                    <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0xFFC0CB</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -3978,7 +3990,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">plum</span>					<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0xDDA0DD</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">plum</span>                    <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0xDDA0DD</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -4005,7 +4017,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">powderBlue</span>			<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0xB0E0E6</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">powderBlue</span>            <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0xB0E0E6</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -4032,7 +4044,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">purple</span>				<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0x800080</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">purple</span>                <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0x800080</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -4059,7 +4071,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">rebeccaPurple</span>			<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0x663399</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">rebeccaPurple</span>            <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0x663399</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -4086,7 +4098,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">red</span>					<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0xFF0000</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">red</span>                    <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0xFF0000</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -4113,7 +4125,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">rosyBrown</span>				<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0xBC8F8F</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">rosyBrown</span>                <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0xBC8F8F</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -4140,7 +4152,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">royalBlue</span>				<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0x4169E1</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">royalBlue</span>                <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0x4169E1</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -4167,7 +4179,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">saddleBrown</span>			<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0x8B4513</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">saddleBrown</span>            <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0x8B4513</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -4194,7 +4206,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">salmon</span>				<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0xFA8072</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">salmon</span>                <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0xFA8072</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -4221,7 +4233,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">sandyBrown</span>			<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0xF4A460</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">sandyBrown</span>            <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0xF4A460</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -4248,7 +4260,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">seaGreen</span>				<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0x2E8B57</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">seaGreen</span>                <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0x2E8B57</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -4275,7 +4287,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">seaShell</span>				<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0xFFF5EE</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">seaShell</span>                <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0xFFF5EE</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -4302,7 +4314,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">sienna</span>				<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0xA0522D</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">sienna</span>                <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0xA0522D</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -4329,7 +4341,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">silver</span>				<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0xC0C0C0</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">silver</span>                <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0xC0C0C0</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -4356,7 +4368,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">skyBlue</span>				<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0x87CEEB</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">skyBlue</span>                <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0x87CEEB</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -4383,7 +4395,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">slateBlue</span>				<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0x6A5ACD</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">slateBlue</span>                <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0x6A5ACD</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -4410,7 +4422,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">slateGray</span>				<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0x708090</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">slateGray</span>                <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0x708090</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -4437,7 +4449,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">slateGrey</span>				<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0x708090</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">slateGrey</span>                <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0x708090</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -4464,7 +4476,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">snow</span>					<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0xFFFAFA</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">snow</span>                    <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0xFFFAFA</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -4491,7 +4503,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">springGreen</span>			<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0x00FF7F</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">springGreen</span>            <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0x00FF7F</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -4518,7 +4530,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">steelBlue</span>				<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0x4682B4</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">steelBlue</span>                <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0x4682B4</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -4545,7 +4557,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">tan</span>					<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0xD2B48C</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">tan</span>                    <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0xD2B48C</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -4572,7 +4584,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">teal</span>					<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0x008080</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">teal</span>                    <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0x008080</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -4599,7 +4611,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">thistle</span>				<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0xD8BFD8</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">thistle</span>                <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0xD8BFD8</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -4626,7 +4638,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">tomato</span>				<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0xFF6347</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">tomato</span>                <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0xFF6347</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -4653,7 +4665,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">turquoise</span>				<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0x40E0D0</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">turquoise</span>                <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0x40E0D0</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -4680,7 +4692,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">violet</span>				<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0xEE82EE</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">violet</span>                <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0xEE82EE</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -4707,7 +4719,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">wheat</span>					<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0xF5DEB3</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">wheat</span>                    <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0xF5DEB3</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -4734,7 +4746,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">white</span>					<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0xFFFFFF</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">white</span>                    <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0xFFFFFF</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -4761,7 +4773,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">whiteSmoke</span>			<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0xF5F5F5</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">whiteSmoke</span>            <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0xF5F5F5</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -4788,7 +4800,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">yellow</span>				<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0xFFFF00</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">yellow</span>                <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0xFFFF00</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -4815,7 +4827,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">yellowGreen</span>			<span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="mh">0x9ACD32</span><span class="p">)</span><span class="o">!</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">yellowGreen</span>            <span class="o">=</span> <span class="kt"><a href="../../Typealiases.html#/Color">Color</a></span><span class="p">(</span><span class="nv">hexValue</span><span class="p">:</span> <span class="mh">0x9ACD32</span><span class="p">)</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -4827,7 +4839,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2018 <a class="link" href="https://github.com/Meniny/EAKit" target="_blank" rel="external">Elias Abel</a>. All rights reserved. (Last updated: 2018-04-13)</p>
+          <p>&copy; 2018 <a class="link" href="https://github.com/Meniny/EAKit" target="_blank" rel="external">Elias Abel</a>. All rights reserved. (Last updated: 2018-05-11)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
