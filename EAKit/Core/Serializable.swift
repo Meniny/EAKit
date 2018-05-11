@@ -52,13 +52,13 @@ open class JSONStringSerializer: Serializer<String, Any> {
 
 open class CodableDataSerializer<T: Codable>: Serializer<Data, T> {
     public override func serialize(_ original: Data) -> T? {
-        return T.decode(from: original)
+        return try? JSONDecoder().decode(T.self, from: original)
     }
 }
 
 open class CodableStringSerializer<T: Codable>: Serializer<String, T> {
     public override func serialize(_ original: String) -> T? {
         guard let data = original.data(using: .utf8) else { return nil }
-        return T.decode(from: data)
+        return try? JSONDecoder().decode(T.self, from: data)
     }
 }
