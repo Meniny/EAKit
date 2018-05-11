@@ -5,6 +5,7 @@
 //  Created by Meniny on 2018-05-12.
 //
 
+#if os(iOS)
 import UIKit
 
 public enum StoryboardInstantiateType {
@@ -46,3 +47,4 @@ public extension StoryboardInstantiatable where Self: UIViewController {
         }
     }
 }
+#endif

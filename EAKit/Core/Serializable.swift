@@ -6,6 +6,9 @@
 //
 
 import Foundation
+#if os(iOS)
+import UIKit
+#endif
 
 open class Serializer<Original, Serialized> {
     
@@ -20,11 +23,13 @@ open class Serializer<Original, Serialized> {
     }
 }
 
+#if os(iOS)
 open class UIImageDataSerializer: Serializer<Data, UIImage> {
     public override func serialize(_ original: Data) -> UIImage? {
         return UIImage.init(data: original)
     }
 }
+#endif
 
 open class StringDataSerializer: Serializer<Data, String> {
     public override func serialize(_ original: Data) -> String? {

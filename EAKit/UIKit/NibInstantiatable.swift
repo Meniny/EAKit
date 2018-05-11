@@ -5,6 +5,7 @@
 //  Created by Meniny on 2018-05-12.
 //
 
+#if os(iOS)
 import Foundation
 import UIKit
 
@@ -30,3 +31,4 @@ public extension NibInstantiatable where Self: UIView {
         return nib.instantiate(withOwner: nibOwner, options: nibOptions)[instantiateIndex] as! Self
     }
 }
+#endif
