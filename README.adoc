@@ -3,7 +3,7 @@
 :author_esc: Elias%20Abel
 :mail: admin@meniny.cn
 :desc: a collection of Swift extensions
-:version: 1.5.2
+:version: 1.5.3
 :na: N/A
 :ios: 8.0
 :macos: 10.10
@@ -17,7 +17,7 @@
 :platform: iOS{sep}macOS
 = Meet `{name}`
 {author} <{mail}>
-v{version}, 2018-05-08
+v{version}, 2018-05-16
 
 [subs="attributes"]
 ++++

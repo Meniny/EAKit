@@ -1,27 +1,27 @@
 PODS:
-  - EAKit (1.5.2):
-    - EAKit/AppKit (= 1.5.2)
-    - EAKit/Core (= 1.5.2)
-    - EAKit/CoreGraphics (= 1.5.2)
-    - EAKit/CoreLocation (= 1.5.2)
-    - EAKit/Foundation (= 1.5.2)
-    - EAKit/Runtime (= 1.5.2)
-    - EAKit/sysctl (= 1.5.2)
-    - EAKit/Testing (= 1.5.2)
-    - EAKit/UIKit (= 1.5.2)
-  - EAKit/AppKit (1.5.2):
+  - EAKit (1.5.3):
+    - EAKit/AppKit (= 1.5.3)
+    - EAKit/Core (= 1.5.3)
+    - EAKit/CoreGraphics (= 1.5.3)
+    - EAKit/CoreLocation (= 1.5.3)
+    - EAKit/Foundation (= 1.5.3)
+    - EAKit/Runtime (= 1.5.3)
+    - EAKit/sysctl (= 1.5.3)
+    - EAKit/Testing (= 1.5.3)
+    - EAKit/UIKit (= 1.5.3)
+  - EAKit/AppKit (1.5.3):
     - EAKit/Core
-  - EAKit/Core (1.5.2)
-  - EAKit/CoreGraphics (1.5.2):
+  - EAKit/Core (1.5.3)
+  - EAKit/CoreGraphics (1.5.3):
     - EAKit/Core
-  - EAKit/CoreLocation (1.5.2):
+  - EAKit/CoreLocation (1.5.3):
     - EAKit/Core
-  - EAKit/Foundation (1.5.2):
+  - EAKit/Foundation (1.5.3):
     - EAKit/Core
-  - EAKit/Runtime (1.5.2)
-  - EAKit/sysctl (1.5.2)
-  - EAKit/Testing (1.5.2)
-  - EAKit/UIKit (1.5.2):
+  - EAKit/Runtime (1.5.3)
+  - EAKit/sysctl (1.5.3)
+  - EAKit/Testing (1.5.3)
+  - EAKit/UIKit (1.5.3):
     - EAKit/Core
   - SwiftLint (0.24.2)
 
@@ -30,7 +30,7 @@ DEPENDENCIES:
   - SwiftLint
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  https://github.com/cocoapods/specs.git:
     - SwiftLint
 
 EXTERNAL SOURCES:
@@ -38,9 +38,9 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  EAKit: d43c42cedaae24bbaef2a207933e920183b265ae
+  EAKit: 5fa4b28e4dafa883b3de06ee9c2485bf16d1a5a1
   SwiftLint: 2aa21b96c8d13396a051bc1cb659d2ce1e0075b0
 
 PODFILE CHECKSUM: 7a7af1227a412edae239b2d614722fe49eb0a507
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.5.2
