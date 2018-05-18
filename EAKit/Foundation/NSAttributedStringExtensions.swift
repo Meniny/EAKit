@@ -165,13 +165,19 @@ public extension NSAttributedString {
 //    case scaleToAllSizes // includes huge accessibility sizes
 //}
 
+#if os(macOS)
+public typealias LineBreaking = NSParagraphStyle.LineBreakMode
+#else
+public typealias LineBreaking = NSLineBreakMode
+#endif
+
 public enum NSStringAttribute: Equatable {
     case font(Font)
     case color(Color)
     case background(Color)
     case lineSpace(CGFloat)
     case paragraphSpacing(CGFloat)
-    case lineBreak(NSLineBreakMode)
+    case lineBreak(LineBreaking)
     case indents(CGFloat, CGFloat)
     case underline(Color, Int)
     case strikethrough(Color, Int)
