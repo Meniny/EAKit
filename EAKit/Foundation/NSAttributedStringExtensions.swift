@@ -158,3 +158,64 @@ public extension NSAttributedString {
 	}
 	
 }
+
+//public enum DynamicTypeBehavior: String, Equatable {
+//    case noScaling
+//    case scaleToStandardSizes // excludes huge accessibility sizes
+//    case scaleToAllSizes // includes huge accessibility sizes
+//}
+
+public enum NSStringAttribute: Equatable {
+    case font(Font)
+    case color(Color)
+    case background(Color)
+    case lineSpace(CGFloat)
+    case paragraphSpacing(CGFloat)
+    case lineBreak(NSLineBreakMode)
+    case indents(CGFloat, CGFloat)
+    case underline(Color, Int)
+    case strikethrough(Color, Int)
+    case attachment(NSTextAttachment)
+    case direction(NSWritingDirection)
+}
+
+extension NSAttributedString {
+    
+    public convenience init(string s: String, attributes: [NSStringAttribute]) {
+        let nsparagraph = NSMutableParagraphStyle.init()
+        var nsattributes: [NSAttributedStringKey: Any] = [:]
+        
+        for attr in attributes {
+            switch attr {
+            case .font(let f):
+                nsattributes[.font] = f
+            case .color(let c):
+                nsattributes[.foregroundColor] = c
+            case .background(let c):
+                nsattributes[.backgroundColor] = c
+            case .lineSpace(let ls):
+                nsparagraph.lineSpacing = ls
+            case .paragraphSpacing(let ps):
+                nsparagraph.paragraphSpacing = ps
+            case .lineBreak(let lb):
+                nsparagraph.lineBreakMode = lb
+            case .indents(let h, let t):
+                nsparagraph.headIndent = h
+                nsparagraph.tailIndent = t
+            case .underline(let c, let w):
+                nsattributes[.underlineColor] = c
+                nsattributes[.underlineStyle] = w
+            case .strikethrough(let c, let w):
+                nsattributes[.strikethroughColor] = c
+                nsattributes[.strikethroughStyle] = w
+            case .attachment(let a):
+                nsattributes[.attachment] = a
+            case .direction(let d):
+                nsparagraph.baseWritingDirection = d
+            }
+        }
+        nsattributes[.paragraphStyle] = nsparagraph
+        
+        self.init(string: s, attributes: nsattributes)
+    }
+}
