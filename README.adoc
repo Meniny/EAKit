@@ -3,7 +3,7 @@
 :author_esc: Elias%20Abel
 :mail: admin@meniny.cn
 :desc: a collection of Swift extensions
-:version: 1.5.4
+:version: 1.5.5
 :na: N/A
 :ios: 8.0
 :macos: 10.10
