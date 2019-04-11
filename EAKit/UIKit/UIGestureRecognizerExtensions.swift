@@ -107,7 +107,7 @@
         
         @objc
         open func didLongPressed(_ longPress: UILongPressGestureRecognizer) {
-            if longPress.state == UIGestureRecognizerState.began {
+            if longPress.state == UIGestureRecognizer.State.began {
                 self.longPressAction?(longPress)
             }
         }
@@ -161,7 +161,7 @@
             super.init(target: target, action: action)
         }
         
-        public convenience init(to direction: UISwipeGestureRecognizerDirection, touches: Int = 1, action: ((UISwipeGestureRecognizer) -> Void)?) {
+        public convenience init(to direction: UISwipeGestureRecognizer.Direction, touches: Int = 1, action: ((UISwipeGestureRecognizer) -> Void)?) {
             self.init()
             self.direction = direction
             #if os(iOS)

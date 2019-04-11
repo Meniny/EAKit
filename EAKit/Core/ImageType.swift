@@ -124,7 +124,7 @@ public extension EAImage {
             case .object(let img):
                 return img
             case .named(let name):
-                return NSImage.init(named: NSImage.Name(rawValue: name))
+                return NSImage.init(named: name)
             case .path(let path):
                 guard let path = path else {
                     return nil

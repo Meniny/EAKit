@@ -26,7 +26,7 @@ import UIKit
             self.actionHandlerClosure()
         }
         
-        public func addClosure(for controlEvents: UIControlEvents, action closure: @escaping () -> Void) {
+        public func addClosure(for controlEvents: UIControl.Event, action closure: @escaping () -> Void) {
             self.actionHandlerClosure(closure)
             self.addTarget(self, action: #selector(triggerActionHandleBlock), for: controlEvents)
         }
@@ -160,7 +160,7 @@ import UIKit
     // MARK: - Methods
     public extension UIButton {
         
-        private var states: [UIControlState] {
+        private var states: [UIControl.State] {
             return [.normal, .selected, .highlighted, .disabled]
         }
         
@@ -188,11 +188,11 @@ import UIKit
         /// EAKit: Convenience constructor for UIButton.
         public convenience init(target: AnyObject, action: Selector) {
             self.init(frame: CGRect.zero)
-            self.addTarget(target, action: action, for: UIControlEvents.touchUpInside)
+            self.addTarget(target, action: action, for: UIControl.Event.touchUpInside)
         }
         
         /// EAKit: Set a background color for the button.
-        public func setBackgroundColor(_ color: UIColor, forState: UIControlState) {
+        public func setBackgroundColor(_ color: UIColor, forState: UIControl.State) {
             UIGraphicsBeginImageContext(CGSize(width: 1, height: 1))
             UIGraphicsGetCurrentContext()?.setFillColor(color.cgColor)
             UIGraphicsGetCurrentContext()?.fill(CGRect(x: 0, y: 0, width: 1, height: 1))

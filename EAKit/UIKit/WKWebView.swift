@@ -43,9 +43,9 @@ extension WKWebView {
                 return nil
             }
             if type == .png {
-                return UIImagePNGRepresentation(img)
+                return img.pngData()
             }
-            return UIImageJPEGRepresentation(img, 1)
+            return img.jpegData(compressionQuality: 1)
         }
     }
     

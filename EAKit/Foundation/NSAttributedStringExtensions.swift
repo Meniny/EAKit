@@ -24,7 +24,7 @@ public extension NSAttributedString {
 	
 	/// EAKit: Underlined string.
 	public var underlined: NSAttributedString {
-		return applying(attributes: [.underlineStyle: NSUnderlineStyle.styleSingle.rawValue])
+        return applying(attributes: [.underlineStyle: NSUnderlineStyle.single.rawValue])
 	}
 	
 	#if os(iOS)
@@ -36,11 +36,11 @@ public extension NSAttributedString {
 	
 	/// EAKit: Struckthrough string.
 	public var struckthrough: NSAttributedString {
-		return applying(attributes: [.strikethroughStyle: NSNumber(value: NSUnderlineStyle.styleSingle.rawValue as Int)])
+        return applying(attributes: [.strikethroughStyle: NSNumber(value: NSUnderlineStyle.single.rawValue as Int)])
 	}
 	
 	/// EAKit: Dictionary of the attributes applied across the whole string
-	public var attributes: [NSAttributedStringKey: Any] {
+	public var attributes: [NSAttributedString.Key: Any] {
 		return attributes(at: 0, effectiveRange: nil)
 	}
 	
@@ -53,7 +53,7 @@ public extension NSAttributedString {
 	///
 	/// - Parameter attributes: Dictionary of attributes
 	/// - Returns: NSAttributedString with applied attributes
-	fileprivate func applying(attributes: [NSAttributedStringKey: Any]) -> NSAttributedString {
+	fileprivate func applying(attributes: [NSAttributedString.Key: Any]) -> NSAttributedString {
 		let copy = NSMutableAttributedString(attributedString: self)
 		let range = (string as NSString).range(of: string)
 		copy.addAttributes(attributes, range: range)
@@ -85,7 +85,7 @@ public extension NSAttributedString {
 	///   - attributes: Dictionary of attributes
 	///   - pattern: a regular expression to target
 	/// - Returns: An NSAttributedString with attributes applied to substrings matching the pattern
-	public func applying(attributes: [NSAttributedStringKey: Any], toRangesMatching pattern: String) -> NSAttributedString {
+	public func applying(attributes: [NSAttributedString.Key: Any], toRangesMatching pattern: String) -> NSAttributedString {
 		guard let pattern = try? NSRegularExpression(pattern: pattern, options: []) else { return self }
 		
 		let matches = pattern.matches(in: string, options: [], range: NSRange(0..<length))
@@ -104,7 +104,7 @@ public extension NSAttributedString {
 	///   - attributes: Dictionary of attributes
 	///   - target: a subsequence string for the attributes to be applied to
 	/// - Returns: An NSAttributedString with attributes applied on the target string
-	public func applying<T: StringProtocol>(attributes: [NSAttributedStringKey: Any], toOccurrencesOf target: T) -> NSAttributedString {
+	public func applying<T: StringProtocol>(attributes: [NSAttributedString.Key: Any], toOccurrencesOf target: T) -> NSAttributedString {
 		let pattern = "\\Q\(target)\\E"
 		
 		return applying(attributes: attributes, toRangesMatching: pattern)
@@ -166,12 +166,29 @@ public extension NSAttributedString {
 //}
 
 #if os(macOS)
-public typealias LineBreaking = NSParagraphStyle.LineBreakMode
+//public typealias LineBreaking = NSParagraphStyle.NSLineBreakMode
+public typealias LineBreaking = NSLineBreakMode
 #else
 public typealias LineBreaking = NSLineBreakMode
 #endif
 
 public enum NSStringAttribute: Equatable {
+    public static func == (lhs: NSStringAttribute, rhs: NSStringAttribute) -> Bool {
+        switch (lhs, rhs) {
+        case let (.font(a), .font(b)): return a == b
+        case let (.color(a), .color(b)): return a == b
+        case let (.lineSpace(a), .lineSpace(b)): return a == b
+        case let (.paragraphSpacing(a), .paragraphSpacing(b)): return a == b
+        case let (.lineBreak(a), .lineBreak(b)): return a == b
+        case let (.indents(a), .indents(b)): return a == b
+        case let (.underline(a), .underline(b)): return a == b
+        case let (.strikethrough(a), .strikethrough(b)): return a == b
+        case let (.attachment(a), .attachment(b)): return a == b
+        case let (.direction(a), .direction(b)): return a == b
+        default: return false
+        }
+    }
+    
     case font(Font)
     case color(Color)
     case background(Color)
@@ -189,7 +206,7 @@ extension NSAttributedString {
     
     public convenience init(string s: String, attributes: [NSStringAttribute]) {
         let nsparagraph = NSMutableParagraphStyle.init()
-        var nsattributes: [NSAttributedStringKey: Any] = [:]
+        var nsattributes: [NSAttributedString.Key: Any] = [:]
         
         for attr in attributes {
             switch attr {

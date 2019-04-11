@@ -386,13 +386,13 @@ public extension UIView {
         }
         switch animationType {
         case .linear:
-            animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionLinear)
+            animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.linear)
         case .easeIn:
-            animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseIn)
+            animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeIn)
         case .easeOut:
-            animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut)
+            animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeOut)
         case .easeInOut:
-            animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+            animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
         }
         CATransaction.setCompletionBlock(completion)
         animation.duration = duration
@@ -414,7 +414,7 @@ public extension UIView {
             view.translatesAutoresizingMaskIntoConstraints = false
             viewsDictionary[key] = view
         }
-        addConstraints(NSLayoutConstraint.constraints(withVisualFormat: withFormat, options: NSLayoutFormatOptions(), metrics: nil, views: viewsDictionary))
+        addConstraints(NSLayoutConstraint.constraints(withVisualFormat: withFormat, options: NSLayoutConstraint.FormatOptions(), metrics: nil, views: viewsDictionary))
     }
     
     /// EAKit: Anchor all sides of the view into it's superview.
@@ -582,7 +582,7 @@ extension UIView {
             delay: 0,
             usingSpringWithDamping: UIViewAnimationSpringDamping,
             initialSpringVelocity: UIViewAnimationSpringVelocity,
-            options: UIViewAnimationOptions.allowAnimatedContent,
+            options: UIView.AnimationOptions.allowAnimatedContent,
             animations: animations,
             completion: completion
         )
@@ -617,7 +617,7 @@ extension UIView {
     //EAKit: Reverse pop, good for button animations
     public func reversePop() {
         setScale(x: 0.9, y: 0.9)
-        UIView.animate(withDuration: 0.05, delay: 0, options: UIViewAnimationOptions.allowUserInteraction, animations: { [weak self] in
+        UIView.animate(withDuration: 0.05, delay: 0, options: UIView.AnimationOptions.allowUserInteraction, animations: { [weak self] in
             self?.setScale(x: 1, y: 1)
         })
     }
@@ -642,7 +642,7 @@ extension UIView {
     }
     
     /// EAKit
-    public func addSwipeGesture(direction: UISwipeGestureRecognizerDirection, numberOfTouches: Int = 1, target: AnyObject, action: Selector) {
+    public func addSwipeGesture(direction: UISwipeGestureRecognizer.Direction, numberOfTouches: Int = 1, target: AnyObject, action: Selector) {
         let swipe = UISwipeGestureRecognizer(target: target, action: action)
         swipe.direction = direction
         
@@ -655,7 +655,7 @@ extension UIView {
     }
     
     /// EAKit - Make sure you use  "[weak self] (gesture) in" if you are using the keyword self inside the closure or there might be a memory leak
-    public func addSwipeGesture(to direction: UISwipeGestureRecognizerDirection, touches: Int = 1, action: ((UISwipeGestureRecognizer) -> Void)?) {
+    public func addSwipeGesture(to direction: UISwipeGestureRecognizer.Direction, touches: Int = 1, action: ((UISwipeGestureRecognizer) -> Void)?) {
         let swipe = UIClosureSwipe.init(to: direction, touches: touches, action: action)
         self.addGestureRecognizer(swipe)
         self.isUserInteractionEnabled = true

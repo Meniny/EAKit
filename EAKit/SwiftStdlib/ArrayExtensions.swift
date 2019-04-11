@@ -693,7 +693,7 @@ public extension Array where Element: Equatable {
 	}
     
     public mutating func remove(_ element: Element) {
-        guard let index = self.index(of: element) else { return }
+        guard let index = self.firstIndex(of: element) else { return }
         self.remove(at: index)
     }
 	

@@ -3,21 +3,21 @@
 :author_esc: Elias%20Abel
 :mail: admin@meniny.cn
 :desc: a collection of Swift extensions
-:version: 1.5.6
+:version: 1.6.0
 :na: N/A
 :ios: 8.0
 :macos: 10.10
 :watchos: {na}
 :tvos: {na}
 :linux: {na}
-:xcode: 9.3
-:swift: 4.1
+:xcode: 10.2
+:swift: 5
 :license: MIT
 :sep: %20%7C%20
 :platform: iOS{sep}macOS
 = Meet `{name}`
 {author} <{mail}>
-v{version}, 2018-05-16
+v{version}, 2019-04-11
 
 [subs="attributes"]
 ++++

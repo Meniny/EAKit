@@ -39,8 +39,8 @@ enum HexColors: String {
     
     var attrString: NSAttributedString {
         return NSAttributedString.init(string: self.rawValue, attributes: [
-            NSAttributedStringKey.backgroundColor: self.color!,
-            NSAttributedStringKey.foregroundColor: self.color!.complementary!
+            NSAttributedString.Key.backgroundColor: self.color!,
+            NSAttributedString.Key.foregroundColor: self.color!.complementary!
             ])
     }
 }

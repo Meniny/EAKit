@@ -69,7 +69,7 @@ public extension UIViewController {
     
     public func share(items: [Any],
                       barButtonItem: UIBarButtonItem?,
-                      completion: UIActivityViewControllerCompletionWithItemsHandler? = nil) {
+                      completion: UIActivityViewController.CompletionWithItemsHandler? = nil) {
         let activityController = UIActivityViewController(activityItems: items, applicationActivities: nil)
         activityController.popoverPresentationController?.barButtonItem = barButtonItem
         activityController.completionWithItemsHandler = completion
@@ -79,7 +79,7 @@ public extension UIViewController {
     public func share(items: [Any],
                       sourceView: UIView?,
                       sourceRect: CGRect?,
-                      completion: UIActivityViewControllerCompletionWithItemsHandler? = nil) {
+                      completion: UIActivityViewController.CompletionWithItemsHandler? = nil) {
         let activityController = UIActivityViewController(activityItems: items, applicationActivities: nil)
         activityController.popoverPresentationController?.sourceView = sourceView
         if let rect = sourceRect {
@@ -95,7 +95,7 @@ public extension UIActivityViewController {
     public static func share(items: [Any],
                              from controller: UIViewController,
                              barButtonItem: UIBarButtonItem?,
-                             completion: UIActivityViewControllerCompletionWithItemsHandler? = nil) {
+                             completion: UIActivityViewController.CompletionWithItemsHandler? = nil) {
         controller.share(items: items, barButtonItem: barButtonItem, completion: completion)
     }
     
@@ -103,7 +103,7 @@ public extension UIActivityViewController {
                              from controller: UIViewController,
                              sourceView: UIView?,
                              sourceRect: CGRect?,
-                             completion: UIActivityViewControllerCompletionWithItemsHandler? = nil) {
+                             completion: UIActivityViewController.CompletionWithItemsHandler? = nil) {
         controller.share(items: items, sourceView: sourceView, sourceRect: sourceRect, completion: completion)
     }
 }

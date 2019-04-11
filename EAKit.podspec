@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name        = 'EAKit'
   s.module_name = 'EAKit'
-  s.version     = '1.5.6'
+  s.version     = '1.6.0'
   s.summary     = 'A huge collection of native Swift extensions to boost your productivity.'
 
   s.homepage    = 'https://github.com/Meniny/EAKit'
@@ -18,8 +18,8 @@ Pod::Spec.new do |s|
   s.requires_arc        = true
   s.source              = { git: 'https://github.com/Meniny/EAKit.git', tag: s.version.to_s }
   s.source_files        = 'EAKit/**/*.swift'
-  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.1' }
-  s.swift_version       = '4.1'
+  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '5' }
+  s.swift_version       = '5'
   # s.documentation_url   = 'https://meniny.cn/EAKit/docs'
 
   s.default_subspecs = 'Core', 'Foundation', 'UIKit', 'AppKit', 'CoreLocation', 'CoreGraphics', 'Testing', 'sysctl', 'Runtime'

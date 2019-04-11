@@ -44,9 +44,9 @@ public extension String {
                                background: UIColor = UIColor.clear,
                                font: UIFont = UIFont.systemFont(ofSize: 14)) -> NSAttributedString {
             return self.attributed([
-                NSAttributedStringKey.foregroundColor: color,
-                NSAttributedStringKey.backgroundColor: background,
-                NSAttributedStringKey.font: font
+                NSAttributedString.Key.foregroundColor: color,
+                NSAttributedString.Key.backgroundColor: background,
+                NSAttributedString.Key.font: font
             ])
         }
     #elseif os(OSX)
@@ -54,14 +54,14 @@ public extension String {
                                background: NSColor = NSColor.clear,
                                font: NSFont = NSFont.systemFont(ofSize: 14)) -> NSAttributedString {
             return self.attributed([
-                NSAttributedStringKey.foregroundColor: color,
-                NSAttributedStringKey.backgroundColor: background,
-                NSAttributedStringKey.font: font
+                NSAttributedString.Key.foregroundColor: color,
+                NSAttributedString.Key.backgroundColor: background,
+                NSAttributedString.Key.font: font
                 ])
         }
     #endif
     
-    public func attributed(_ attributes: [NSAttributedStringKey: Any]?) -> NSAttributedString {
+    public func attributed(_ attributes: [NSAttributedString.Key: Any]?) -> NSAttributedString {
         return NSAttributedString.init(string: self, attributes: attributes)
     }
     
@@ -1022,12 +1022,12 @@ public extension String {
 	
 	/// EAKit: Underlined string
 	public var underline: NSAttributedString {
-		return NSAttributedString(string: self, attributes: [.underlineStyle: NSUnderlineStyle.styleSingle.rawValue])
+        return NSAttributedString(string: self, attributes: [.underlineStyle: NSUnderlineStyle.single.rawValue])
 	}
 	
 	/// EAKit: Strikethrough string.
 	public var strikethrough: NSAttributedString {
-		return NSAttributedString(string: self, attributes: [.strikethroughStyle: NSNumber(value: NSUnderlineStyle.styleSingle.rawValue as Int)])
+        return NSAttributedString(string: self, attributes: [.strikethroughStyle: NSNumber(value: NSUnderlineStyle.single.rawValue as Int)])
 	}
 	
 	#if os(iOS)
